@@ -1,0 +1,105 @@
+{% load static %}
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/css/wheat.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <div class="back-body">
+        <div class="header" style="background-image: url('{% static 'img/crop3.jpg' %}');">
+            <h1><img src="{% static 'img/Farmbzz.png' %}" width="10%"> <b>Farmbzz-A Farmer Friendly Web App</b>
+            </h1>
+        </div>
+
+
+        <nav class="navbar navbar-inverse" style="margin-top:-10px;">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:25px;" class="navbar-brand" href="http://127.0.0.1:8000">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Disease Book <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                     <li><a  href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+                        </ul>
+
+
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Insect Book <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'mango' %}">Mango</a></li>
+                        <li><a href="{% url 'irice' %}">Rice</a></li>
+                        <li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+                        <li><a href="{% url 'icotton' %}">Cotton</a></li>
+                        <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                        <li><a href="{% url 'ipotato' %}">Potato</a></li>
+                    </ul>
+
+
+                    </li>
+                    <li><a href="{% url 'weather' %}">Weather</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer/">E-Shikayat</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer/">Soil Testing</a></li>
+                    <li><a href="#">Auto Diagnosis</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        <form id="navbar-search-form" class="form-inline" method="GET" action="/diagnose">
+            <div class="form-group">
+                <input type="text" class="form-control" name="d" placeholder="Your Path" value="{{ request.Get.d}}" required />
+                <input type="submit" class="btn btn-outline-sucess my-2 my-sm-0" value='Submit'/>
+            </div>
+        </form>
+       
+        {% for disease in disease_name %}
+        {{ disease }}<br/><br/>
+     
+        {% endfor %}
+        <img src="static/img/my21.jpg">
+        
+        {% for object in objects %}
+        <h3 style="color:DarkOrange"><b>Symptom:</b></h3> <p style="color:green; font-size:30px; padding: 20px; "><b>{{ object.symptm }}</b></p><br/><br/>
+
+        <h3 style="color:DarkOrange"><b>Mechanical Solution:</b></h3> <p style="color:green; font-size:30px; padding: 20px;"><b>{{ object.mechanical }}</b></p><br/><br/>
+
+        <h3 style="color:DarkOrange"><b>Chemical Solution:</b></h3> <p style="color:green; font-size:30px; padding: 20px;"><b>{{ object.chemical }}</b></p><br/><br/>
+
+        {{ object.chemical }}<br/><br/>
+        <h3 style="color:DarkOrange"><b>Physical Solution:</b></h3> <p style="color:green; font-size:30px; padding: 20px;"><b>{{ object.physical }}</b></p><br/><br/>
+    
+        <h3 style="color:DarkOrange"><b>Use of Pesticide:</b></h3> <p style="color:green; font-size:30px; padding: 20px;"><b>{{ object.pesticide }}</b></p><br/><br/>
+        
+
+
+        {% endfor %}
+    
+    </body>
+
+
+
+
+</div>
+</body>
+</html>

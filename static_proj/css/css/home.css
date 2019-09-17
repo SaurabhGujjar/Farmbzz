@@ -1,0 +1,349 @@
+
+{% load static %}
+         .header {
+                
+                background-image: url("{% static 'img/pexels-photo-207247.jpeg' %}");
+                background-size: cover;
+                text-align: center;
+            }
+            #myCarousel{
+                width: 100%;
+            }
+            .img-wrapper{
+                height: 200px;
+                width: 200px;
+                background-repeat:no-repeat ;
+                position: relative;
+                left: 42vw;
+                top: 15vh;
+
+            }
+            #blur-bg{
+                background-image:url("{% static 'img/e1.jpg' %}");
+                box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+                background-size: cover;
+                display: block;
+                height: 64vh !important;
+                filter: blur(5px);
+                z-index: 1 
+            }
+            #wheat{
+                height: 100px
+            }
+            #myCarousel-2{
+                z-index: 2;
+                position: relative;
+                bottom: -1vh;
+                margin-top: -65vh;
+                height: 64vh;
+            }
+            .item{
+                background: none !important;
+            }
+            .text-wrapper-1{
+                background:none !important;
+                color: white;
+                font-size: 2.5rem;
+                text-align: center;
+                padding: 50px;
+                position: relative;
+                height: 30vh;
+                top: 11vh;
+            }
+            .container{
+                padding: 0;
+                margin: 0;
+            }
+            .img-responsive{
+                height: 63vh !important;
+                background-position: center
+            }
+            .mySlides {
+                display: none;
+                width: 40%;
+                float: right;
+                margin-right: 2%;
+                margin-top: 3%;
+                border-radius: 50px;
+            }
+            
+            .w3-content w3-section {
+                max-width: 500px;
+                TEXT-align: right;
+                transition-duration: 6s;
+            }
+            
+            .sdf {
+                color: rgb(21, 48, 39);
+                margin-left: 2%;
+                margin-top: 2%;
+            }
+            
+            .hjk {
+                background-image: url("{% static 'img/free-wallpaper-hd-wallpaper-leaves-1454794.jpg' %}");
+                background-size: cover;
+              padding: 50px;
+              background-position: bottom;
+            }
+            
+            .lkj {
+                background-image: url('{{ STATIC_URL }}css/lala1.jpg');
+                background-position:center;
+                padding-left: 200px;
+                padding-right: 200px;
+                padding-top: 100px;
+                padding-bottom: 100px;
+
+                
+            }
+
+            #ppp{
+                color:#333;
+                margin-top: 0%;
+                margin-bottom: 0%;
+            }
+            
+            .normal-content:hover {
+                cursor: pointer;
+            }
+            
+            .bnm {
+                
+                font-size: 55px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color:#333;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+            
+            .plm {
+                color: #333;
+                line-height: 40px;
+                text-align: center;
+                font-size: 20px;
+            }
+            
+            h1 {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+               
+                color: black;
+                text-shadow: 2px 2px 2px;
+            }
+            
+            h2 {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding: 5px;
+                margin-left: 5px;
+                color: black;
+                text-shadow: 2px 2px 2px;
+            }
+            
+            h4 {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding: 5px;
+                margin-left: 20px;
+                color: black;
+                text-shadow: 1px 1px 1px;
+            }
+            
+            p {
+                margin-left: 25px;
+                font-size: 18px;
+                color: green;
+            }
+            
+            #auto-features-fadein {
+                opacity: inherit;
+            }
+            
+            #auto-features-fadeout {
+                transition-property: width;
+                transition-duration: 5s;
+            }
+            
+            .html-hidden {
+                display: none;
+            }
+            
+            .hover-link {
+                cursor: pointer;
+            }
+            
+            body {
+                font-family: Verdana, sans-serif;
+                margin: 0
+            }
+            
+            .mySlidess {
+                display: none;
+                border-radius: 60px;
+            }
+            
+            img {
+                vertical-align: middle;
+            }
+            /* Slideshow container */
+            
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+            /* Next & previous buttons */
+            
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+            /* Position the "next button" to the right */
+            
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            /* On hover, add a black background color with a little bit see-through */
+            
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            /* Caption text */
+            
+            .text {
+                color: red;
+                font-size: 30px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+            /* Number text (1/3 etc) */
+            
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            /* The dots/bullets/indicators */
+            
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            
+            .active,
+            .dot:hover {
+                background-color: #717171;
+            }
+            /* Fading animation */
+            
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+            
+            @-webkit-keyframes fade {
+                from {
+                    opacity: .4
+                }
+                to {
+                    opacity: 1
+                }
+            }
+            
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+                to {
+                    opacity: 1
+                }
+            }
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+body{display:none}
+                .prev,
+                .next,
+                .text {
+                    font-size: 11px
+                }
+                .img-wrapper{
+                    left: 38vw;
+                }
+            }
+           
+            
+            .opo {
+                font-size: 30px;
+                background-color: rgb(255, 255, 179);
+            }
+            
+            .lll {
+                
+                width: 100%;
+               
+                background-color: white;
+            }
+            
+            
+            
+            #kkk {
+                color: #333;
+                font-size: 25px;
+                margin-left: 0%;
+                margin-bottom: 0%;
+                line-height: 50px;
+            }
+            
+            .sss {
+                width: 250px;
+                height: 30px;
+            }
+            
+            .ssd {
+                width: 120px;
+            }
+            
+            #www {
+                margin-left: 90px;
+                margin-bottom: 50px;
+            }
+            
+            .nav a {
+                font-size: 25px;
+            }
+            .pop{
+                margin-left: 25px;
+            }
+            .try{
+                background-image: url("{% static 'img/visionbackground1.jpg' %}");
+                background-size: cover;
+            }
+            .test div{
+                padding:  30px 40px;
+            }
+            .test{
+                margin: 7rem 0px;
+            }

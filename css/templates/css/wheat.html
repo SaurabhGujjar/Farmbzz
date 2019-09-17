@@ -1,0 +1,576 @@
+{% load static %}
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/css/wheat.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+    <div class="back-body">
+        <div class="header" style="background-image: url('{% static 'img/crop3.jpg' %}');">
+            <h1><img src="{% static 'img/Farmbzz.png' %}" width="10%"> <b>Farmbzz-A Farmer Friendly Web App</b>
+            </h1>
+        </div>
+
+
+        <nav class="navbar navbar-inverse" style="margin-top:-10px;">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:25px;" class="navbar-brand" href="http://127.0.0.1:8000">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Disease Book <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                     <li><a  href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+                        </ul>
+
+
+
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Insect Book <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'mango' %}">Mango</a></li>
+                        <li><a href="{% url 'irice' %}">Rice</a></li>
+                        <li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+                        <li><a href="{% url 'icotton' %}">Cotton</a></li>
+                        <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                        <li><a href="{% url 'ipotato' %}">Potato</a></li>
+                    </ul>
+
+                    </li>
+                    <li><a href="{% url 'weather' %}">Weather</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer/">E-Shikayat</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer/">Soil Testing</a></li>
+                    <li><a href="{% url 'auto' %}">Auto Diagnosis</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        
+
+
+
+
+       
+       
+        <div class="container" style=" width: 100%; padding: 20px; margin-top: -20px;">
+            <h1 style="margin-top: 0px;">Wheat</h1>
+            <div class="w3-content w3-section">
+                <img class="mySlides" src="{% static 'img/pexels-photo-235925.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/pexels-photo-240525.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/pexels-photo-916406.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/watering-watering-can-man-vietnam-162637.jpeg' %}">
+
+            </div>
+
+        <!--<div class="mnb">-->
+            <p class="asx"> Wheat is the main cereal crop and mainly a rabi(winter) season crop in India.Indian
+                Wheat is the largely  soft,medium protein,white bread wheat, somewhat similar to U.S. hard
+                white wheat.Wheat gro central <br/>and western
+                India is typically hard, also with high protein and high gluten content .India also produces around 1.0-1.2
+                million tons of durum wheat, mostly in the state of Madhya Pradesh. Most Indian durum <br/>is not marketed
+                separately due to segregation
+                problem in the market yards. <br/> <b> Agro-climatic conditions:-</b> for
+                wheat farming -Wheat  has  adaptability
+                and  it  can also be  grown  tropicals, sub-tropical zones, in the temperate zone and the cold
+                tracts of the far north , beyond  60 degree north altitude. It can be grown from sea level  as high
+                as 3300m .It can be grown in severe
+                cold, snow and also resumes growth with the setting in of  warm weather in spring season. Wheat cultivation
+                is suitable with, moist , cold weather during the major part of the wheat growing period.<br/> <b> Ideal
+                temperature:-</b>ideal temperature range for ideal germination
+                of  seeds is 20°c-25°c though the     seeds <br/>can be germinated in the temperature range 3.5°c to 35°c.
+
+            </p>
+        </div>
+        
+        <br /> <br /> <br />
+        <div class="container" style=" width: 100%; padding: 20px;">
+        <!--<div class="mnv"></div>-->
+            <p class="asx">
+                <b> Soil:-</b> Soil with a clay loam or loam texture, good
+                structure and moderate water holding capacity are ideal for wheat cultivation. Soil
+                should be neutral in its reaction.Heavy soil with good drainage is suitable for wheat cultivation
+                under dry conditions. These soil absorb and retain rain water well. Heavy soils with poor structure and
+                poor drainage are not suitable
+                as wheat is sensitive to water logging.Wheat can be successfully grown on lighter soils provided their
+                water and nutrient holding capacity are improved.<br/> <b> Soil treatment:-</b> In wheat farming Azatobacter 2.5kg
+                +Phosphetica culture 2.5kg +Trycoderma
+                powder 2.5kg mix with 100kg to 125kg Farm Yard Manure(FYM)& broadcastat the time of last ploughing.<br/><b>Seed
+                rate and its treatment:-</b> In wheat farming seed rate in wheat farming as follows: 100 kg/ha -For normal
+                condition 120 kg/ha -for coarse
+                size grain 125 kg/ha -for late sowing 5 kg carbendazim or 2.5 kg thiram or 5 gram trycoderma spore at
+                1kg seed.<br/><b> Spacing between plants:-</b>  In wheat farming row to row spacing should be 23 to 24 cm .The late
+                sowing wheat should be sown
+                in rows spaced 15 to 18cm Irrigation in wheat farming 1st irrigation should be a given at 3 to 4 weeks
+                after sowing 2nd irrigation should be at 40 to 45 day after sowing 3rd irrigation at 60 to 65 day after
+                sowing 4 irrigation<br/> at 80 to
+                85 day after sowing 5th irrigation at 100 to 105 day after sowing 6th irrigation 15 to 120 day after
+                sowing . </p>
+        </div>
+    
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <div>
+            <h1>Common Diseases of Wheat:</h1>
+        </div>
+        <br>
+        <br>
+        
+
+
+
+        <div id="hover3" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Leaf Rust</h2>
+            <p>
+                <h3><b>Intro</b></h3><p class="text">Wheat leaf rust is a fungal disease that affects wheat, barley and rye stems, leaves and
+                grains. In temperate zones it is destructive on winter wheat because the pathogen overwinters.
+                Infections can lead up to 20%
+                yield loss, which is exacerbated by dying leaves, which fertilize the fungus. The pathogen is Puccinia
+                rust fungus. Puccinia triticina causes "black rust", P. recondita causes "brown rust", and P.
+                striiformis causes "yellow
+                rust". It is the most prevalent of all the wheat rust diseases, occurring in most wheat growing regions.
+                It causes serious epidemics in North America, Mexico and South America and is a devastating seasonal
+                disease in India.</p>
+                <h3 ><b>Symptoms</b></h3>
+                <p class="text">
+                    <ul class="text">
+                        <li>Small brown pustules develop on the leaf blades in a random scatter distribution.</li>
+                        <li>Onset of the disease is slow but accelerated in temperatures above 15 °C, making it a disease of the mature cereal plant in summer.</li>
+                        <li> Losses of between 5 to 20% are normal but may reach 50% in severe cases. </li> 
+                    </ul>
+                </p>
+                <h3><b> Chemical method</b></h3>
+                <p class="text">
+                    <ul class="text">
+                        <li> There are several fungicides labeled for leaf rust on wheat.</li>
+                        <li> There are only a few varieties that are highly resistant to leaf rust, and there is some potential for use of fungicides.</li>
+                        <li>IF leaf rust is found in the field, a fungicide application is recommended.</li>
+                    </ul>
+                 </p>
+                <h3><b>Cultural method</b></h3>
+                <p >
+                    <ul class="text">
+                        <li> 
+                                It is recommended to implement practices that include the eradication of volunteer plants and crop  debris, which can harbor inoculum over the winter.
+
+                        </li>
+                        <li>
+                                This cultural practice does not guarantee freedom from rust because urediniospores are carried long distances by wind.
+                        </li>
+                        <li>
+                                Avoid early sowing and excess nitrogen applications.
+
+                        </li>
+                    </ul>
+                 </p>
+            </p>
+            <h4></h4>
+        </div>
+
+        <div id="hover9" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Hill Blunt</h2>
+                <p>
+                    <h3><b>Description</b></h3><p class="text">
+                        It is also called European bunt or common bunt. It is systematic disease in India, its incidence is ristricted to the northern hills. The
+                        disease is capable of causing heavy losses in grain yield, which range from negligible to complete loss of the produce. Besides yield
+                        losses, it causes a serious deteriration in wheat flour. It imparts a fishy odour and black colour to the wheat meal resulting in the
+                        unpalatable chapatis.</p>
+                        <h3><b>Symptoms</b></h3><p class="text">
+                        The disease is not usually visible until heading stage. The pistils in infected heads are longer with ovary almost double the normal and green in
+                        colour instead of being white. Both species produce different symptoms T.caries(low bunt) affected culms are shorter than the normal and the
+                        plants affected by T.foetida(high bunt) are more often higher than the normal ones. The disease produces slightly discoloured grains which are full
+                        of black powder and gives foul smell. The occurrence of bunt in the field can be felt by the foul smell resembling rotten fish</p>.
+                        <h3><b>Chemical Control</b></h3><p class="text">
+                        Common bunt. Hyphae infect plants shortly after the seed germinates and before seedlings emerge, which makes control possible with fungicide seed
+                        treatments because a high concentration of the fungicide is placed directly in the infection court. Currently, seed treatment chemicals that contain carboxin or
+                        pentachloronitrobenzene are commonly used in the USA and provide excellent control of CB. However, both of these chemicals, at commonly used application
+                        rates, are less effective at controlling infection from high levels of soilborne inoculum (Hoffmann and Waldher 1981, Gaudet et al. 1989). Despite this, the
+                        continued use of fungicides that control seedborne inoculum has apparently reduced the number of soilborne teliospores to the extent that they are not
+                        presently a significant problem. CB may occur in trace amounts even where seed treatments are commonly used (Mathre and Johnson 1976, Ballinger and
+                        Gould1989). This low incidence occasionally provides sufficient inoculum to produce significant disease when seed is not properly treated (Williams and Gough
+                        1984, Gaudet et al. 1992).</p>
+                        <h3><b>Cultural Practices</b></h3><p class="text">
+                        As discussed earlier, DB incidence can be reduced by deep sowing, or by very early or late planting to avoid the plant stages that are the most susceptible.
+                        However, these practices may not provide effective control and may reduce yields and cause plants to be more vulnerable to other diseases. In contrast, CB
+                        incidence may be reduced by seeding shallow and significantly reduced or controlled by seeding into warm soil (Purdy and Kendrick 1963, Gaudet and
+                        Puchalski 1990). The effects of timing and method of cultivation, no-till, and stubble burning on teliospore germination or survival, or incidence of DB and CB,
+                        have not been investigated.</p>
+                </p>
+                <h4></h4>
+            </div>
+
+
+        <div id="hover8" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Tan spot</h2>
+            <p>
+                <h3><b>Intro</b></h3><p class="text">
+                    Tan spot,caused by the fungus Pyrenophora tritici-repentis, is a major leaf spot disease of winter wheat in the Great Plains of North
+                    America.It is more severe in wheat cropping systems that maintain crop residue on the soil surface . Although tan spot can be a
+                    serious threat by itself, it occurs more often as part of a leaf spot complex involving tan spot, Septoria leaf blotch, and spot
+                    blotch.The most severe damage occurs from the boot stage to the dough
+                    stage and is great-est on late tillers.Susceptible hosts of P.tritici-repentis include all classes ofwheat,bromegrass,wheatgrass,rye, and several
+                    native prairie grasses that may serve as sources of inoculum as well as sources of genetic diversity forthe pathogen.</p>
+                    
+                    <h3><b>Symptoms tan spot:</b></h3><p class="text">
+                    The initial symptoms of tan spot are small dark brown spots that expand to become tan elliptical or diamond-shaped lesions with a yellow halo. Frequently, there is a small, dark-brown spot in the center of the lesion. The lesions often merge as they grow, result- ing in large
+                    sections of affected tissue. Older infected leaves eventually begin to die from the tip back. In Kansas, the first tan spot symptoms usually appear in
+                    late March. When the infection is severe, fields planted with a susceptible variety may become yellow in less than a week. The appearance of these
+                    fields usually improves as plants grow and new leaves mask the old, infected leaves. If weather remains conducive, the disease is likely to move
+                    onto the middle and upper leaves. Tan spot is capable of infecting the developing grain, but kernel infection is rare in Kansas.Several similar
+                    diseases can be confused with tan spot.
+                    <h3><b>Cultural control:</b><h3><p class="text">
+                    A unique three-year conservation tillage rotation system called ecofarming (ecofallow) can be used to reduce the threat of tan
+                    spot. Ecofarming is a crop rotation system of controlling weeds and conserving soil moisture with minimum disturbance of crop
+                    
+                    residue. In this system, corn or sorghum is seeded directly into winter wheat stubble in a winter wheat-grain sorghum or corn-
+                    fallow rotation. In the ecofarming system a crop is planted directly into the residue of a different crop, rather than into the
+                    
+                    residue of the same crop. This crop rotation-fallow system effectively breaks disease cycles which involve host specific
+                    pathogens such the tan spot fungus that survive in crop residue.</p>
+                    
+                    <h3><b>Chemical Control</b></h3><p class="text">
+                    Foliar fungicides can be applied to control tan spot if the disease becomes serious during the crucial post-boot stage of wheat
+                    development.Crop scouting should begin early in the growing season and should continue on a regular basis until disease is
+                    detected or a decision to spray is made based on the observed disease level.</p>
+            </p>
+            <h4></h4>
+        </div>
+
+
+
+        <div id="hover7" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Ergot</h2>
+            <p>
+                <h3><b>Description:</b></h3><p class="text">
+                    Purple to black horn like bodies that replace grains in the head. Most species have bodies that are larger than
+                    the grain and protrude from the head, so they are usually easy to see at harvest. During flowering yellow
+                    droplets of sugary slime on the head are the first sign of the disease.
+                    Ergot contamination in grain samples is more commonly due to Ergot of Annual Ryegrass or Darnel growing as
+                    a weed in the crop.</p>
+                    <h3><b>Symptons: </b></h3><p class="text">
+                    After initial infection, the entire kernel is converted into a sorus consisting of a dark brown to black mass of
+                    teliospores covered by a modified periderm, which is thin andpapery.The sorus is light to dark brown and is
+                    called a bunt ball. The bunted heads are slender, bluish-green and may stay greener longer than healthy
+                    heads. The bunt balls change to a dull gray-brown at maturity, at which they become conspicuous. The fragile
+                    covering of the bunt balls are ruptured at harvest, producing clouds of spores. The spores have a fishy
+                    odor(trimethylamine). Plants with common bunt may be moderately stunted but infected plants cannot be easily
+                    recognized until near maturity and even then it is seldom conspicuous.</p>
+                    <h3><b>Prevention</b></h3><p class="text"> 
+                    Recognition of the potential for exposure to contaminated feed and actions to prevent or minimize exposure are the best ways to
+                    reduce risks of developing ergot toxicosis.The safest course of action would be Not to use contaminated grain or straw.If circumstances
+                    require their use, thencontinually monitor the grain or straw for the presence of ergot using two methods. The first method is
+                    continual inspection of the grain or straw for the presence of sclerotia as the product is used. The more vigilant the inspection, the
+                    more likely sclerotia, if present, will be detected.The second method is chemical analysis of specimens of feed or straw. Ideally, a
+                    representative specimen from every batch or bale should be collected and submitted for analysis so that results are available in
+                    advance of use. That way,if hazardous concentrations of ergot alkaloids are detected, time will be available to take whatever action
+                    is needed to control the risk of feeding the contaminated feed.</p>
+                    <h3><b>Disease control:</b></h3><p class="text">
+                    The disease is externally seed BORNE and systemic infection is there -as such spray of fungicides is not effective in
+                    controlling the disease. Systemic fungicides like carboxin, vitavax and benlate @ 2.0 g/Kg seed and Tilt(propioconazole)
+                    25 EC @ 0.1% are used for seed treatment. A combination of vitavax with thiram is very effective for diseasecontrol. The
+                    most successful method is the use of resistant varieties.Crop rotation at suitable intervals is also effective indsieaseconrto.l</p>
+            </p>
+            <h4></h4>
+        </div>
+
+    
+
+        <div id="hover2" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Stem Rust</h2>
+            
+            <p>
+                <h3><b>Intro</b></h3><p class="text"> Rust is an occasional, but devastating disease of wheat. Epidemics occur when there is a
+                carry over of stem rust from the previous season, susceptible varieties of wheat are grown, and warm
+                humid conditions in the
+                spring encourage disease development. tem rust is characterised by reddish-brown, powdery, oblong
+                pustules. The pustules have a characteristic torn margin that can occur on both sides of the leaves, on
+                the stems and the glumes.
+                Stem rust spores are much darker in colour than leaf rust spores, which are light brown and don't have
+                torn margins. As the plant matures, the pustules produce black spores known as teliospores. They occur
+                mainly on the leaf
+                sheaths and stem.</p>
+                <h3> <b>Symptoms</b> </h3><p class="text"> 
+                  <ul style=" font-size: 20px;
+                  margin-left: 10px;
+                  margin-right: 10px;
+                  color: green;
+                  line-height: 40px;">
+                      <li>Symptoms begin as oval to elongate lesions that are generally reddish-brown in
+                            color.</li>
+                            <li> In the late stages
+                                    of the disease, erumpent pustules produce numerous black sooty spores.</li>
+                                    <li>Severe infestations with many
+                                        stem lesions may weaken plant stems and result in lodging.</li>
+                  </ul>
+                  
+                     </p>
+                <h3> <b>Cultural method</b></h3><p class="text">
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;">
+                        <li>
+                                it has long been known that moisture on leaves and excessive foliar nitrogen
+                                favor infections by rust fungi. Farmers consider these factors in spacing, row orientation, and
+                                fertilizer schedules. 
+                        </li>
+                        <li>
+                                In some areas, summer wheat crops are
+                                irrigated, which may increase the survival of infected volunteer plants. In addition, many farmers are
+                                practicing no-till
+                                or minimum tillage
+                        </li>
+                        <li>
+                                Modern wheat varieties in that region
+                                mature about 2 weeks earlier than older varieties. This limits the length of time for stem rust
+                                epidemics to develop in the
+                                central Great Plains as well as the numbers of urediniospores that can contribute to epidemics farther
+                                north.
+                        </li>
+                    </ul>
+                  </p>
+                <h3><b>Chemical method</b></h3><p class="text"> 
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;">
+                        <li>
+                                some areas where disease pressure is high, fungicides are applied to wheat to
+                                control rust diseases.
+                        </li>
+                        <li> Fungicides that inhibit the synthesis of sterols [i.e., sterol biosynthesis
+                            inhibitors (SBIs) or demethylation
+                            inhibitors (DMIs)] are particularly effective, but the cost of application is generally prohibitive for
+                            routine use in most wheat-growing areas .</li>
+                    </ul>
+                   </p>
+            </p>
+            <h4></h4>
+        </div>
+
+
+
+
+        <div id="hover6" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%"> Stripe Rust</h2>
+                <p>
+                    <h3><b>Intro</b></h3><p class="text">Rust diseases of wheat are among the oldest plant diseases known to humans. Early literature on wheat cultivation mentions these devastating diseases and their ability to destroy entire wheat crops. Since rust discovery,
+                    numerous studies have been conducted on the life cycles of rust pathogens and their management. The information gained from these studies has enabled us to develop best management practices that reduce the impact of the diseases.
+                    T.stripe rust is easiest to identify in the morning. Examine the leaves, especially the older leaves low in the canopy, and look for yellow stripes of pustules. Pustules are raised above the leaf surface and can be easily wiped
+                    off onto a white cloth or tissue leaving a yellow stain. Also, watch for hot spots in the crop . Hot spots are often 1-10 metres in diameter, and are generally well developed just before the disease becomes widespread in the
+                    crop.</p>
+                    <h3><b>Symptoms</b></h3>
+                    <p class="text">
+                    The fungus forms clusters of tiny yellow- to orange-colored pustules, called uredinia. On young plants the pustules appear as blotches covering large areas of affected leaves. In older plants pustules appear in linear rows on the leaf forming narrow stripes
+                    along the length of the wheat leaf, which eventually merge and whole leaf can be covered with uredinia in susceptible cultivars. Resistant cultivars can show from small necrotic stripes to blotches carrying uredinia that have
+                    little or moderate sporulation. Affects leaves, spikes and occasionally leaf sheaths. During infection of the wheat spikes pustules appear on the inner surface of the glumes and lemmas. Individual pustules are oval and about
+                    0.5-1 mm in diameter. Stunting of plants is common with severe early infections. Narrow black stripes form on the leaves later on in the season during reproductive development and are called telia..
+                </p>
+                    <h3><b>Cultural method</b></h3>
+                    <p class="text">
+                    it has long been known that moisture on leaves and excessive foliar nitrogen favor infections by rust fungi. Farmers consider these factors in spacing, row orientation, and fertilizer schedules. Recent changes in production practices may have effects
+                    on stem rust. In some areas, summer wheat crops are irrigated, which may increase the survival of infected volunteer plants. In addition, many farmers are practicing no-till or minimum tillage. This increases the probability
+                    that rust fungi may successfully overwinter in the protective layer of stubble from the previous crop. Use of earlier-maturing wheat varieties in the central Great Plains of the U.S. has helped reduce the threat of stem rust
+                    epidemics. Modern wheat varieties in that region mature about 2 weeks earlier than older varieties. This limits the length of time for stem rust epidemics to develop in the central Great Plains as well as the numbers of urediniospores
+                    that can contribute to epidemics farther north.</p>
+                    <h3><b>Chemical method</b></h3>
+                    <p class="text">
+                    some areas where disease pressure is high, fungicides are applied to wheat to control rust diseases. Fungicides that inhibit the synthesis of sterols [i.e., sterol biosynthesis inhibitors (SBIs) or demethylation inhibitors (DMIs)] are particularly effective,
+                    but the cost of application is generally prohibitive for routine use in most wheat-growing areas .</p>
+                </p>
+                <h4></h4>
+            </div>
+
+
+
+
+
+
+
+            <div id="link-change">
+                    <div class="container"  style="width: 65%;">
+                     <div class="row">
+                          <div class="col-lg-4">
+                            <div class="thumbnail">
+                                 <div class="card" style="height: 430px;">
+                                    <img src="{% static 'img/download.jpeg' %}"  style="width:100%;height: 230px;">
+                                    <h1>Stem Rust</h1>
+                                    <p class="title">CEO & , Example</p>
+                                    <p><b>Causal Organism : Puccinia Graminis</b></p>
+                                    <div style="margin: 24px 0;">
+                                        <button class="hover-link" id="hover2-hidden">Click</button>
+                
+                                    </div>
+                
+                                </div>
+                
+                       </div>
+                   </div>
+               
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                    <div class="card" style="height:430px;">
+                                            <img src="{% static 'img/leaf_rust_on_wheat.jpg' %}"  style="width:100%;height: 230px;">
+                                            <h1>Leaf Rust</h1>
+                                            <p class="title"> & Founder, Example</p>
+                                            <p><b>Causal Organism : Puccinia Recondia</b></p>
+                                            <div style="margin: 24px 0;">
+                                                <button class="hover-link" id="hover3-hidden">Click</button>
+                                            </div>
+                        
+                                     </div>
+                  
+                                </div>
+                    </div>
+                
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                        <div class="card" style="height:430px;">
+                                                <img src="{% static 'img/images.jpeg' %}"  style="width:100%" height="230px">
+                                                <h1>Stripe Rust</h1>
+                                                <p class="title">CEO & Founder,</p>
+                                                <p><b>Causal Organism : Puccinia Striiformis</b></p>
+                                                <div style="margin: 24px 0;">
+                                                        <button class="hover-link" id="hover6-hidden">Click</button>                    
+                                                </div>
+                                            </div>   
+                    
+                                 </div>
+                        </div>
+                    </div>
+                 </div>
+                
+           
+        
+        
+        
+        
+        
+        
+        
+        
+           <div class="container" style="margin-top:2%; width: 65%;">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                             <div class="card" style="height:430px;">
+                                     <img src="{% static 'img/download (3).jpeg' %}"  style="width:100%; height:230px;">
+                                     <h1>Hill Bunt</h1>
+                                     <p class="title">CEO & , Example</p>
+                                     <p><b>Causal Organism : Tilletia Caries and T.Foetida</b></p>
+                                     <div style="margin: 24px 0;">
+                                         <button class="hover-link" id="hover9-hidden">Click</button>
+                 
+                                     </div>
+                 
+                                 </div>
+                 
+                        </div>
+                    </div>
+                
+                     <div class="col-lg-4">
+                             <div class="thumbnail">
+                                     <div class="card" style="height:430px;">
+                                             <img src="{% static 'img/fi00198.jpg' %}"  style="width:100%;height: 230px;">
+                                             <h1>Ergot</h1>
+                                             <p class="title"> & Founder, Example</p>
+                                             <p><b>Causal Organism :Claviceps Purpurea</b></p>
+                                             <div style="margin: 24px 0;">
+                                                 <button class="hover-link" id="hover7-hidden">Click</button>
+                                             </div>
+                         
+                                      </div>
+                   
+                                 </div>
+                     </div>
+                 
+                         <div class="col-lg-4">
+                                 <div class="thumbnail">
+                                         <div class="card" style="height:430px;">
+                                                 <img src="{% static 'img/TanSpot01.jpg' %}"  style="width:100%" height="230px">
+                                                 <h1>Tan Spot</h1>
+                                                 <p class="title">CEO & Founder,</p>
+                                                 <p><b>Causal Organism : Pyrenophora Tritici-Repem</b></p>
+                                                 <div style="margin: 24px 0;">
+                                                         <button class="hover-link" id="hover8-hidden">Click</button>                    
+                                                 </div>
+                                             </div>   
+                     
+                                  </div>
+                         </div>
+                     </div>
+                  </div>
+                  
+            </div>
+        
+        
+        
+        
+        
+        
+       
+        
+        
+        
+
+
+
+
+
+
+        <div>
+            <marquee class="opo"><b>Public Relation Officer:</b> Sh.Anil K Sharma , <b>Phone:</b> 91-11-25843301 ,
+                <b>Email:</b> anil.cpro@gmail.com <br /></marquee>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <script src="{% static 'js/project.js' %}"></script>
+</body>
+</html>

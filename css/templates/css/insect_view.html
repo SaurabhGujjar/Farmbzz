@@ -1,0 +1,116 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <title>Farmbzz-Insect Management</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/css/explorer.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+
+
+ <div class="lll" style="width:100%; margin-left:0px; margin-top:0px;">
+
+        <div class="header" style="background-image: url('{% static 'css/images/crop3.jpg' %}')">
+            <h1><img src="{% static 'css/images/Farmbzz.png' %}" width="9%"><b>  Farmbzz-A Farmer Friendly Web App</b>
+            </h1>
+        </div>
+
+
+        <nav class="navbar navbar-inverse">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:25px;" class="navbar-brand" href="http://127.0.0.1:8000/">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Disease Book <span
+                            class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a  href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+                        </ul>
+
+
+
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Insect Book <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'mango' %}">Mango</a></li>
+                        <li><a href="{% url 'irice' %}">Rice</a></li>
+                        <li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+                        <li><a href="{% url 'icotton' %}">Cotton</a></li>
+                        <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                        <li><a href="{% url 'ipotato' %}">Potato</a></li>
+                    </ul>
+
+
+                    </li>
+                    <li><a href="{% url 'weather' %}">Weather</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer/">E-Shikayat</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer/">Soil Testing</a></li>
+                    <li><a href="{% url 'auto' %}">Auto Diagnosis</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                </ul>
+
+        </nav>
+
+
+
+
+
+ <h1 > <i class="fas fa-search"></i>Search By Insect&nbsp;:</h1>
+
+{% include 'css/insect-form.html' %}
+
+{% if query %}
+{% for object in object_list %}
+
+
+<h3 style="color:DarkOrange"><b>Insect Name:</b></h3> <p style="color:green; font-size:30px; "><b>{{ object.insect_name }}</b></p><br/><br/>
+     <h3 style="color:DarkOrange"><b>Symptom:</b></h3> <br/><p style="color:green">{{ object.sympt }}</p> <br/><br/>
+     {% if object.img1 %}
+     <img class ='img-fluid' src="{{ object.img1.url }}" width="1000px" height="800"><br/>
+     {% endif %}
+     {% if object.img2 %}
+     <img class ='img-fluid' src="{{ object.img2.url }}" width="1000px" height="800"><br/>
+     {% endif %}
+
+     {% if object.img3 %}
+     <img class ='img-fluid' src="{{ object.img3.url }}" width="1000px" height="800px"><br/>
+     {% endif %}
+     <h3 style="color:DarkOrange"><b>Triger:</b></h3>  <br/> <p style="color:green">{{ object.biological_control }}</p><br/><br/>
+     <h3 style="color:DarkOrange"><b>Biological Control:</b></h3>  <br/> <p style="color:green">{{ object.biological_control }}</p><br/><br/>
+     <h3 style="color:DarkOrange"><b>Chemical Control:</b> </h3><br/> <p style="color:green">{{ object.chem_control }}</p><br/><br/>
+     <h3 style="color:DarkOrange"><b>Preventions:</b></h3>  <br/> <p style="color:green">{{ object.preventive_measures }}</p><br/><br/>
+
+<br/>
+
+
+{% empty %}
+ No results found!
+
+{% endfor %}
+{% endif %}
+
+
+
+
+
+     <marquee class="opo " width="100% " direction="rtl "><b>Public Relation Officer:</b> Sh.Anil K Sharma , <b>Phone:</b> 91-11-25843301 , <b>Email:</b> anil.cpro@gmail.com <br/></marquee>
+ </div>
+
+</body>
+</html>

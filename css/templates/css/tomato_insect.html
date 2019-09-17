@@ -1,0 +1,520 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/css/wheat.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+   
+</head>
+
+<body>
+    <div class="back-body">
+        <div class="header" style="background-image: url('{% static 'img/crop3.jpg' %}');">
+            <h1><img src="{% static 'img/Farmbzz.png' %}" width="10%"> <b>Farmbzz-A Farmer Friendly Web App</b>
+            </h1>
+        </div>
+
+
+        <nav class="navbar navbar-inverse" style="margin-top:-10px;">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:25px;" class="navbar-brand" href="http://127.0.0.1:8000/">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Disease Book <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a  href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+                        </ul>
+
+
+
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Insect Book <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'mango' %}">Mango</a></li>
+                        <li><a href="{% url 'irice' %}">Rice</a></li>
+                        <li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+                        <li><a href="{% url 'icotton' %}">Cotton</a></li>
+                        <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                        <li><a href="{% url 'ipotato' %}">Potato</a></li>
+                    </ul>
+
+
+                    </li>
+                    <li><a href="{% url 'weather' %}">Weather</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">E-Shikayat</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">Soil Testing</a></li>
+                    <li><a href="{% url 'auto' %}">Auto Diagnosis</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        
+
+
+
+
+       
+       
+        <div class="container" style=" width: 100%; padding: 20px; margin-top: -20px;">
+            <h1 style="margin-top:0px">Tomato</h1>
+            <div class="w3-content w3-section">
+                <img class="mySlides" src="{% static 'img/r1.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r2.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r3.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r4.jpeg' %}">
+            </div>
+        <!--<div class="mnb">-->
+            <p class="asx"> Rice is the seed of the grass species Oryza sativa(Asian rice) or Oryza glaberrima(African rice).
+                It is a cereal grain belongs to the grass family of Graminae and native to the deltas of the great Asian rivers,
+                 the Ganges, the Chang (Yangtze), and the Tigris and Euphrates. The rice plant grows from 2 to 6 ft tall, with a
+                  round, jointed stem, long pointed leaves and edible seeds borne in dense head on separate stalks. Rice is one 
+                  of the most cultivated grain crops in India as well as in Asian countries and a staple diet of major part of 
+                  India. India is an important centre for rice cultivation and consumption. India stands in second position after
+                  China in the production of rice.Major rice producing states are Haryana ,Tamil Nadu ,West Bengal ,Uttar Pradesh 
+                  ,Andhra Pradesh . Methods of growing rice differ greatly in different regions, but in most Asian countries 
+                  including India, the traditional hand methods of cultivating and harvesting rice are still practiced. Modern 
+                  farming of rice started in most of the countries which drastically reduced the labour problems and cost of cultivation.
+                   There are machines available from planting to harvesting the rice crop. Some parts of Indian rural areas still depend 
+                   on the wet buffalos for land preparation and manpower in plantation and harvesting. People often confuses with paddy 
+                   and rice. Rice when it is still covered by the brown hull is known as paddy. Rice fields are also called paddy fields or rice paddies.
+                     
+                
+                
+            </p>
+        </div>
+        
+        <br /> 
+        <div class="container" style=" width: 100%; padding: 20px;">
+        <!--<div class="mnv"></div>-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="thumbnail" style="border-color:transparent">
+                    <img src="{% static 'img/ricegraph.png' %}" alt="">
+                </div>
+            </div>
+                <div class="col-lg-6"> 
+                    <div class="thumbnail">
+                    <p class="asx">dsjkfkjshfkjskdfsdjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+                </div>
+            </div>
+            </div>
+         </div>
+    
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <div>
+            <h1>Common Insects of Tomato:</h1>
+        </div>
+        <br>
+        <br>
+        
+
+
+
+        <div id="hover3" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Helicoverpa Caterpillar</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/helicoverpa.jpg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/helicoverpa2.jpg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/Helicoverpa1.JPG' %}" style="width: 300px; height: 300px;">
+            </div>
+            <p>
+                    <h3><b>Description:</b></h3><p class="text">
+                            Rice sheath blight is one of the most </p>
+                       <h3 ><b>Symptoms:</b></h3>
+                       <p class="text">
+                            Eggs of the Helicoverpa caterpillar can often be found on the top canopy of the plant. They are yellow-white to brown, about 0.5 mm in diameter and are laid in clusters around floral structures and young leaves. Larvae can feed on any plant tissue but are most likely to attack flowers and fruits. Young larvae scrape the foliage, causing little damage. Older ones bores into flowers or the young fruit, making it unfit for marketing and causing serious damage. Frass is visible around the feeding holes. The growth of secondary pathogens on the wounds and frass lead to the rotting of the affected tissues. One caterpillar is capable of destroying 2-8 fruits, making of H. armigera one of the most destructive pests of tomato and pepper plants.
+                            </p>
+                           <h3> <b>Triger:</b></h3><p class="text"> 
+                                Damage is caused by the caterpillars of Helicoverpa armigera. Adults are usually light brown, about 35 mm long, with brown forewings mottled with darker patterns. Hindwings are whitish gray, with black "veins" and a large black patch on the edges. Females lay eggs singly on the upper and lower leaf surfaces, mainly on the top canopy. The aspect of the larvae varies from dark-green to reddish black depending on maturation stage. Their body is speckled with little black spots and they have a dark head. At later maturity stages, lines and bands develop along their back and flanks. Its life cycle is influenced by weather conditions and diet. Population normally peaks during fruit development, which results in high yield loss.
+                        </p>   
+                            <h3><b> Chemical method:</b></h3>
+                       <p class="text">
+                            Always consider an integrated approach with preventive measures together with biological treatments if available. Selective insecticide treatment is the best option to rid the field from the pest without affecting beneficial insects. Use the insecticides chlorantraniliprole, flubendiamide, cypermethrin or alpha- and zeta-cypermethrin to reduce populations. The first spray should be at the flowering stage and followed by sprays at either 10 or 15 days interval.    
+                        </p>
+                       <h3><b>Biological method:</b></h3>
+                       <p class="text">
+                            Trichogramma wasps parasitize the eggs. Microplitis, Heteropelma and Netelia wasps parasitize the larvae. Predatory bugs and ants, spiders, robber flies and some predatory flies also attack the larvae. You can also apply bio-insecticides based on spinosad, nucleopolyhedrovirus (NPV), Neem seed kernel extract or Bacillus thuringiensis (Bt) to control the larvae. Use of African marigold (Tagitus erecta) as a trap crop is also useful against this pest. Finally, the placement of bird perches will favor the presence of birds that feed on the fruit borer.  
+
+                       </p>
+                             <h3><b>Prevention:</b></h3>
+                                         <p class="text">
+    
+                                                Avoid water stress by providing a good drainage. Use resistant or tolerant varieties if available. Plant early to avoid population peaks of the pest. Leave sufficient distance between plants at planting. Provide uncultivated marginal areas to break life cycle. Use light or pheromone traps to monitor or mass-catch the moths. Use intercrops to attract or repel the moths. Monitor plants for the presence of eggs and damage to flowers or fruits. Hand-pick larvae and leaves with eggs. Remove weeds in and around the field. Clear all harvest residues after each cropping cycle. Plow deeply after harvesting to expose the pupae for natural predators and solar rays. Avoid monocultures and implement intercropping with beneficial plants.
+                                  </p>
+                    </p>
+            <h4></h4>
+        </div>
+
+        <div id="hover9" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Tobacco Caterpillar</h2>
+                <div class="container"  style="width: 70%; ">
+                    <img src="{% static 'img/tobacco.jpg' %}" style="width: 300px; height: 300px;">
+                    <img src="{% static 'img/tobacco2.jpg' %}" style="width: 300px; height: 300px;">
+                    <img src="{% static 'img/tobacco3.jpg' %}" style="width: 300px; height: 300px;">
+                </div>
+                <p>
+                        <h3><b>Description:</b></h3><p class="text">
+                                Rice sheath blight is one of the most </p>
+                           <h3 ><b>Symptoms:</b></h3>
+                           <p class="text">
+                                Freshly-hatched larvae feed gregariously on leaves, scraping the leaf tissue and completely stripping the plant. Older larvae disperse and feed voraciously on foliage at night. During the day, they usually hide in the soil around the base of the plants. In lighter soils, the larvae can reach the roots and damage them. Due to extensive feeding, only petioles and branches are left behind. Larvae and adults thrive at temperatures between 15 and 35°C, optimum at 25 °C. Low humidity and higher or lower temperatures reduce the fecundity and prolong their life cycle.
+                            </p>
+                               <h3> <b>Triger:</b></h3><p class="text">
+                                    Adult moths have greyish-brown bodies and variegated forewings with white wavy markings on the edges. The hindwings are translucent white with brown lines along the margins and the veins. Females lay hundred of eggs in clusters on the upper leaf blades, covered with golden brown scales. After hatching, the hairless light-green larvae disperse quickly and start feeding on leaves. Older larvae are dark green to brown with dark spots on the flanks and somewhat clearer bellies. Two yellow longitudinal bands run along the sides, interrupted by black triangular spots. An orange band runs dorsally between these spots. Larvae feed during the night and take refuge in the soil during the day.
+                                </p>
+                                <h3><b> Chemical method:</b></h3>
+                           <p class="text">
+                                Always consider an integrated approach of preventive measures together with biological treatment if available. Extensive insecticide use can lead to resistance in the pest. Azadirachtin can be used during the egg stage and prevents the larvae from hatching. To control the young larvae, several types of insecticides could be used, for example products based on emamectin, indoxycarb, bifenthrin or chlorantraniliprole. Bait solutions also effectively reduce populations.
+                            </p>
+                           <h3><b>Biological method:</b></h3>
+                           <p class="text">
+                                Parasitoid wasps of the species Trichogramma chilonis, Telenomus remus or Apanteles africanus feed on eggs or larvae. Bioinsecticides based on Nuclear Polyhedrosis Virus (NPV) or Bacillus thuringiensis also work well. Alternatively, the insect pathogenic fungi Nomuraea rileyi and Serratia marcescens can be sprayed on leaves. Bait solutions based on rice bran, molasses or brown sugar can be distributed on the soil in the evening hours. Plant oil extracts of neem leaves or kernels and extracts of Pongamia glabra seeds are highly effective against Spodoptera litura larvae on tomato leaves.
+
+                           </p>
+                                 <h3><b>Prevention:</b></h3>
+                                             <p class="text">
+        
+                                                    Check for tolerant varieties in your market. Sow early to avoid peaks in insect populations. Irrigate regularly to avoid prolonged mid season drought. Plant trap crops like taro and castor around and within fields. Plant repellent plants such as Ocimum spp. (basilicum). Use light or pheromone traps to attract the moths. Build bird perches in several places in the field. Check your fields for signs of the disease such as egg masses, feeding damage or the presence of larvae. Collect egg masses and larvae from trap plants and host plants and destroy them. Remove weeds 15-20 days after sowing. Handle your plants carefully during cultivation and avoid plant damage and injuries. Take care of the hygiene of your tools and equipment. Plow deep to expose Spodoptera pupae to natural enemies and weather-related factors.
+
+                                      </p>        
+                </p>
+                <h4></h4>
+            </div>
+
+
+        <div id="hover8" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Tuta Absolute</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/tuta.jpg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/tuta1.jpg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/tuta2.jpeg' %}" style="width: 300px; height: 300px;">
+            </div>
+            <p>
+                    <h3><b>Description:</b></h3><p class="text">
+                            Rice sheath blight is one of the most </p>
+                       <h3 ><b>Symptoms:</b></h3>
+                       <p class="text">
+                        Infestation occurs throughout the crop cycle and can affect any crop part. The larvae prefer apical buds, young soft leaflets, and flowers. On leaves, the larvae form irregular, gray to white leaf mines that may later become necrotic. The larvae may drill galleries into stems which affects plant growth. On fruits, black marks can be found at the larvaes entry or exit points. These opening serve as entry points for secondary pathogens, leading to fruit rot.    
+                    </p>
+                           <h3> <b>Triger:</b></h3><p class="text">   Tuta absoluta is a devastating tomato pest because of its high reproduction potential, with up to 12 generations per year. Females may lay up to 300 creamy-­colored eggs on the underside of leaves.  Eclosion takes place at 26-30ºC and 60-75% RH. The larvae are pale green with a characteristic black band at the back of their heads. Under favorable conditions (temperature, humidity), their development is completed in about 20 days. The adults are silvery brown, 5 - 7 mm long and hide between leaves during daytime. Tuta absoluta can overwinter as eggs, larvae or adults on leaves or in the soil.</p>
+                           <h3><b> Chemical method:</b></h3>
+                       <p class="text">
+                        Always consider an integrated approach with preventive measures together with biological treatments if available. Pesticides recommended for tuta absoluta pest management may not be viable due to the cryptic nature of the larvae, the high reproduction capacity of the insect and the development of resistance. To avoid that, rotate several types of insecticides such as indoxacarb, abamectin, azadirachtin, fenoxycarbe+lufenuron.   
+                    </p>
+                       <h3><b>Biological method:</b></h3>
+                       <p class="text">
+                        Several predators feeding on T. absoluta have been found: among other species the parasitoid wasp Trichogramma pretiosum, and the bugs Nesidiocoris tenuis and Macrolophus pygmaeus. Several fungal species including Metarhizium anisopliae and Beauveria bassiana attack the eggs, larvae and adults of the pest.  Neem seed extracts or insecticides containing Bacillus thuringiensis or Spinosad also work.
+                       </p>
+                             <h3><b>Prevention:</b></h3>
+                                         <p class="text">
+    
+                                            Use pest-­free transplants. Use sticky traps or pheromone traps to monitor your field and mass-catch the adults. Pick up and destroy damaged plants and plant parts. Control alternative host plants in and around the field. Plow the soil and cover it with plastic mulch or perform solarization. Remove and destroy infested plants after harvest. To prevent a carryover from previous crops, wait a minimum of 6 weeks before planting the next crop. Implement wide crop rotation.
+                                  </p>   
+            </p>
+            
+        </div>
+
+
+
+        <div id="hover7" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Black Cutworm </h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/blackcut.jpg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/blackcut1.jpg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/blackcut2.jpg' %}" style="width: 300px; height: 300px;">
+            </div>
+            <p>
+                    <h3><b>Description:</b></h3><p class="text">
+                            Rice sheath blight is one of the most </p>
+                       <h3 ><b>Symptoms:</b></h3>
+                       <p class="text">
+                        Cutworms can attack tomato plants at all growth stages, but young seedlings are preferred. The damage can be severe if high numbers of caterpillars coincides with the emergence of seedlings. Young caterpillars forage near the ground on plants, leaving small irregular holes on tender leaves. Their older counterparts are burrowed in the soil to avoid the daylight and emerge at night to feed at the base of the plants. Stems can be severed (‘cut’ ) at ground level, resulting in damage to the growing tissues, impaired growth or death. Young plants can be dragged underground. The cutworms can also burrow into the stem of mature plants, which can result in wilting and lodging. Agrotis ipsilon has a worldwide distribution and, beside tomato, it has broad range of hosts        
+                    </p>
+                           <h3> <b>Triger:</b></h3><p class="text">Damage is caused by the larvae of the Agrotis ipsilon. They are robust moths with a grayish brown mottled body and nocturnal habits, hiding in the soil during the day. They have light-brown forewings mottled with darker patterns, and white hindwings. Females look similar to males but are somewhat darker. They lay pearly white (later light brown) eggs singly or in clusters on plants, on moist ground or in cracks in the soil. The hatching of the larvae depends greatly on temperature and can take place from 3 to 24 days, depending on the temperature. Young larvae are light gray, smooth and greasy in appearance, and 5 to 10 mm in length. Older larvae are dark-brown, up to 40 mm long, with a grayish to yellowish dotted stripe running down the back. They can be found curled up into a C shape in small shallow tunnels below the soil surface.</p>
+                           <h3><b> Chemical method:</b></h3>
+                       <p class="text">
+                        Always consider an integrated approach with preventive measures together with biological alternatives if available. Products containing chlorpyrifos, cypermethrin, beta-cypermethrin, deltamethrin, lambda-cyhalothrin can be applied to control cutworm populations. Pre-planting application of insecticides can also help but are recommended only in case large populations are expected.       
+                    </p>
+                       <h3><b>Biological method:</b></h3>
+                       <p class="text">
+                        Cutworms have many enemies including parasitic wasps, flies and predators such as grasshoppers. Bio-insecticides based on Bacillus thuringiensis, Nucleopolyhedrosis virus  and Beauveria bassiana provide effective population control. Natural predators should be encouraged by avoiding unnecessary treatment.
+
+                       </p>
+                             <h3><b>Prevention:</b></h3>
+                                         <p class="text">
+    
+                                            Plant early to avoid population peaks of the pest. Plant sunflower plants around the field to attract black cutworms. Clear weeds in and around the field before planting and after emergence. Use light and pheromones traps to monitor or catch moths. Bury plant residues deep in the soil after harvest. Keep the field in fallow for some weeks before planting. Plow the field to bury larvae or expose them to predators 3 to 6 weeks before planting. Plan a good crop rotation with a resistant crop.
+                                  </p>
+                </p>
+            <h4></h4>
+        </div>
+
+    
+
+        <div id="hover2" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Aphids</h2>
+
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/brown-spot-2.jpg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/brownspot1.jpg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/brown-spot-3.jpg' %}" style="width: 300px; height: 300px;">
+            </div>
+            <p>
+                    <h3><b>Description:</b></h3><p class="text">
+                            Rice sheath blight is one of the most </p>
+                       <h3 ><b>Symptoms:</b></h3>
+                       <p class="text">
+                            Rice gall midge forms a tubular gall at the base of tillers, producing elongated silvery leaf sheaths called onion leaf or silver shoot (about 1 cm wide and 10−30 cm long). The affected tiller inhibits growth of leaves and fails to produce panicles. Plant stunting and leaf deformity, wilting and rolling are also symptoms caused by drought, potassium deficiency, salinity, and by rice thrips. To confirm cause of problem, check for presence of insects. Particularly, elongated-tubular eggs and maggot-like larva feeding inside developing buds. 
+                        </p>
+                           <h3> <b>Triger:</b></h3><p class="text">  The Asian rice gall midge is found in irrigated or rainfed wetland rice environment during the tillering stage of the rice crop. It is also common in upland and deep-water rice. The insect remains dormant in the pupa stage but become active again when the buds start growing after the rains. Population density is favored by cloudy or rainy weather, cultivation of high-tillering varieties, intensive management practices.</p>
+                           <h3><b> Chemical method:</b></h3>
+                       <p class="text">
+                            Always consider an integrated approach with preventive measures together with biological treatments if available. Use time insecticide applications accurately to control outbreak by spraying on emergence of rice gall brood. Products based on chlorpyriphos can be used against the Asian rice gall midge to control its population.
+                          </p>
+                       <h3><b>Biological method:</b></h3>
+                       <p class="text">Parasitization with platygasterid, eupelmid, and pteromalid wasps (parasitize the larvae), phytoseiid mites (feed on eggs), spiders (feed on adults) have successfully been used. Planting more flowering plant that attract the insects around the rice field also helps.
+                        </p>
+                             <h3><b>Prevention:</b></h3>
+                                         <p class="text">
+    
+                  Use resistant varieties available locally.,Plant early, at the beginning of the rainy season.,Use a wider space between plants or a looser sowing rate.,Plant trap plants that attract beneficial insects around the rice fields.,Remove all off-season plant hosts around the rice field.,Check the optimum recommendation of nitrogen and potash fertilizer.,Use light traps along with sticky board with oil or glue to collect the moths.,Plow plant debris of the previous crop immediately after harvest.,Keep land fallow some weeks or months during off season.
+                
+                                  </p>   
+            </p>
+            <h4></h4>
+        </div>
+
+
+
+
+        <div id="hover6" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%"> Bright Line Brown Eye</h2>
+                <div class="container"  style="width: 70%; ">
+                    <img src="{% static 'img/blbe.jpg' %}" style="width: 300px; height: 300px;">
+                    <img src="{% static 'img/blbe1.jpg' %}" style="width: 300px; height: 300px;">
+                    <img src="{% static 'img/blbe2.jpg' %}" style="width: 300px; height: 300px;">
+                </div>
+                <p>
+                    <h3><b>Description:</b></h3><p class="text">
+                        Rice sheath blight is one of the most </p>
+                   <h3 ><b>Symptoms:</b></h3>
+                   <p class="text">
+                        On tomato plants, chewing damage is visible on young leaves, stems, flowers and fruits. Young larvae feed on the underside of leaves where they make small perforations. As the larvae grow older, whole leaves, stalks and also flowers and fruits may be severely damaged. A series of holes and superficial scratching and tunnels are visible on the fruit surface. Damaged tissues and frass are colonized by opportunistic pathogens that favors rotting. Thus, even slight infestations of older larvae can be harmful for the crop. Beside tomato plants, they have a variety of host plants, including potato, lettuce, cucumber, peppers, onion, cabbage and cauliflower.
+                        </p>
+                       <h3> <b>Triger:</b></h3><p class="text">
+                            Damage is caused by the caterpillar of the bright line brown eye moth, Lacanobia oleracea It prefers humid and nutrient-rich habitats such as greenhouses, on farmland, along rivers or forest clearings. The adult moth has nocturnal habits and has a wing span of about 35 -45 mm, and a light brown body with some slightly darker specimens. Forewings are dark reddish-brown marked with a prominent light orange, kidney-like blotch. A white, bright line incorporating a ‘W’ close to the edge is another marked feature. The hindwings are grey, darker toward the edge. The females lays eggs in groups of about 150 units on the underside of leaves. Caterpillars reach a size of up to 5 cm. Their color ranges from green to dark brown, with white and black speckles and a yellow stripe on each flank.
+                        </p>
+                        <h3><b> Chemical method:</b></h3>
+                   <p class="text">
+                       
+                        Always consider an integrated approach with preventive measures together with biological treatments if available. In the case of this moth, the efficacy of alternative products such as spinosad and Bt often does not justify the use of chemical treatments. Otherwise, you can use products based on alpha-cypermethrin, beta-cyfluthrin, bifenthrin, cypermethrin, deltamethrin, diflubenzuron, fenpropathrin, lambda-cyhalothrin, teflubenzuron. It is important to use pesticides in the frame of well-planed integrated management strategies to avoid deleterious effects to beneficial insects.                
+                        </p>
+                   <h3><b>Biological method:</b></h3>
+                   <p class="text">
+
+                        In some cases, the introduction of Trichogramma parasitoid wasps (T. evanescens) or the predatory bug Podisus maculiventris reduces caterpillar populations. Use insecticides containing Spinosad or Bacillus thuringiensis (Bt) that do not persist in the environment. A concentration of 0.1%. sprayed as soon as the larvae are discovered and repeated twice is a good alternative to chemical control of these larvae.
+                   </p>
+                         <h3><b>Prevention:</b></h3>
+                                     <p class="text">
+
+                                            Monitor your field and remove eggs, infected plant parts or caterpillars. Scrape off eggs clusters on the underside of leaves and remove caterpillars. Use mesh to block access of the moths to greenhouses. Remove infested plants and destroy them. Monitor soil after harvest and remove remaining pupae.              
+                              </p>
+                   
+                 </p>
+                <h4></h4>
+            </div>
+
+
+
+
+
+
+
+            <div id="link-change">
+                    <div class="container"  style="width: 65%;">
+                     <div class="row" >
+                          <div class="col-lg-4">
+                            <div class="thumbnail">
+                                 <div class="card" style="height: 430px;">
+                                    <img src="{% static 'img/download (12).jpeg' %}" alt="John" style="width:100%;height: 230px;">
+                                    <h1>Aphids</h1>
+                                    <p class="title"></p>
+                                    <p><b>Cnaphalocrocis Medinalis</b></p>
+                                    <div style="margin: 24px 0;">
+                                        <button class="hover-link" id="hover2-hidden">Click</button>
+                
+                                    </div>
+                
+                                </div>
+                 
+                       </div>
+                   </div>
+               
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                    <div class="card" style="height:430px;">
+                                            <img src="{% static 'img/Helicoverpa1.JPG' %}" alt="John" style="width:100%;height:230px;">
+                                            <h1>Helicoverpa Caterpillar</h1>
+                                            <p class="title"></p>
+                                            
+                                            <div style="margin: 24px 0;">
+                                                <button class="hover-link" id="hover3-hidden">Click</button>
+                                            </div>
+                        
+                                     </div>
+                  
+                                </div>
+                    </div>
+                
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                        <div class="card" style="height:430px;">
+                                                <img src="{% static 'img/blbe.jpg' %}" alt="John" style="width:100%" height="230px">
+                                                <h1>Bright Line Brown Eye</h1>
+                                                <p class="title"></p>
+                                                <p><b>Orseolia oryzae</b></p>
+                                                <div style="margin: 24px 0;">
+                                                        <button class="hover-link" id="hover6-hidden">Click</button>                    
+                                                </div>
+                                            </div>   
+                    
+                                 </div>
+                        </div>
+                    </div>
+                 </div>
+                 
+           
+        
+        
+        
+        
+        
+        
+        
+        
+           <div class="container" style="margin-top:2%; width: 65%;">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                             <div class="card" style="height:430px;">
+                                     <img src="{% static 'img/tobacco.jpg' %}" alt="John" style="width:100%; height:230px;">
+                                     <h1>Tobacco Caterpillar</h1>
+                                     <p class="title"></p>
+                                     <p><b>Causal Organism : Helminthosporium</b></p>
+                                     <div style="margin: 24px 0;">
+                                         <button class="hover-link" id="hover9-hidden">Click</button>
+                 
+                                     </div>
+                 
+                                 </div>
+                 
+                        </div>
+                    </div>
+                
+                     <div class="col-lg-4">
+                             <div class="thumbnail">
+                                     <div class="card" style="height:430px;">
+                                             <img src="{% static 'img/blackcut.jpg' %}" alt="John" style="width:100%;height: 230px;">
+                                             <h1>Black Cutworm  </h1>
+                                             <p class="title"></p>
+                                             <p><b></b></p>
+                                             <div style="margin: 24px 0;">
+                                                 <button class="hover-link" id="hover7-hidden">Click</button>
+                                             </div>
+                         
+                                      </div>
+                   
+                                 </div>
+                     </div>
+                 
+                         <div class="col-lg-4">
+                                 <div class="thumbnail">
+                                         <div class="card" style="height:430px;">
+                                                 <img src="{% static 'img/tuta.jpg' %}" alt="John" style="width:100%" height="230px">
+                                                 <h1>Tuta Absoluta</h1>
+                                                 <p class="title"></p>
+                                                 <p><b>Causal Organism : Ustilaginoidea Virens</b></p>
+                                                 <div style="margin: 24px 0;">
+                                                         <button class="hover-link" id="hover8-hidden">Click</button>                    
+                                                 </div>
+                                             </div>   
+                     
+                                  </div>
+                         </div>
+                     </div>
+                  </div>
+                  
+            </div>
+        
+        
+        
+        
+        
+        
+       
+        
+        
+        
+
+
+
+
+
+
+        <div>
+            <marquee class="opo"><b>Public Relation Officer:</b> Sh.Anil K Sharma , <b>Phone:</b> 91-11-25843301 ,
+                <b>Email:</b> anil.cpro@gmail.com <br /></marquee>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <script src="{% static 'js/project.js' %}"></script>
+</body>
+
+</html>

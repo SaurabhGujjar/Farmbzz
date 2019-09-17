@@ -1,0 +1,531 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/css/home.css' %}">
+    <link href="{% static 'css/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <style>
+     {
+         font-family: 'Raleway','sans-serif';
+     }
+    </style>
+</head>
+
+<body>
+    <div class="lll" style="width:100%; margin-left:0px; margin-top:0px;">
+
+        <div class="header" style="background-image: url('{% static 'img/crop3.jpg' %}'); margin-top: -20px;">
+            <h1 id="aaa" style="color:darkgreen;"><img src="{% static 'img/Farmbzz.png' %}" width="9%"><b> Farmbzz-A
+                    Farmer Friendly Web App</b>
+            </h1>
+        </div>
+
+
+        <nav class="navbar navbar-inverse" style="margin-top:-10px; margin-bottom:0px; border-radius:0px; position:sticky; top: 0; z-index:2;">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:20px;" class="navbar-brand" href="http://127.0.0.1:8000/">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="font-size:20px" href="#">Disease Book
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+                        </ul>
+
+
+
+
+
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="font-size:20px" href="#">Insect Book
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'mango' %}">Mango</a></li>
+                            <li><a href="{% url 'irice' %}">Rice</a></li>
+                            <li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'icotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                            <li><a href="{% url 'ipotato' %}">Potato</a></li>
+                        </ul>
+
+
+
+
+
+
+                    </li>
+                    <li><a style="font-size:20px" href="{% url 'weather' %}">Weather</a></li>
+                    <li><a style="font-size:20px" href="http://127.0.0.1:8000/mailer/">E-Shikayat</a></li>
+                    <li><a style="font-size:20px" href="http://127.0.0.1:8000/mailer/">Soil Testing</a></li>
+                    <li><a style="font-size:20px" href="{% url 'auto' %}">Auto Diagnosis</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a style="font-size:20px" href="#">Guide</a></li>
+                    <li><a style="font-size:20px" href="{% url 'login' %}">Log In</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+
+
+
+         
+
+        <div class="container" style="width:100%;" >
+              
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img class="img-responsive" src="{% static 'img/exp.jpg' %}"   style=" width: 100%; height: 70% !important;">
+                </div>
+          
+                <div class="item">
+                  <img class="img-responsive" src="{% static 'img/exp1.jpg' %}" class="img-responsive"  style=" width: 100%; height: 70% !important;">
+                </div>
+              
+                <div class="item">
+                  <img class="img-responsive" src="{% static 'img/lala.jpg' %}" class="img-responsive" style=" width: 100%; height: 70% !important;">
+                </div>
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+        <div class="lkj" style="background-image: url('https://images.pexels.com/photos/1328999/pexels-photo-1328999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); background-position:center;padding-left: 200px;padding-right: 200px;padding-top: 100px;padding-bottom: 100px;">
+            <h1 id="ppp">Pest</h1>
+            <p id="kkk">In India about 15-17% of crops are damaged by not taking real time measures against pest and weed.Due to lack of information and negligence pest becomes a major destructive factor to agriculture.Major part of many crops is lost due to presence of pest.It was found in a survey that approximately 30% of Cotton,25% of Rice and 5-10% of Wheat is lost due to this problem. Farmer community faces a great problem in handling the pest present in their farm.  Pest a destructive insect or other animal that attacks crops, food,etc.Generally animals are called pests when they attack and cause damage to agriculture by feeding on crops or parasitising livestock, such as boll weevil on cotton.According
+                to International Plant Protection Convention pest is defined as any species, strain or biotype of plant, animal, or pathogenic agent that is injurious to plants or plant products.Sometimes plants may be considered pests themselves
+                i an invasive species. </p>
+        </div>
+        
+
+
+
+
+<div style="background-image: url('https://images.pexels.com/photos/628241/pexels-photo-628241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')">
+        <div style="display:flex;flex-direction:row;justify-content: space-around; padding: 60px;" id="www">
+            <div>
+                <form id="forms" class="form-inline" method="GET" action="/search/insect/">
+                    <h1> <i class="fas fa-search"></i>Search By Insect&nbsp;:</h1>
+                    <div class="form-group">
+                        <input id="ToSubmit" type="text" class="form-control" name="i" placeholder="" value="{{ request.Get.i}}"
+                            required /><i style="font-size:2.7rem;color:#333;padding: 15px;position:relative;top:5px" id="sp"
+                            class="fas fa-microphone fa-2x"></i>
+                        <input type="submit" class="btn btn-outline-sucess my-2 my-sm-0" value='Search' />
+                    </div>
+                </form>
+                
+            </div>
+
+
+            <div style="display:flex;flex-direction:row;justify-content: space-around">
+                <form id="navbar-search-form" class="form-inline" method="GET" action="/search">
+                    <h1> <i class="fas fa-search"></i>Search By Disease&nbsp;:</h1>
+                    <div class="form-group">
+
+                        <input id="textToSubmit" type="text" class="form-control" name="q" placeholder="Your Search"
+                            value="{{ request.Get.q}} " required /> <i style="font-size:2.7rem;color:#333;padding: 15px;position:relative;top:5px" id="mic"  class="fas fa-microphone fa-2x"></i>
+                        <input id="inputToSearch" type="submit" class="btn btn-outline-sucess my-2 my-sm-0" value='Search' />
+                    </div>
+              </form>                  
+            </div>
+
+            <script>
+                window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+                document.getElementById('sp').addEventListener('click', () => {
+                    let recognizer;
+                    recognizer = new window.SpeechRecognition();
+                    recognizer.onresult = (event) => {
+                        console.log(event)
+                        let speechToText = event.results[0][0].transcript;
+                        document.getElementById('ToSubmit').value = speechToText;
+                        document.getElementById('forms').submit();
+                    }
+                    recognizer.start();
+                })
+            </script>
+
+
+
+
+
+
+
+            <script>
+                window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+                document.getElementById('mic').addEventListener('click', () => {
+                    let recognizer;
+                    recognizer = new window.SpeechRecognition();
+                    recognizer.onresult = (event) => {
+                        console.log(event)
+                        let speechToText = event.results[0][0].transcript;
+                        document.getElementById('textToSubmit').value = speechToText;
+                        document.getElementById('navbar-search-form').submit();
+                    }
+                    recognizer.start();
+                })
+            </script>
+
+        </div>
+    </div>
+        <p>
+            <div class="w3-content w3-section">
+                <img class="mySlides" src="{% static 'img/pexels-photo-235925.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/pexels-photo-240525.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/pexels-photo-916406.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/watering-watering-can-man-vietnam-162637.jpeg' %}">
+
+            </div>
+
+            <p class="sdf">
+
+                <div class="auto-features dos">
+                    <h1 style="text-align: center">Key-Features<b>:</b></h1>
+
+                    <div id="hover3" class="html-hidden">
+
+                        <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%"> Weather forecast</h2>
+                        <p>This feature of Farmbzz provides you helping hand<br /> in knowing your weather forcast <br />the
+                            plant's species</p>
+                        <h4></h4>
+                    </div>
+                    <div id="hover2" class="html-hidden">
+
+                        <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%"> Auto-Diagnosis</h2>
+                        <p style="color:#333"> 
+                            <ul style="line-height:35px; font-size: 24px;">
+                            <li> <b>All information from a single click.</b></li> 
+
+                            
+                                <li>
+                            Auto diagnosis is basically a image recognition tool which help the farmer to know about<br/> the pest/insect with a single photo.
+                        </li>
+                         <li> 
+                              This helps
+                            Simply snap the picture of your arable crop leaf and upload it on the farmbzz
+                            and the immediately get detailed information related to insect symptoms ,its trigger ,biological as well as chemical method  to fight against the insects.
+                            
+                            to simplify the  user experience.</li>
+                             <li>  Auto diagnosis functionality   has been added to the  farmbuzz web app. it uses deep learning algorithm to do the task .It come with a  remarkable efficiency  around 90% in predicting the correct insect</li>
+                        </ul> 
+                        </p>
+                        <h4></h4>
+                    </div>
+                    <div id="hover6" class="html-hidden">
+
+                        <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%"> Soil Testing</h2>
+                        <p>Take a picture of your crop .<br /> Farmbzz analysis it within yhe blink of an eye and
+                            Report the detailed information about <br />the plant's species</p>
+                        <h4></h4>
+                    </div>
+                    <div id="hover4" class="html-hidden">
+
+                        <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%"> E-Shikayat</h2>
+                        <p>
+                            <ul style="line-height:35px; font-size: 24px;">
+                                <li>E-portal for filing complaint anytime and anywhere</li>
+                            <li>E-Shikayat is a unique feature in farmbzz which help the farmer to file a complaint online</li>
+                            <li>With this feature farmer can send his complaint to their respected agriculture  development officer </li>
+                            <li>It prevent farmer from standing in queue to file  a complaint  to your regional agriculture development officer.</li> 
+                            <li>E-Shikayat comes with simple complain launching system 
+                                    By simple entering your name ,address,location one can launch its complaint anytime and anywhere </li>
+                            
+                        </ul>
+                           </p>
+                        <h4></h4>
+                    </div>
+                    <div id="link-change">
+                        <div class="hover2-link-container">
+                            <a>
+                                <h4 class="hover-link" id="hover2-hidden"><img class="hover-link" id="hover2-hidden"
+                                        src="{% static 'img/icon4.png' %}" width="3%"> Auto-Diagnosis</h4>
+                            </a>
+                            <p style="color:#333">This helps farmers to know about pest diseases in their field automatically.</p>
+                        </div>
+                        <div class="hover3-link-container">
+                            <a>
+                                <h4 class="hover-link" id="hover3-hidden"><img class="hover-link" id="hover3-hidden"
+                                        src="{% static 'img/icon.png' %}" width="4%"> Weather Forecasting</h4>
+                            </a>
+                            <p style="color:#333">This helps farmers to know the weather forecast of the area. </p>
+                        </div>
+                        <div class="hover4-link-container">
+                            <a>
+                                <h4 class="hover-link" id="hover4-hidden"><img class="hover-link" id="hover4-hidden"
+                                        src="{% static 'img/icon5.png' %}" width="4%"> E-Shikayat</h4>
+                            </a>
+                            <p style="color:#333">This helps farmers to complaint to ADO regarding their problem. </p>
+                        </div>
+
+                        <div class="hover6-link-container">
+                            <a>
+                                <h4 class="hover-link" id="hover6-hidden"><img class="hover-link" id="hover6-hidden"
+                                        src="{% static 'img/icon3.png' %}" width="3%"> Soil Testing</h4>
+                            </a>
+                            <p style="color:#333">This helps farmers to call for soil testing of their field. </p>
+                        </div>
+
+                    </div>
+                </div>
+            </p>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br>
+        <br>
+        <br>
+        <div class="hjk" style="background-image: url('https://images.pexels.com/photos/1454794/pexels-photo-1454794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');">
+
+            <h3 class="bnm "> Farmbzz-Vision</h3>
+            <p class="plm "> With the power of technology we aim to help farmers in producing the best quality products<br>
+                and serve society and nation with the power of technology we aim to help<br> farmers to produce the
+                best quality products and serve society and
+                <br>nationwith the power of technology.</p>
+        </div>
+             
+        <br>
+        <br>
+        <div class="no-space" style="background-image: url('https://images.pexels.com/photos/1599969/pexels-photo-1599969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); background-size: cover; background-position: left; padding: 40px;">
+            <center>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="thumbnail" style="border:transparent">
+                        <img src="{% static 'img/graphs.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                        <div class="thumbnail" style="border:transparent;">
+                           <p style="font-size:25px; padding:50px; color: #333">Insects are the most ubiquitous, diverse and abundant group of animals on planet Earth. These tiny but versatile creatures are the major
+                            In India, as per the data available the yield loss due to pest in cotton is
+                            estimated to vary from 22% in 1996 to 30% in 2015 and it was high upto 70% in 2007.In India, as per the data available the yield loss due to
+                            pest in rice is estimated to vary from 18.6% in 1996 to 25% in 2015 .In India, as per the data available the yield loss due to pest in oilseeds is
+                            estimated to vary from 25% in 1996 to 20% in 2015 .In India, as per the data available the yield loss due to pest in wheat is estimated to vary
+                            from 11.4% in 1996 to 5% in 2015 .In India, as per the data available the yield loss due to pest in sugarcane is estimated to vary from 15% in
+                            1996 to 20% in 2015.</p>
+                        </div>
+                    </div>
+            </div>
+        </center>
+        </div>
+        
+        <br>
+        <br>
+
+
+
+
+</div>
+<div style="" id="blur-bg"></div>
+<div id="myCarousel-2" class="carousel slide" data-ride="carousel">
+
+
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+        <div class="item active">
+            <div style="z-index: 5;background-image:url('http://pngimg.com/uploads/wheat/wheat_PNG92.png')">
+            </div>
+            <div class="text-wrapper-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, suscipit!
+            </div>
+        </div>
+        <div class="item">
+            <div style="background-image:url(data:image/svg+xml;base64,PHN2ZyBpZD0iMzQyY2RjMGMtZGM2Ny00MGJlLWI1NDktOGMwZDdhMTNjYzNjIiBkYXRhLW5hbWU9IkxheWVyIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8dGl0bGU+Y3JvcCBjb3R0b248L3RpdGxlPgogIDxwYXRoIGQ9Ik0xMy4xMSw2Ljg0YTIuMSwyLjEsMCwwLDAtLjY1LS40MywyLjEsMi4xLDAsMCwwLS42Mi0xLjI1LDIuMDcsMi4wNywwLDAsMC0yLjkzLjA2LDIsMiwwLDAsMC0uNTcsMS4zNWwtLjA5LjA4YTIuMDgsMi4wOCwwLDAsMC0uMiwyLjYzLDIuMDYsMi4wNiwwLDAsMCwuNDQsMi4zNSwyLjA5LDIuMDksMCwwLDAsMi42LjIzLDIuMDYsMi4wNiwwLDAsMCwyLjQ1LTIuNjRBMi4wNywyLjA3LDAsMCwwLDEzLjExLDYuODRaIiBzdHlsZT0iZmlsbDogI2MzYzJiZCIvPgogIDxwYXRoIGQ9Ik0xMi41NywxMC4zMWExLjM4LDEuMzgsMCwwLDEtMS0uNDUsMS4zNywxLjM3LDAsMCwxLS44OS4zNCwxLjQsMS40LDAsMCwxLTEuNC0xLjQsMS41NSwxLjU1LDAsMCwxLC4wNi0uMzFBMS42LDEuNiwwLDAsMSw4LjExLDYuOTRzMC0uMDcsMC0uMWEyLjA2LDIuMDYsMCwwLDAtLjA3LDIuNDQsMi4wNiwyLjA2LDAsMCwwLC40NCwyLjM1LDIuMDksMi4wOSwwLDAsMCwyLjYuMjMsMi4wNSwyLjA1LDAsMCwwLDIuNTUtMi4wOEExLjM2LDEuMzYsMCwwLDEsMTIuNTcsMTAuMzFaIiBzdHlsZT0iZmlsbDogI2FhYSIvPgogIDxwYXRoIGQ9Ik05LjExLDExLjI0YTEuODUsMS44NSwwLDAsMC0xLjU4LTEuNiwyLjE1LDIuMTUsMCwwLDAtLjc2LDBBMS45MSwxLjkxLDAsMCwwLDUuNjIsOWEyLjEyLDIuMTIsMCwwLDAtMi40MSwxLjU0LDEuOCwxLjgsMCwwLDAsLjIyLDEuMzNsMCwuMUExLjgxLDEuODEsMCwwLDAsNC41OCwxNC4xYTEuODcsMS44NywwLDAsMCwxLjU3LDEuNTZBMi4xNiwyLjE2LDAsMCwwLDguNDMsMTQuNWEyLjA1LDIuMDUsMCwwLDAsMS4zNS0xLjQ1QTEuNzQsMS43NCwwLDAsMCw5LjExLDExLjI0WiIgc3R5bGU9ImZpbGw6ICNjM2MyYmQiLz4KICA8cGF0aCBkPSJNNywxNC4xN3MtMi4xNSwxLjU1LTMuNzUuMzZjLjM5LDEsMi42NCwyLDMuNjUsMS40UzguMTEsMTQuMTksNywxNC4xN1oiIHN0eWxlPSJmaWxsOiAjOWE3NDQ1Ii8+CiAgPHBhdGggZD0iTTE2LjQxLDE1LjA4QTIuMSwyLjEsMCwwLDAsMTguMjQsMTRhMi4wNSwyLjA1LDAsMCwwLDEuNDItMiwyLjE5LDIuMTksMCwwLDAtLjE0LS43N0EyLDIsMCwwLDAsMjAsMTAsMi4wNywyLjA3LDAsMCwwLDE2LjU1LDguNGgtLjExYTIuMDcsMi4wNywwLDAsMC0yLDEuNjdBMi4wNywyLjA3LDAsMCwwLDEzLDEyYTIuMDksMi4wOSwwLDAsMCwxLjYzLDJBMi4xLDIuMSwwLDAsMCwxNi40MSwxNS4wOFoiIHN0eWxlPSJmaWxsOiAjYzNjMmJkIi8+CiAgPHBhdGggZD0iTTE2LDE0LjM1czIsMS4xNSwzLjM3LjI1Yy0uMjguODEtMi4xNCwyLTMuMTMsMS4zUzE1LDE0LjI2LDE2LDE0LjM1WiIgc3R5bGU9ImZpbGw6ICM5YTc0NDUiLz4KICA8cGF0aCBkPSJNMTQuODEsMTMuNzZBMywzLDAsMCwxLDE0LjU1LDExYTIsMiwwLDAsMC0uMjguMTlBMy42NiwzLjY2LDAsMCwwLDE0LDguOTJhMi45MywyLjkzLDAsMCwxLTEuNzIsMi4xNGMtLjQ0LjM5LS4zMy43LDAsLjg2YS45My45MywwLDAsMCwuMjMuODEsMi41NCwyLjU0LDAsMCwwLC40NC4zOC45NC45NCwwLDAsMCwuMjQuN0MxNC4wNSwxNC42NiwxNS4wOCwxNC43NSwxNC44MSwxMy43NloiIHN0eWxlPSJmaWxsOiAjOWE3NDQ1Ii8+CiAgPHBhdGggZD0iTTExLjA3LDExLjUyQTIuOTQsMi45NCwwLDAsMSw4LjkxLDkuODFhNCw0LDAsMCwwLS4wNywxLjA5QTIuOSwyLjksMCwwLDEsNy42Niw5LjU3Yy0uMjEuODMtLjA4LDIuODcsMS4xMSwyLjg3YTIuNDksMi40OSwwLDAsMCwuNTctLjA2Ljg4Ljg4LDAsMCwwLC42OC4zMUMxMS4yLDEyLjY5LDEyLDEyLDExLjA3LDExLjUyWiIgc3R5bGU9ImZpbGw6ICM5YTc0NDUiLz4KICA8cGF0aCBkPSJNMTQuODUsMTMuODdjLS42Ni0uMDYtLjc3LjMzLS41MS44LS41OSwxLTIuNjksNC41My0yLjcxLDRsLS4xNi02LjE2YTIuNDgsMi40OCwwLDAsMCwuOTMsMGMxLjE2LS4yNy44My0yLjI5LjQ0LTMuMDVhMi45MywyLjkzLDAsMCwxLTEuNzIsMi4xNGMtLjI4LjI1LS4zNC40Ni0uMjUuNjNoMFYxNmMtLjA2LjE4LS4xMy4zNC0uMTYuMjhzLS4wOSwwLS44MS0uNjhjLS4yNi0uMjMtLjY3LS42NS0xLTFBMi4xNSwyLjE1LDAsMCwwLDEwLjI4LDE0Yy44Ni0uODEtLjcyLTIuNzctMS41NS0zLjM5YTMuMTUsMy4xNSwwLDAsMS0uMTgsMy4wNSwxLjI3LDEuMjcsMCwwLDAtLjI0LjM3bDAsMGgwYS42LjYsMCwwLDAtLjM2LS4yMmwtLjE4LDBINy42MmEzLjE2LDMuMTYsMCwwLDEtMy0uNmMuMzgsMSwxLjg4LDMsMi44OSwyLjM1YTEuOTIsMS45MiwwLDAsMCwuNjgtLjY4Yy40NS40MSwxLC44OSwxLjMyLDEuMTcuNy41OCwxLjM1LDEuMjQsMS4zNSwxLjg5djUuM2guODhsLS4wNy0yLjcxYy4yMi0xLjQzLDIuNDMtNC41LDMtNS4zYTIuNCwyLjQsMCwwLDAsLjM4LjNjMSwuNjUsMi4yMi0xLDIuNS0xLjc5QTIuOTMsMi45MywwLDAsMSwxNC44NSwxMy44N1oiIHN0eWxlPSJmaWxsOiAjNzU1MTM0Ii8+Cjwvc3ZnPgo=)" class="img-wrapper">
+
+            </div>
+            <div class="text-wrapper-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, suscipit!
+            </div>
+        </div>
+
+        <div class="item">
+            <div style="background-image:url(data:image/svg+xml;base64,PHN2ZyBpZD0iNWE4NmM0ZjAtYmUxNi00ZGM1LWJiZmMtNTc1MGQ5NDY2MTAxIiBkYXRhLW5hbWU9IkxheWVyIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8dGl0bGU+Y3JvcCBwZWFubnV0PC90aXRsZT4KICA8cGF0aCBkPSJNMTYuMjMsMy43Yy0uNzktLjU3LTMuMTksMS4xNC00Ljg4LDMuMi0uNS0yLjEtMS4zMi00LjYzLTIuMi00LjU2QzgsMi40Myw3LjE2LDYuNTIsNy42LDkuNDhjLjI5LDEuOTQsMi4xMiwxLjg3LDMuMjcsMS4xNiwxLC42OSwyLjQ5Ljc4LDMsMEMxNC42Nyw5LjMzLDE3LjI4LDQuNDYsMTYuMjMsMy43WiIgc3R5bGU9ImZpbGw6ICM0YTc1NDMiLz4KICA8Zz4KICAgIDxwYXRoIGQ9Ik0xOC4wNSwxNi4xNFoiIHN0eWxlPSJmaWxsOiAjYmE4ZDU2Ii8+CiAgICA8cGF0aCBkPSJNMTMuNjgsNy45MWgwWiIgc3R5bGU9ImZpbGw6ICNiYThkNTYiLz4KICAgIDxwYXRoIGQ9Ik0xOC44MSwxMy4yMmMtLjY4LTEuMzEtLjY5LTMuNzgtMS43Ni01YTIuNSwyLjUsMCwwLDAtMy4zNy0uMjljLTEuMTEuNzUtMS4zNiwyLS4zNSwyLjY5YTYuOTIsNi45MiwwLDAsMSwyLjI5LDQuMzMsMS41NCwxLjU0LDAsMCwwLDIuNDMsMS4yMUEyLjA2LDIuMDYsMCwwLDAsMTguODEsMTMuMjJaIiBzdHlsZT0iZmlsbDogI2JhOGQ1NiIvPgogICAgPHBhdGggZD0iTTEzLjY1LDcuOVoiIHN0eWxlPSJmaWxsOiAjYmE4ZDU2Ii8+CiAgPC9nPgogIDxwYXRoIGQ9Ik0xOC44MSwxMy4yMmMtLjY4LTEuMzEtLjY5LTMuNzgtMS43Ni01YTIuMDcsMi4wNywwLDAsMC0yLjc0LS41Yy0uNS4yNy0uMTEuODkuMzUsMS4yMWE2LjgzLDYuODMsMCwwLDEsMi4yOCw0LjMzYy4yMSwxLjIsMS41OSwyLjc1LDIuMTYsMS4zMkEyLjQsMi40LDAsMCwwLDE4LjgxLDEzLjIyWiIgc3R5bGU9ImZpbGw6ICNkZGJjNzkiLz4KICA8cGF0aCBkPSJNMTUuNDMsOC4xNWMtLjExLS4yMS0uMzEtLjMtLjQ0LS4yMWEuNDQuNDQsMCwwLDAtLjA1LjU1Yy4xMS4yLjMxLjI5LjQ1LjJBLjQ0LjQ0LDAsMCwwLDE1LjQzLDguMTVaIiBzdHlsZT0iZmlsbDogI2JhOGQ1NiIvPgogIDxwYXRoIGQ9Ik0xNi41NCw5LjU4Yy0uMTItLjIzLS4zMi0uMzUtLjQ0LS4yN3MtLjExLjM0LDAsLjU3LjMyLjM2LjQ0LjI3UzE2LjY3LDkuODIsMTYuNTQsOS41OFoiIHN0eWxlPSJmaWxsOiAjYmE4ZDU2Ii8+CiAgPHBhdGggZD0iTTE2LjYsOC4zNWMtLjE2LS4xOC0uMzgtLjI1LS40OC0uMTZzLS4wNS4zMy4xMi41MS4zOC4yNi40OC4xNlMxNi43Nyw4LjU0LDE2LjYsOC4zNVoiIHN0eWxlPSJmaWxsOiAjYmE4ZDU2Ii8+CiAgPGVsbGlwc2UgY3g9IjE4LjI4IiBjeT0iMTMuMiIgcng9IjAuMiIgcnk9IjAuMzkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yLjg5IDUuNDMpIHJvdGF0ZSgtMTUuNjgpIiBzdHlsZT0iZmlsbDogI2JhOGQ1NiIvPgogIDxwYXRoIGQ9Ik0xNy40LDExLjU1Yy0uMTMtLjI0LS4zNS0uMzUtLjQ5LS4yNXMtLjE2LjM3LDAsLjYxLjM1LjM2LjQ5LjI2UzE3LjUyLDExLjc5LDE3LjQsMTEuNTVaIiBzdHlsZT0iZmlsbDogI2JhOGQ1NiIvPgogIDxlbGxpcHNlIGN4PSIxOC4wOCIgY3k9IjE0LjM0IiByeD0iMC4yNSIgcnk9IjAuNDkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00Ljk3IDE1LjUzKSByb3RhdGUoLTQxLjM3KSIgc3R5bGU9ImZpbGw6ICNiYThkNTYiLz4KICA8ZWxsaXBzZSBjeD0iMTcuNDQiIGN5PSIxMy4xNiIgcng9IjAuMjQiIHJ5PSIwLjUxIiB0cmFuc2Zvcm09Im1hdHJpeCgwLjk2LCAtMC4yOSwgMC4yOSwgMC45NiwgLTMuMDMsIDUuNTIpIiBzdHlsZT0iZmlsbDogI2JhOGQ1NiIvPgogIDxwYXRoIGQ9Ik0xNiwxNC43M2MuMjUtLjgxLjM3LTIuNDUtLjU1LTMuMTMtLjM1LS4yNi0uNjcsMC0uOTMuMzRhOC43Niw4Ljc2LDAsMCwxLDEuMDksMywyLDIsMCwwLDAsLjQ1LDFBMS40OSwxLjQ5LDAsMCwxLDE2LDE0LjczWiIgc3R5bGU9ImZpbGw6ICNhODczNGEiLz4KICA8Zz4KICAgIDxwYXRoIGQ9Ik00LjYxLDEwaDBaIiBzdHlsZT0iZmlsbDogI2JhOGQ1NiIvPgogICAgPHBhdGggZD0iTTE1LjcsMTMuNjRsMCwwWiIgc3R5bGU9ImZpbGw6ICNiYThkNTYiLz4KICAgIDxwYXRoIGQ9Ik00LjU2LDEwWiIgc3R5bGU9ImZpbGw6ICNiYThkNTYiLz4KICAgIDxwYXRoIGQ9Ik0xNS43LDEzLjY0WiIgc3R5bGU9ImZpbGw6ICNiYThkNTYiLz4KICAgIDxwYXRoIGQ9Ik0xNS43LDEyLjJBMi44NiwyLjg2LDAsMCwwLDE0LDEwLjg2Yy0xLjc0LS41OC0zLjgxLTIuNDktNS44Ny0yLjc4QTMuMDksMy4wOSwwLDAsMCw0LjYxLDEwLDEuNjksMS42OSwwLDAsMCw2LjUyLDEyLjNhMTAuMzksMTAuMzksMCwwLDEsNS44LDEuOTJjMS4zLjg2LDIuNzUuNjMsMy4zNC0uNkExLjU4LDEuNTgsMCwwLDAsMTUuNywxMi4yWiIgc3R5bGU9ImZpbGw6ICNiYThkNTYiLz4KICA8L2c+CiAgPHBhdGggZD0iTTE1LjM2LDExLjcyYTMuNDEsMy40MSwwLDAsMC0xLjQtLjg2Yy0xLjc0LS41OC0zLjgxLTIuNDktNS44Ny0yLjc4QTIuNywyLjcsMCwwLDAsNSw5LjQyYy0uMjYuNTMuNjMuNzcsMS4zNC43M2ExMC4zNCwxMC4zNCwwLDAsMSw1LjgxLDEuOTFDMTMuMzgsMTIuODYsMTYsMTMuMiwxNS4zNiwxMS43MloiIHN0eWxlPSJmaWxsOiAjZGRiYzc5Ii8+CiAgPHBhdGggZD0iTTYuNDksOS4wNkM2LjIxLDksNiw5LDUuODksOS4xOHMuMTQuMzcuNDEuNDYuNTUsMCwuNi0uMTNTNi43Nyw5LjE1LDYuNDksOS4wNloiIHN0eWxlPSJmaWxsOiAjYmE4ZDU2Ii8+CiAgPGVsbGlwc2UgY3g9IjguNjciIGN5PSI5LjczIiByeD0iMC4yNiIgcnk9IjAuNiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMuMjYgMTQuOTcpIHJvdGF0ZSgtNzEuOTkpIiBzdHlsZT0iZmlsbDogI2JhOGQ1NiIvPgogIDxwYXRoIGQ9Ik03Ljc5LDguNDhjLS4zMSwwLS41OCwwLS42LjE4cy4yMi4yOS41NC4zMi41OCwwLC41OS0uMThTOC4xLDguNTIsNy43OSw4LjQ4WiIgc3R5bGU9ImZpbGw6ICNiYThkNTYiLz4KICA8cGF0aCBkPSJNMTMuNTMsMTFjLS4yNC0uMTEtLjQ3L
+S4xMi0uNTIsMHMuMS4yOC4zNC4zOS40Ni4xMi41MSwwUzEzLjc2LDExLjExLDEzLjUzLDExWiIgc3R5bGU9ImZpbGw6ICNiYThkNTYiLz4KICA8cGF0aCBkPSJNMTEuMjIsMTAuNDdjLS4zMy0uMTEtLjYzLS4wNi0uNjkuMTFzLjE3LjM4LjQ5LjQ5LjYzLjA2LjY5LS4xMVMxMS41NCwxMC41NywxMS4yMiwxMC40N1oiIHN0eWxlPSJmaWxsOiAjYTg3MzRhIi8+CiAgPHBhdGggZD0iTTE0LjIzLDEyYy0uMzQtLjA1LS42NCwwLS42NS4xN3MuMjQuMjguNTkuMzIuNjMsMCwuNjUtLjE3UzE0LjU3LDEyLDE0LjIzLDEyWiIgc3R5bGU9ImZpbGw6ICNiYThkNTYiLz4KICA8cGF0aCBkPSJNMTIuNywxMS40NmMtLjMxLS4xNS0uNjEtLjE3LS42Ny0uMDVzLjE1LjM1LjQ2LjUuNjEuMTYuNjcsMFMxMywxMS42MSwxMi43LDExLjQ2WiIgc3R5bGU9ImZpbGw6ICNiYThkNTYiLz4KICA8Zz4KICAgIDxwYXRoIGQ9Ik0xMC45Myw5LjUyQTIsMiwwLDAsMCw4LjEyLDguNGExMi4yMiwxMi4yMiwwLDAsMC01LjM4LDUsMi4xNCwyLjE0LDAsMCwwLC40MiwyLjgzLDEuMjksMS4yOSwwLDAsMCwyLjIzLS41LDcsNywwLDAsMSw0LjQ3LTRBMS41NCwxLjU0LDAsMCwwLDEwLjkzLDkuNTJaIiBzdHlsZT0iZmlsbDogI2JhOGQ1NiIvPgogICAgPHBhdGggZD0iTTMuMTYsMTYuMjdaIiBzdHlsZT0iZmlsbDogI2JhOGQ1NiIvPgogICAgPHBhdGggZD0iTTEwLjkzLDkuNTJaIiBzdHlsZT0iZmlsbDogI2JhOGQ1NiIvPgogIDwvZz4KICA8Zz4KICAgIDxwYXRoIGQ9Ik0zLDE1LjQ1WiIgc3R5bGU9ImZpbGw6ICNkZGJjNzkiLz4KICAgIDxwYXRoIGQ9Ik05LjkxLDkuMjZBMS4zMiwxLjMyLDAsMCwwLDgsOC40OGExMS43OSwxMS43OSwwLDAsMC01LjMzLDUuMDlBMS4zNiwxLjM2LDAsMCwwLDMsMTUuNDNjLjUxLjQyLDEuMTcuNTgsMS40NS0uMzRhNS43OSw1Ljc5LDAsMCwxLDQuNzEtNC4zM0MxMC4xNCwxMC41MywxMC4yNSwxMCw5LjkxLDkuMjZaIiBzdHlsZT0iZmlsbDogI2RkYmM3OSIvPgogIDwvZz4KICA8cGF0aCBkPSJNNi40MiwxMS4yNWMtLjA5LS4xMS0uMzYsMC0uNjEuMTVzLS4zOC40My0uMy41NS4zNiwwLC42MS0uMTVTNi41LDExLjM2LDYuNDIsMTEuMjVaIiBzdHlsZT0iZmlsbDogI2JhOGQ1NiIvPgogIDxwYXRoIGQ9Ik03LjUyLDEwYy0uMDktLjExLS4zNiwwLS42MS4xNXMtLjM4LjQzLS4yOS41NS4zNSwwLC42LS4xNVM3LjYsMTAuMDksNy41MiwxMFoiIHN0eWxlPSJmaWxsOiAjYmE4ZDU2Ii8+CiAgPHBhdGggZD0iTTguNDEsMTBjLS4zLjEtLjUxLjI4LS40Ni40MnMuMzIuMTYuNjIuMDYuNS0uMjguNDYtLjQxUzguNzEsOS45LDguNDEsMTBaIiBzdHlsZT0iZmlsbDogI2JhOGQ1NiIvPgogIDxwYXRoIGQ9Ik00Ljc4LDEyLjE0Yy0uMS0uMDctLjMsMC0uNDYuMjRzLS4yMi40NC0uMTMuNTEuMywwLC40Ni0uMjVTNC44NywxMi4yMSw0Ljc4LDEyLjE0WiIgc3R5bGU9ImZpbGw6ICNiYThkNTYiLz4KICA8cGF0aCBkPSJNMy40NiwxMi45Yy0uMDgsMC0uMjQuMTQtLjM1LjRzLS4xNC41LS4wNi41My4yMy0uMTUuMzQtLjRTMy41MywxMi45MywzLjQ2LDEyLjlaIiBzdHlsZT0iZmlsbDogI2JhOGQ1NiIvPgogIDxwYXRoIGQ9Ik00LDE0Yy0uMTQsMC0uMy4xOS0uMzcuNXMwLC41OC4xMy42MS4zLS4yLjM3LS41UzQuMTEsMTQsNCwxNFoiIHN0eWxlPSJmaWxsOiAjYmE4ZDU2Ii8+CiAgPHBhdGggZD0iTTguMzgsOC44OEM4LjE0LDksOCw5LjEyLDgsOS4yNXMuMjYuMTYuNDkuMDkuMzktLjI0LjM1LS4zNlM4LjYxLDguODEsOC4zOCw4Ljg4WiIgc3R5bGU9ImZpbGw6ICNiYThkNTYiLz4KICA8cGF0aCBkPSJNMTAuODQsMTEuMTdhMi4wNiwyLjA2LDAsMCwxLTEsLjYzLDguNTksOC41OSwwLDAsMC0xLjUxLjY4LDExLjUxLDExLjUxLDAsMCwxLDMuMDYsMS4xOUExLjksMS45LDAsMCwxLDEwLjg0LDExLjE3WiIgc3R5bGU9ImZpbGw6ICNhODczNGEiLz4KICA8cGF0aCBkPSJNMTEuMDcsMTAuNzFoMHYwWiIgc3R5bGU9ImZpbGw6ICNhODczNGEiLz4KICA8Zz4KICAgIDxwYXRoIGQ9Ik0xNi4xMiwxMi44NGExMy4zMywxMy4zMywwLDAsMS03LjY1LDEuODFjLTItLjA4LTMuNDUsMS4xNi0zLjI2LDIuOTFhMi4wNiwyLjA2LDAsMCwwLC45MSwxLjU3LDMuNjMsMy42MywwLDAsMCwyLjgxLjNjMi4zMS0uNTQsNS44Ni4xNyw4LjMxLS45LDItLjg2LDMuOS0yLjcxLDMuNTEtNC40MVMxNy43NywxMS42OSwxNi4xMiwxMi44NFoiIHN0eWxlPSJmaWxsOiAjZGRiYzc5Ii8+CiAgICA8cGF0aCBkPSJNMjAuNzksMTQuMDhaIiBzdHlsZT0iZmlsbDogI2RkYmM3OSIvPgogICAgPHBhdGggZD0iTTUuMjEsMTcuNTZaIiBzdHlsZT0iZmlsbDogI2RkYmM3OSIvPgogICAgPHBhdGggZD0iTTIwLjc1LDE0LjEybDAsMFoiIHN0eWxlPSJmaWxsOiAjZGRiYzc5Ii8+CiAgPC9nPgogIDxwYXRoIGQ9Ik0yMC4xMywxNC4yNkExLjkxLDEuOTEsMCwwLDAsMTguOSwxM2EyLjkxLDIuOTEsMCwwLDAtMi42NS4yNywxMy4yMywxMy4yMywwLDAsMS03LjY2LDEuODIsMi44MiwyLjgyLDAsMCwwLTIuMjQuNzksMS45MiwxLjkyLDAsMCwwLS41LDEuNTksMS42MiwxLjYyLDAsMCwwLC43LDEuMjVBMy4yMiwzLjIyLDAsMCwwLDksMTguOTRhMTUuMzMsMTUuMzMsMCwwLDEsMy4zLS4yNSwxMi4zMSwxMi4zMSwwLDAsMCw0LjY4LS42QzE4Ljc2LDE3LjMsMjAuNDQsMTUuNjUsMjAuMTMsMTQuMjZaIiBzdHlsZT0iZmlsbDogIzc1NTEzNCIvPgogIDxwYXRoIGQ9Ik0xOS4zNywxNC41NmMtMS0yLjIxLTIuNi0uNjktMy43NC0uMzlzLTIuOTEsMS0zLjI5LDIuMjFjLS44LDIuNDEsMi4yOSwxLjU4LDQuODUuOTFDMTguMjIsMTcsMTkuOTQsMTUuNzgsMTkuMzcsMTQuNTZaIiBzdHlsZT0iZmlsbDogI2M0NzQ2NSIvPgogIDxwYXRoIGQ9Ik0xMC40NywxNi44OWMtLjQ3LS44NC02LjY4LDQuNzItNi42OCw0LjcyYTYuMTgsNi4xOCwwLDAsMCw1LS45M0MxMC4xLDE5LjgzLDEwLjk0LDE3Ljc0LDEwLjQ3LDE2Ljg5WiIgc3R5bGU9ImZpbGw6ICNiYThkNTYiLz4KICA8cGF0aCBkPSJNMTAuMTQsMTYuMzljLTItMS42Ny0zLjMxLjI4LTQuNTYuOTVzLTMuMTYsMi41Mi0yLjUyLDMuNmMxLjI4LDIuM
+TcsNC4xNi0uODksNS40Mi0xLjI4UzExLjIzLDE3LjMsMTAuMTQsMTYuMzlaIiBzdHlsZT0iZmlsbDogI2Y0ZGViMyIvPgogIDxwYXRoIGQ9Ik05LjYzLDE2LjQzYy0uNDguMzQtNiw0LjUyLTYsNC44MiwwLDAsMS4zOC0uODksMy4yNy0xLjkxYTkuMjksOS4yOSwwLDAsMCwzLjA1LTIuODVTMTAuMTEsMTYuMDksOS42MywxNi40M1oiIHN0eWxlPSJmaWxsOiAjYmE4ZDU2Ii8+Cjwvc3ZnPgo=)" class="img-wrapper">
+
+            </div>
+            <div class="text-wrapper-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, suscipit!
+            </div>
+        </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel-2" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel-2" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<!--
+    <div style="text-align:center ">
+        <span class="dot " onclick="currentSlide(1) "></span>
+        <span class="dot " onclick="currentSlide(2) "></span>
+        <span class="dot " onclick="currentSlide(3) "></span>
+        <span class="dot " onclick="currentSlide(4) "></span>
+        <span class="dot " onclick="currentSlide(5) "></span>
+        <span class="dot " onclick="currentSlide(6) "></span>
+    </div>
+    -->
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot ");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none ";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active ", " ");
+        }
+        slides[slideIndex - 1].style.display = "block ";
+        dots[slideIndex - 1].className += " active ";
+    }
+</script>
+
+
+
+
+
+
+
+
+<script>
+    document.querySelector('body').addEventListener('click', e => {
+        if (e.target.classList.contains('hover-link')) {
+            console.log(e.target, e.target.classList, e.target.id);
+            document.getElementById('link-change').style.display = 'none';
+            console.log(e.target.id.split('-')[0])
+            console.log(document.getElementById(e.target.id))
+            console.log(document.getElementById(e.target.id.split('-')[0]))
+            document.getElementById(e.target.id.split('-')[0]).style.display = 'block';
+        } else if (e.target.classList.contains('normal-content')) {
+            document.getElementById('link-change').style.display = 'block';
+            Array.from(document.getElementsByClassName('html-hidden')).forEach(e => {
+                e.style.display = "none ";
+            })
+
+        }
+    })
+</script>
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides ");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none ";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block ";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
+
+<br>
+<br>
+
+<marquee class="opo " width="100% " direction="rtl "><b>Public Relation Officer:</b> Sh.Anil K Sharma ,
+    <b>Phone:</b> 91-11-25843301 , <b>Email:</b> anil.cpro@gmail.com <br /></marquee>
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+ 

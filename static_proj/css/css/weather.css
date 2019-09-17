@@ -1,0 +1,32 @@
+{% load static %}
+
+body {
+    background-color: white;
+}
+
+.header {
+    text-align:center;
+    margin-top: 0%;
+    background-size: cover;
+  
+}
+
+.ijk{
+margin-right:300px;
+margin-top:-160px;
+}
+
+.qwe{
+    border:solid 2px white;
+    width:97%;
+    margin-top: 5px;
+    margin-left: 22px;
+    background-color: rgb(255,255,204);
+}
+.opo {
+    font-size: 30px;
+    background-color: rgb(255,255,179);
+    width: 100% ;
+    direction: "rtl";
+    color:green;
+}

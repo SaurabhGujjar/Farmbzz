@@ -1,0 +1,496 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/css/wheat.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+   
+</head>
+
+<body>
+    <div class="back-body">
+        <div class="header" style="background-image: url('{% static 'img/crop3.jpg' %}');">
+            <h1><img src="{% static 'img/Farmbzz.png' %}" width="10%"> <b>Farmbzz-A Farmer Friendly Web App</b>
+            </h1>
+        </div>
+
+
+        <nav class="navbar navbar-inverse" style="margin-top:-10px;">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:25px;" class="navbar-brand" href="http://127.0.0.1:8000/">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Disease Book <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a  href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+                        </ul>
+
+                 
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Insect Book <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'mango' %}">Mango</a></li>
+                        <li><a href="{% url 'irice' %}">Rice</a></li>
+                        <li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+                        <li><a href="{% url 'icotton' %}">Cotton</a></li>
+                        <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                        <li><a href="{% url 'ipotato' %}">Potato</a></li>
+                    </ul>
+
+
+
+                    </li>
+                    <li><a href="#">Weather</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">E-Shikayat</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">Soil Testing</a></li>
+                    <li><a href="{% url 'auto' %}">Auto Diagnosis</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        
+
+
+
+
+       
+       
+        <div class="container" style=" width: 100%; padding: 20px; margin-top: -20px;">
+            <h1 style="margin-top:0px">Rice</h1>
+            <div class="w3-content w3-section">
+                <img class="mySlides" src="{% static 'img/r1.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r2.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r3.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r4.jpeg' %}">
+            </div>
+        <!--<div class="mnb">-->
+            <p class="asx"> Rice is the seed of the grass species Oryza sativa(Asian rice) or Oryza glaberrima(African rice).
+                It is a cereal grain belongs to the grass family of Graminae and native to the deltas of the great Asian rivers,
+                 the Ganges, the Chang (Yangtze), and the Tigris and Euphrates. The rice plant grows from 2 to 6 ft tall, with a
+                  round, jointed stem, long pointed leaves and edible seeds borne in dense head on separate stalks. Rice is one 
+                  of the most cultivated grain crops in India as well as in Asian countries and a staple diet of major part of 
+                  India. India is an important centre for rice cultivation and consumption. India stands in second position after
+                  China in the production of rice.Major rice producing states are Haryana ,Tamil Nadu ,West Bengal ,Uttar Pradesh 
+                  ,Andhra Pradesh . Methods of growing rice differ greatly in different regions, but in most Asian countries 
+                  including India, the traditional hand methods of cultivating and harvesting rice are still practiced. Modern 
+                  farming of rice started in most of the countries which drastically reduced the labour problems and cost of cultivation.
+                   There are machines available from planting to harvesting the rice crop. Some parts of Indian rural areas still depend 
+                   on the wet buffalos for land preparation and manpower in plantation and harvesting. People often confuses with paddy 
+                   and rice. Rice when it is still covered by the brown hull is known as paddy. Rice fields are also called paddy fields or rice paddies.
+                     
+                
+                
+            </p>
+        </div>
+        
+        <br /> 
+      
+
+        <div class="container" style=" width: 100%; padding: 20px; ">
+                <!--<div class="mnv"></div>-->
+                <div class="row">
+                        <div class="col-lg-6">
+                            <div class="thumbnail" style="border-color:transparent">
+                            <img src="{% static 'img/ricegraph.png' %}" alt="">
+                        </div>
+                    </div>
+                        <div class="col-lg-6"> 
+                            <div class="thumbnail">
+                            <p class="asx">dsjkfkjshfkjskdfsdjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+                        </div>
+                    </div>
+                    </div>
+                 </div>
+    
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <div>
+            <h1>Common Insects of Cotton:</h1>
+        </div>
+        <br>
+        <br>
+        
+
+
+
+        <div id="hover3" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Helicoverpa Caterpillar</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/caterpillar.jpeg' %}"style="width: 27%;">
+                <img src="{% static 'img/caterpillar.jpg' %}" style="width: 30%;">
+                <img src="{% static 'img/caterpillar2.jpeg' %}" style="width: 35%;">
+            </div>
+            <p>
+                <h3><b>Description:</b></h3><p class="text">
+                     Rice sheath blight is one of the most </p>
+                <h3 ><b>Symptoms:</b></h3>
+                <p class="text">The larvae of the Helicoverpa bollworm can feed on leaves and stems but they actually prefer buds, inflorescences and cotton bolls. In the cases where the bolls are attacked, they gradually hollow them, leaving abundant moist frass, usually around the base. Larvae may also chew shallow gouges in the boll surface, which can become infected with opportunistic organisms. At the places where the larvae have entered the squares or the bolls, black holes can be found. The open holes in the plant tissue can lead to additional damage caused by fungal or bacterial infections. Leaves and shoots may also be consumed by larvae in some cases. </p>
+                    <h3> <b>Triger:</b></h3><p class="text">The damage is caused by the larvae of the cotton bollworm Helicoverpa armigera, a common pest in a number of crops. The moths are light brown, 2 cm long, a wingspan of 3 - 4 cm and can be detected on flowers or close to light sources. Their forewings are yellow to orange in females and green to gray in males, with dark marks in both cases. Hindwings are whitish, with dark veins and dark elongated spots on the lower edges. Eggs are spherical, flattened, with 10 to 15 vertical rows of toothed ribs and hatch within 3-4 days of the ovoposition. The young larvae are white in color with little black spots and dark heads. As they develop, they can reach up to 40mm in length and are olive green to dark reddish brown with several black and yellow stripes on the body. Larvae can be best distinguished from most other caterpillars by the tiny spines, visible under a hand lens, that cover most of the body surface. As they reach maturity, the larvae drop off the host plant and pupate in the soil.</p>
+                    <h3><b> Chemical method:</b></h3>
+                <p class="text">Bollworm management is based on scouting for eggs or small larvae. Some species of the parasitoid insects of the family Ichneumonidae, Braconidae, Scelionidae, Trichogrammatidae and Tachinidae can be used as biological control method. Also try predatory insects from the following orders: Coleoptera, Hymenoptera, Hemiptera and Neuroptera. Make sure to promote these species (or even introduce them to the field), and avoid use of broad-scale pesticides. You can apply bioinsecticide sprays containing Bacillus thuringiensis, Spinosad or Helicoverpa armigera nuclear polyhedrosis virus (HaNPV) to control population peaks. Spray NSKE 5% or Neem oil (1500ppm) @ 5ml/l or Spinosad (0.3 ml/l).       </p>  
+                <h3><b>Biological method:</b></h3>
+                <p class="text">Always consider an integrated approach with preventive measures together with biological treatments if available. Treatment is recommended when 10 eggs or five small worms per 100 plants are present during early bloom. As larvae become increasingly resilient to insecticidal treatment while growing, scouting for eggs and young larvae is crucial. Treatment is recommended to be applied during egg stage. Insecticides containing chlorantraniliprole, emamectin, flubendiamide, indoxacarb, methomyl or esfenvalerate can be applied (usually 0-3 to o.5 ml/l of water). Chemical treatment may not be viable in low value crops.
+                        </p>
+                      <h3><b>Prevention:</b></h3>
+                      <p class="text">                      
+                            Pant resilient varieties, if available in your area (several are on the market). Ensure early planting to avoid peak populations. Leave sufficient distance between plants. Avoid monocultures and implement intercropping with beneficial plants. Provide uncultivated marginal areas to break life cycle. Monitor the cotton field regularly for larvae and eggs of the bollworm. Keep up a sufficient fertilization. Promote an early harvest. Clear all harvest residues after each cropping cycle. Plow deeply to expose pupae to predators and elements.
+                           </p>
+                    </p>
+            <h4></h4>
+        </div>
+
+        <div id="hover9" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Boll Weevil</h2>
+                <div class="container"  style="width: 70%; ">
+                    <img src="{% static 'img/weevil.jpeg' %}" style="width: 29%;">
+                    <img src="{% static 'img/weevil1.jpeg' %}" style="width: 30%;">
+                    <img src="{% static 'img/weevil2.jpeg' %}" style="width: 33%;">
+                </div>
+                <p>
+                        <h3><b>Intro</b></h3><p class="text"> 
+                                Brown spot has been historically largely ignored as one of the most common and most damaging rice diseases.</p>
+                           <h3> <b>Symptoms:</b> </h3><p class="text">  
+                                  Adult boll weevils feed on flowering or fruiting structures such as squares and bolls and occasionally on leaf petioles and terminal growth. The early stage of attack is recognizable by small feeding punctures at the side of the flower bud or small wart-like growth corresponding to ovoposition sites. Damage to the flower buds causes discoloration and may result in abortion or premature dropping of flowers or small bolls (with the larva inside). Large, punctured bolls usually remain on the plant and may not open. Alternatively, they can be attacked by opportunistic pathogens that may cause them to rot. Adults feeding on leaf petioles during the vegetative growth of the plant causes leaves to wilt and wither while remaining attached to the stems, a trait that is commonly known as "black flags".            
+                               </p>
+                               <h3> <b>Triger:</b></h3><p class="text">   
+                                  The damage is caused by both adults and grubs of the boll weevil, Anthonomus grandis. Adult beetles are about 6 mm long with long slender snouts and vary in color from dark, brownish-red to brown or near black. They overwinter in well-drained areas in or near the cotton fields. After this period of suspended development, they emerge and enter cotton fields from early spring through midsummer, with peak emergence in late spring, during the development of the boll. Females lay eggs in the growing cotton bolls, usually one egg per square. The creamy-white, legless, C-shape larvae feed within the square or boll for about 10 days and later pupate there. The life cycle from egg to adult spans about three weeks during the summer. The boll weevil can reach up to 8 to 10 generations per year.
+                                </p>
+                               <h3> <b>Biological method:</b></h3><p class="text"> 
+                                   Parasitic wasps like Catolaccus grandis can be introduced or promoted to control the weevil. Furthermore, bio-insecticides based on the fungus Beauveria bassiana, the bacterium Bacillus thuringiensis or the Chilo iridescent virus (CIV) can be applied.</p>
+                           <h3><b>Chemical method:</b></h3><p class="text">
+                                    Always consider an integrated approach with preventive measures together with biological treatments if available. Synthetic pyrethroid insecticides and substances like deltamethrin can be used to control boll weevils. Humid conditions increase the efficacy of the treatment. Pheromone traps can be used for weevil monitoring and control (combined with an insecticide or bio-agent)         
+                               </p>
+                           <h3><b>Prevention:</b></h3><p class="text">
+                               Check for quarantine regulations in your country. Plant late in the season to avoid peak populations. Choose resistant or resilient varieties, if available in your area (several have been put on the market). Monitor the cotton field regularly for symptoms of the pest. Avoid excessive fertilization and overwatering. Immature cotton weevil stages are sensitive to heat and desiccation. Therefore, plant debris should be removed from the fields to expose remaining larvae or pupae to adverse weather conditions. Do not plow plant residues after harvest, simply remove debris from the field instead. Do not transport potentially infected plant material between farms or fields.
+
+
+            
+                              </p>
+                              
+                </p>
+                <h4></h4>
+            </div>
+
+
+        <div id="hover8" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Spiny Bollworm</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/spiny.jpeg' %}" style="width: 28%;">
+                <img src="{% static 'img/spiny1.jpeg' %}" style="width: 30%;">
+                <img src="{% static 'img/spiny2.jpg' %}" style="width: 33%;">
+            </div>
+            <p>
+                    <h3><b>Intro</b></h3><p class="text"> 
+                            Brown spot has been historically largely ignored as one of the most common and most damaging rice diseases.</p>
+                       <h3> <b>Symptoms:</b> </h3><p class="text"> 
+                              Larvae mainly attack cotton bolls, but might also feed on squares, shoots and flowers. If infested during the vegetative state, they bore through the terminal buds of the shoots and move downward. This causes drying and shedding of terminal shoots before flowering. If the main stem is affected, the whole plant might collapse. When attacked in a later stage, the larvae will bore holes at the base of buds and bolls to feed inside. The tunnel entrance is often blocked by excrement. Damaged flower buds sometimes spread prematurely and so-called flared squares can be observed. Damage to the plant tissue can lead to fungal or bacterial infections. The younger the plant, the more damage the spotted bollworm can cause.
+
+                            </p>
+                           <h3> <b>Triger:</b></h3><p class="text">
+                                 
+                                  The damage is caused by the larvae of the spiny bollworm, Earias insulana, a common pest in the northern regions of India. Alternative host plants for this pest are, among others, hibiscus and okra. The moths are silver-green to yellow in color, approximately 2 cm long and can be seen on flowers or close to light sources. Three darker streaks can be seen on the wings. Green forms are common during summer while yellow and brownish colors appear in fall. Eggs are of blue in color, singly laid on young shoots, leaves and squares. The young larvae are light brown with grey to yellow and orange features. They can be best distinguished from most other caterpillars by the tiny spines, visible under a hand lens, that cover most of the body surface. As they reach maturity, they pupate in a silken cocoon attached to leaves or fallen plant parts. Under tropic conditions a generation is complete within 20-25 days. Low temperatures can delay the process to a length of up to two months.
+
+                                  </p>
+                           <h3> <b>Biological method:</b></h3><p class="text">
+                                   Scouting for eggs or small larvae is essential in the management of this pest. Some parasitoid insects of the family Braconidae, Scelionidae and Trichogrammatidae can be used as biological control method. Also try predatory insects from the following orders: Coleoptera, Hymenoptera, Hemiptera and Neuroptera. Make sure to promote these species (or even introduce them to the field), and avoid use of broad-scale pesticides. You can apply bioinsecticide sprays containing Bacillus thuringiensis to control population peaks. Spray Neem seed kernel extracts (NSKE) 5% or Neem oil (1500ppm) @ 5ml/l.                         
+                                   
+                                     </p>
+                            <h3><b>Chemical method:</b></h3><p class="text"> 
+                                   
+                                      Always consider an integrated approach with preventive measures together with biological treatments if available. Treatment is recommended when 10 eggs or five small worms per 100 plants are present during early bloom. As larvae become increasingly resilient to insecticidal treatment while growing, scouting for eggs and young larvae is crucial. Treatment is recommended to be applied during egg stage. Insecticides containing chlorantraniliprole, emamectin benzoate, flubendiamide, methomyl or esfenvalerate can be applied. Chemical treatment may be inviable in low value crops.
+                                    </p>
+                       <h3><b>Prevention:</b></h3><p class="text">
+                            Plant resilient varieties, if available in your area. Avoid monocultures and implement intercropping with beneficial plants. Ensure early planting to avoid peak populations. Provide uncultivated marginal areas to break life cycle or plant trap crops like hibiscus and okra. Leave sufficient distance between plants. Monitor the cotton field regularly for larvae and eggs of the spiny bollworm. Keep up a sufficient fertilization. Promote an early harvest. Clear all harvest residues after each cropping cycle. Plow deeply to expose pupae to predators and elements.
+
+
+
+                           </p>
+
+                </p>
+            
+        </div>
+
+
+
+        <div id="hover7" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Spotted Maize Beetle </h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/spotted.jpeg' %}" style="width: 32%;">
+                <img src="{% static 'img/spotted1.jpg' %}" style="width: 30%;">
+                <img src="{% static 'img/spotted2.jpg' %}" style="width: 30%;">
+            </div>
+            <p>
+                    <h3><b>Intro</b></h3><p class="text"> 
+                            Brown spot has been historically largely ignored as one of the most common and most damaging rice diseases.</p>
+                       <h3> <b>Symptoms:</b> </h3><p class="text"> 
+                              Clusters of yellow, elongated beetles with black spots on flowers and maize heads. Damage to seeds or germinating maize seedlings and reduction of plant stand. This insect is actually considered an efficient pollinator as its flight range can occasionally reach up to 200 m or even more. Only when conditions are favorable may it develop into a pest (warm, dry weather and temperature above 15°C). Even in these conditions, they do not usually cause sufficient damage to justify control with insecticides. </p>
+                           <h3> <b>Triger:</b></h3><p class="text">
+                                The damage is caused by the spotted maize beetle, Astylus atromaculatus. Adult beetles are slightly elongated, and have yellow wing covers with black spots. They are mainly herbivorous and feed on silk, pollen or grains from crops such as maize, rice, sorghum or sunflower. They usually do not cause much damage to these plants. When there are too few crops in the field, the beetles gather gregariously in grasses and can be a problem if they are ingested by cattle, with a possibility of causing deaths. Females lay the eggs under dry leaves. Larvae live in the ground and feed on decaying plant debris. They can also sometimes cause damage to seeds or germinating maize seedlings, thus reducing plant stand. Periods of warm, dry weather (above 15°C) favors their life cycle.</p>
+                           <h3> <b>Biological method:</b></h3><p class="text"> 
+                                Habitat management with known predators (cereal stemborers) together with a plant push-pull system (consisting of an intercropping with Desmodium and a barrier with Napier grass) has worked well in the past to deter this occasional pest from feeding on crops.
+
+                              </p>
+                            <h3><b>Chemical method:</b></h3><p class="text"> 
+                             Always consider an integrated approach with both preventive measures together with biological treatments if possible. Methods currently recommended for the control of the Astylus beetle include chemical seed treatments and chemical sprays.      
+                           </p>
+                       <h3><b>Prevention:</b></h3><p class="text">
+                            Avoid monocrop systems as this favors the development of the pest. Use yellow buckets filled with water or traps baited with 2-phenyl ethanol to reduce populations.
+          
+                           </p>
+                </p>
+            <h4></h4>
+        </div>
+p
+    
+
+        <div id="hover2" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Brown Stink Bug</h2>
+
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/brown.jpeg' %}" style="width: 30%;">
+                <img src="{% static 'img/brown1.jpg' %}" style="width: 30%;">
+                <img src="{% static 'img/brown2.jpg' %}" style="width: 28%;">
+            </div>
+            <p>
+                <h3><b>Intro</b></h3><p class="text"> 
+                     Brown spot has been historically largely ignored as one of the most common and most damaging rice diseases.</p>
+                <h3> <b>Symptoms:</b> </h3><p class="text">
+                       Stink bugs feed on the squares and bolls of cotton. They attack mainly older bolls which then are stained and matted superficially. Seeds of the attacked bolls are shriveled and bolls may not open. If young bolls are damaged, they may drop off. The external lesions are associated with wart like growths on the interior of the boll, more precisely on the inner carpal wall where penetration has occurred. Seed feeding may result in reduced cotton production and stained cotton near the feeding site, which is a clear loss in terms of quality. Stink bugs are also known to facilitate the infection of opportunistic boll rotting organisms. </p> 
+                    <h3> <b>Triger:</b></h3><p class="text">Adults overwinter in protected areas such as ditch banks, fence rows, under boards and dead weeds, ground cover, stones, and under the bark of trees. They become active during the first warm days of spring when temperatures rise above 21°C. Normally the first generation develops on wild hosts, while the second generation typically develops on cultivated crops. Each female lays about 18 egg masses, averaging 60 eggs, over a period of over 100 days. Adults are strong fliers and will readily move between weeds and other alternate hosts.</p>
+                    <h3> <b>Biological method:</b></h3><p class="text"> 
+                        Parasitic tachinid flies and wasps lay eggs into the eggs of stink bugs and their larvae later feed on the hatching maggots. Birds and spiders can also help to reduce infestation. The oil of Eucalyptus urograndis is toxic to the bugs and their nymphs.</p>
+                <h3><b>Chemical method:</b></h3><p class="text"> Always consider an integrated approach with preventive measures together with biological treatments if available. Seed treatments with insecticides of the pyrethroids group may provide some control and avoid damage in seedlings. Foliar application of insecticides based on dicrotophos and bifenthrin can also help to control populations.</p>
+                <h3><b>Prevention:</b></h3><p class="text">Plant early to avoid peak populations. Monitor the fields regularly for signs of the pest. Make sure to rogue the weeds from the field. Barriers between fields can help to reduce the migrations of the bug. Clear the field of plant residues after harvesting. No-tillage practices or the presence of mulch favors the risk of infestation.</p>                   
+                </p>
+            <h4></h4>
+        </div>
+
+
+
+
+        <div id="hover6" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Cotton Leafhopper Jassids</h2>
+                <div class="container"  style="width: 70%; ">
+                    <img src="{% static 'img/leFHOPPER1.jpeg' %}" style="width: 20%;">
+                    <img src="{% static 'img/leafhopper.jpg' %}" style="width: 35%;">
+                    <img src="{% static 'img/leafhopper2.jpg' %}" style="width: 35%;">
+                </div>
+                <p><h3><b>Description:</b></h3><p class="text">
+                        Rice sheath blight is one of the most </p>
+                   <h3 ><b>Symptoms:</b></h3>
+                   <p class="text">
+                        The affected leaves turn yellowish, then brownish starting from the margins and migrating to the midrib. Leaves gradually show signs of curling before drying completely and shedding. Severe incidences result in “hopper burn” injury and death of leaves, eventually leading to the stunting of young plants. The fruiting capacity of the plants infested at later stages of growth is significantly affected and in many cases cause lower yields and poor quality of the fibers. Before becoming necrotic, leaves may show higher trichome density on the lower side of leaves and a hardening of the tissues. These traits confers some degree of resistance against the insect in that it makes ovoposition and movements more difficult. However, it has a negative effect on the agronomic performance.
+                    </p>
+                       <h3> <b>Triger:</b></h3><p class="text"> Both nymphs and adults of Amrasca devastans suck the plant sap and introduce salivary toxins that damage the tissue and impair photosynthesis in proportion to the amount of feeding and the number of insects. First and second generation of nymphs feed near the base of the leaf veins, older nymphs get distributed all over the leaves but feed chiefly from the lower side. Environmental factors such as moderate to high temperatures (21 to 31°C), moderate to high humidity ranges (55 to 85%) either early in the morning or late in the evenings, and hours of sunshine affects positively the populations of this insect. Low temperatures and strong winds have a negative impact.</p>
+                       <h3><b> Biological method:</b></h3>
+                   <p class="text">
+                        Generalist predators of cotton leaf hoppers are the common green lacewing (Chrysoperla carnea), species of the genus Orius or Geocoris, some species of Coccinellids and spiders. Make sure to promote those species and avoid use of broad-scale insecticides. Apply Spinosad (0.35ml/l) when first symptoms occur.
+                        </p>
+                   <h3><b>Chemical method:</b></h3>
+                   <p class="text">Always consider an integrated approach with preventive measures together with biological treatments if available. Insecticide formulations based on malathion, cypermethrin (1 ml/l), sulfoxaflor, chlorpyrifos (2.5 ml/l), dimethoate, lambdacyhalothrin (1ml/l) or chlorantraniliprole + lambda-cyhalothrin (0.5ml/l ) can be applied. They may however also affect natural predators of leafhoppers and should therefore only be applied in severe cases and in a timely manner. Seed treatment with insecticides can also help to suppress leaf hopper populations on crop for 45-50 days.
+                    </p>
+                         <h3><b>Prevention:</b></h3>
+                                     <p class="text">
+
+             Plant resistant or tolerant varieties (several are available on the market). Monitor the orchard regularly for signs of cotton leaf hoppers. Maintain a balanced fertilization and especially do not apply excessive nitrogen.
+    
+            
+                              </p>
+                   
+                 </p>
+                <h4></h4>
+            </div>
+
+
+
+
+
+
+
+            <div id="link-change">
+                    <div class="container"  style="width: 65%;">
+                     <div class="row" >
+                          <div class="col-lg-4">
+                            <div class="thumbnail">
+                                 <div class="card" style="height: 430px;">
+                                    <img src="{% static 'img/brown1.jpg' %}" alt="John" style="width:100%;height: 230px;">
+                                    <h1>Brown Stink Bug</h1>
+                                    <p class="title"></p>
+                                    <p><b>Euschistus Servus</b></p>
+                                    <div style="margin: 24px 0;">
+                                        <button class="hover-link" id="hover2-hidden">Click</button>
+                
+                                    </div>
+                
+                                </div>
+                 
+                       </div>
+                   </div>
+               
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                    <div class="card" style="height:430px;">
+                                            <img src="{% static 'img/caterpillar.jpg' %}" alt="John" style="width:100%;height:230px;">
+                                            <h1>Helicoverpa Caterpillar</h1>
+                                            <p class="title"></p>
+                                            <p><b>Helicoverpa Armigera</b></p>
+                                            <div style="margin: 24px 0;">
+                                                <button class="hover-link" id="hover3-hidden">Click</button>
+                                            </div>
+                        
+                                     </div>
+                  
+                                </div>
+                    </div>
+                
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                        <div class="card" style="height:430px;">
+                                                <img src="{% static 'img/leFHOPPER1.jpeg' %}" alt="John" style="width:100%" height="230px">
+                                                <h1>Cotton Leafhopper Jassids</h1>
+                                                <p class="title"></p>
+                                                <p><b>Amrasca Devastans</b></p>
+                                                <div style="margin: 24px 0;">
+                                                        <button class="hover-link" id="hover6-hidden">Click</button>                    
+                                                </div>
+                                            </div>   
+                    
+                                 </div>
+                        </div>
+                    </div>
+                 </div>
+                 
+           
+        
+        
+        
+        
+        
+        
+        
+        
+           <div class="container" style="margin-top:2%; width: 65%;">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                             <div class="card" style="height:430px;">
+                                     <img src="{% static 'img/weevil.jpeg' %}" alt="John" style="width:100%; height:230px;">
+                                     <h1>Boll Weevil</h1>
+                                     <p class="title"></p>
+                                     <p><b>Anthonomus Grandis</b></p>
+                                     <div style="margin: 24px 0;">
+                                         <button class="hover-link" id="hover9-hidden">Click</button>
+                 
+                                     </div>
+                 
+                                 </div>
+                 
+                        </div>
+                    </div>  
+                
+                     <div class="col-lg-4">
+                             <div class="thumbnail">
+                                     <div class="card" style="height:430px;">
+                                             <img src="{% static 'img/spotted.jpeg' %}" alt="John" style="width:100%;height: 230px;">
+                                             <h1>Spotted Maize Beetle</h1>
+                                             <p class="title"></p>
+                                             <p><b>Astylesatroma Cultus </b></p>
+                                             <div style="margin: 24px 0;">
+                                                 <button class="hover-link" id="hover7-hidden">Click</button>
+                                             </div>
+                         
+                                      </div>
+                   
+                                 </div>
+                     </div>
+                 
+                         <div class="col-lg-4">
+                                 <div class="thumbnail">
+                                         <div class="card" style="height:430px;">
+                                                 <img src="{% static 'img/spiny1.jpeg' %}" alt="John" style="width:100%" height="230px">
+                                                 <h1>Spiny Bollworm</h1>
+                                                 <p class="title"></p>
+                                                 <p><b>Earias Insulana</b></p>
+                                                 <div style="margin: 24px 0;">
+                                                         <button class="hover-link" id="hover8-hidden">Click</button>                    
+                                                 </div>
+                                             </div>   
+                     
+                                  </div>
+                         </div>
+                     </div>
+                  </div>
+                  
+            </div>
+        
+        
+        
+        
+        
+        
+       
+        
+        
+        
+
+
+
+
+
+
+        <div>
+            <marquee class="opo"><b>Public Relation Officer:</b> Sh.Anil K Sharma , <b>Phone:</b> 91-11-25843301 ,
+                <b>Email:</b> anil.cpro@gmail.com <br /></marquee>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <script src="{% static 'js/project.js' %}"></script>
+</body>
+
+</html>

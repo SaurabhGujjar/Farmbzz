@@ -1,0 +1,139 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="{% static 'css/css/weather.css' %}">
+
+    <title>Weather-Farmbzz</title>
+
+</head>
+
+<body>
+    <div class="qwe" style="width:100%; margin-left:0px; margin-top:0px;">
+        <div class="header" style="background-image: url('{% static 'css/images/crop3.jpg' %}')">
+
+                <h1 style="text-shadow:2px 2px 2px black"><img src="{% static 'css/images/Farmbzz.png' %}" width="9%">  <b>Farmbzz-A Farmer Friendly Web App</b>
+                </h1>
+              </div>
+
+
+    <nav class="navbar navbar-inverse">
+
+         <div class="container-fluid">
+             <div class="navbar-header">
+                <a class="navbar-brand" href="http://127.0.0.1:8000/">Home</a>
+             </div>
+             <ul class="nav navbar-nav">
+
+                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" style="font-size:20px" href="#">Disease Book<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                     <li><a  href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+					</ul>
+					
+
+
+
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Insect Book <span
+						class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="{% url 'mango' %}">Mango</a></li>
+					<li><a href="{% url 'irice' %}">Rice</a></li>
+					<li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+					<li><a href="{% url 'icotton' %}">Cotton</a></li>
+					<li><a href="{% url 'tomato' %}">Tomato</a></li>
+					<li><a href="{% url 'ipotato' %}">Potato</a></li>
+				</ul>
+
+
+
+                 </li>
+                   <li><a style="font-size:20px" href="{% url 'weather' %}">Weather</a></li>
+                   <li><a style="font-size:20px" href="http://127.0.0.1:8000/mailer/">E-Shikayat</a></li>
+                   <li><a style="font-size:20px" href="http://127.0.0.1:8000/mailer/">Soil Testing</a></li>
+                   <li><a style="font-size:20px" href="{% url 'auto' %}">Auto Diagnosis</a></li>
+             </ul>
+			  <ul class="nav navbar-nav navbar-right">
+                    <li><a style="font-size:20px" href="#">Guide</a></li>
+                    <li><a style="font-size:20px" href="{% url 'login' %}">Log In</a></li>
+                </ul>
+         </div>
+	</nav>
+
+              	<div class="container">
+		            <h1  style="color:green; text-shadow:2px 2px 2px green">Weather Forecasting</h1>
+                    <h3  style="color:green"><b>Enter your city name:</b></h3>
+				 </div>
+				     <section class="section">
+					     <div class="container">
+					         <div class="column">
+								 <div class="column is-offset-4 is -4">
+								     <form method ="POST">
+									   {% csrf_token %}
+									     <div class="field has-addona">
+										     <div class="control is-expended">
+											 {{ form.name }}
+										     </div>
+											   <button type = "submit" >Search</button>
+									     </div>
+								     </form>
+							     </div>
+						    </div>
+					     </div>
+					 </section>
+
+					 <section class="section">
+						 <div class="container">
+							 <div class="columns">
+								 <div class="column is-offset-4 is -4">
+								 {% for city_weather in weather_data %}
+									<div class="box">
+										 <article>
+											 <div >
+                                                 <img src="http://openweathermap.org/img/w/{{ city_weather.icon }}.png" alt="Image" width="199px">
+
+											 </div>
+											 <div class="media-content">
+												 <div class="ijk" style="float:right">
+													 <h4 style="color:green"><b>
+														<span class="title">{{ city_weather.city}}</span>
+														<br>
+													 <span class="subtitle">Temprature is : {{ city_weather.temperature }}°C</span><br/>
+													 <span class="subtitle">Wind Speed is : {{ city_weather.windspeed }}m/s</span><br/>
+													 <span class="subtitle">Wind Direction is : {{ city_weather.winddir }}degrees</span><br/>
+													 <span class="subtitle">Cloudiness: {{ city_weather.cloud }}% cloudy</span><br/>
+													   The weather description of {{ city_weather.city}} is: {{ city_weather.description }}
+                                                     </b>
+													 </h4>
+												 </div>
+											 </div>
+										 </article>
+									</div>
+
+								 {% endfor %}
+
+								 </div>
+							 </div>
+						 </div>
+					 </section>
+					 <br>
+					 <br>
+					 <br>
+							 <br>
+
+
+    <marquee class="opo"><b>Public Relation Officer:</b>  Mr. Anil K Sharma ,   <b>Phone:</b> 91-11-25843301 ,    <b>Email:</b> anil.cpro@gmail.com <br/></marquee>
+
+</div>
+</body>
+
+</html>
+

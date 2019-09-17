@@ -1,0 +1,612 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/css/wheat.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+   
+</head>
+
+<body>
+    <div class="back-body">
+        <div class="header" style="background-image: url('{% static 'img/crop3.jpg' %}');">
+            <h1><img src="{% static 'img/Farmbzz.png' %}" width="10%"> <b>Farmbzz-A Farmer Friendly Web App</b>
+            </h1>
+        </div>
+
+
+        <nav class="navbar navbar-inverse" style="margin-top:-10px;">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:25px;" class="navbar-brand" href="http://127.0.0.1:8000">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Disease Book <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a  href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+                        </ul>
+
+
+
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Insect Book <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'mango' %}">Mango</a></li>
+                        <li><a href="{% url 'irice' %}">Rice</a></li>
+                        <li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+                        <li><a href="{% url 'icotton' %}">Cotton</a></li>
+                        <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                        <li><a href="{% url 'ipotato' %}">Potato</a></li>
+                    </ul>
+
+
+                    </li>
+                    <li><a href="#">Weather</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">E-Shikayat</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">Soil Testing</a></li>
+                    <li><a href="{% url 'auto' %}">Auto Diagnosis</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        <h1>Groundnut</h1>
+
+
+
+
+       
+       
+        <div class="container" style=" width: 100%; padding: 20px; margin-top: -20px;">
+            <div class="w3-content w3-section">
+                <img class="mySlides" src="{% static 'img/groundnut1.jpg' %}">
+                <img class="mySlides" src="{% static 'img/groundnut2.jpg' %}">
+                <img class="mySlides" src="{% static 'img/groundnut3.jpg' %}">
+                <img class="mySlides" src="{% static 'img/groundnut4.jpg' %}">
+            </div>
+        <!--<div class="mnb">-->
+            <p class="asx"> The peanut, also known as the groundnut,grown mainly for its edible seeds. It is widely grown in the tropics and subtropics, being important to both small and large
+                commercial producers. It is classified as both a grain legume[3] and, due to its high oil content, an oil crop.[4] World annual production of shelled peanuts
+                was 44 million tonnes in 2016, led by China with 38% of the world total. 
+               Peanuts are similar in taste and nutritional profile to tree nuts, such as walnuts and almonds,
+               Peanut is an annual herbaceous plant growing 30 to 50 cm (1.0 to 1.6 ft) tall.
+               The leaves are opposite and pinnate with four leaflets (two opposite pairs; no terminal leaflet); each leaflet is 1 to 7 cm (? to 2¾ in) long and 1 to 3 cm (? to 1 in) 
+               across.Like many other legumes, the leaves are nyctinastic, that is, they have "sleep" movements,
+                closing at night.The flowers are 1.0 to 1.5 cm (0.4 to 0.6 in) across, and yellowish orange with reddish veining.
+               
+               Parts of the peanut include:
+               
+               Shell - outer covering, in contact with dirt
+               Cotyledons (two) - main edible part
+               Seed coat - brown paper-like covering of the edible part
+               Radicle - embryonic root at the bottom of the cotyledon, which can be snapped off
+               Plumule - embryonic shoot emerging from the top of the radicle.
+               
+
+            </p>
+        </div>
+        
+        <br /> <br /> <br />
+        <div class="container" style=" width: 100%; padding: 20px;">
+        <!--<div class="mnv"></div>-->
+            <p class="asx">
+                Peanuts grow best in light, sandy loam soil with a pH of 5.9–7.
+
+ 
+                Peanuts are rich in essential nutrients (right table, USDA nutrient data). In a 100 g serving, peanuts provide 570 calories and are an excellent source
+                 (defined as more than 20% of the Daily Value, DV) of several B vitamins, vitamin E, several dietary minerals, such as manganese (95% DV), magnesium (52% DV) and
+                 phosphorus (48% DV), and dietary fiber (right table). They also contain about 25 g protein per 100 g serving, a higher proportion than in many tree nuts.[54]
+                Some studies show that regular consumption of peanuts is associated with a lower specific risk of mortality from certain diseases.
+                
+                land preparation:
+                Good land preparation is critical for maximum moisture retention, precision planting, fast uniform seed
+                germination and emergence and effective weed and disease control. The first tillage should take place six
+                weeks before planting using a disc plough. This tillage involves deep turning of the soil 20-30 cm in
+                depth (8-12") to completely bury weed seed and incorporate crop residues.
+                
+                
+                Safe storage of peanut requires an atmosphere with low relative humidity of 60 to 70 %. Storage facilities
+                for peanuts should be weatherproof and free from insect and disease bearing litter. Buildings should have
+                provisions for good ventilation to prevent condensation of water. </p>
+        </div>
+    
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <div>
+            <h1>Common Diseases of Groundnut:</h1>
+        </div>
+        <br>
+        <br>
+        
+
+
+
+        <div id="hover3" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Early Leaf Spot</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                            <img src="{% static 'img/earlyleafspot.jpg' %}" style="height:300px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="{% static 'img/earlyleafspot1.jpg' %}" style="height:300px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="{% static 'img/earltleafspot2.jpeg' %}" style="height:300px;">
+                                </div>
+                            </div>
+
+                </div>
+            </div>
+            <p>
+                <h3><b>Intro</b></h3><p class="text">early leaf spot caused by the fungi Mycosphaerella arachidis and M.berkeleyi, this  diseases cause spots on leaves, stems and petioles, resulting in leaf fall and high pod yield losses. Early leaf spots are brown with halos early leaf spot can be noticed usually between a time span of 30 to 45 days of planing hese spores can be seen with the help of a good magnifying glass. .it produces spores  on the top of the leaf.
+                </p>
+                <h3 ><b>Symptoms</b></h3>
+                <p class="text">
+                    Small chlorotic flecks on leaf petioles, stems and pegs which enlarge and turn dark in color; lesions on upper surface of leaves usually possess a yellow halo and are reddish brown on the underside of leaves.
+                </p>
+                <h3><b> Chemical method</b></h3>
+                <p class="text">
+                    Inspect the crop at least once a week, and if growing the crop for sale, and fungicides are
+                    affordable and available, spray with chlorothalonil as soon as leaf spots are seen, even if they appear only on one or a
+                    few plants. Spray every 10-14 days, continuing until 14 days before harvest. Chlorothalonil controls both leaf spots and
+                    rust disease. Mancozeb can also be used. Spray more often (7-10 days) if:
+                    • The first treatment is late and there are many plants with spots. In most cases, spraying should begin no later than
+                    30-35 days after planting.
+                    • Rainfall is high and disease control is poor. 
+                      </p>
+                <h3><b>Cultural method</b></h3>
+                <p class="text">
+                    Before sowing, plan to plant the new crops as far away as possible from older ones, especially if
+                    they are infected by leaf spots. If it is not possible to avoid planting near old crops, do not plant downwind from them,
+                    otherwise spores will easily spread to the new crop in wind and rain.
+                    </p>
+            </p>
+            <h4></h4>
+        </div>
+
+        <div id="hover9" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Charcol Rot</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="{% static 'img/charcolrot.JPG' %}" style="height:300px;">
+                            </div>
+                        </div>
+                        <!--
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="crop/stripe_rust1.png" style="height:300px;">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                    <div class="thumbnail">
+                                        <img src="crop/Stripe rust 2.png" style="height:300px;">
+                                    </div>
+                                </div>
+    -->
+                    </div>
+                </div>
+                <p>
+                    <h3><b>Description</b></h3><p class="text">
+                        It is also called European bunt or common bunt. It is systematic disease in India, its incidence is ristricted to the northern hills. The
+                        disease is capable of causing heavy losses in grain yield, which range from negligible to complete loss of the produce. Besides yield
+                        losses, it causes a serious deteriration in wheat flour. It imparts a fishy odour and black colour to the wheat meal resulting in the
+                        unpalatable chapatis.</p>
+                        <h3><b>Symptoms</b></h3><p class="text">
+                        The disease is not usually visible until heading stage. The pistils in infected heads are longer with ovary almost double the normal and green in
+                        colour instead of being white. Both species produce different symptoms T.caries(low bunt) affected culms are shorter than the normal and the
+                        plants affected by T.foetida(high bunt) are more often higher than the normal ones. The disease produces slightly discoloured grains which are full
+                        of black powder and gives foul smell. The occurrence of bunt in the field can be felt by the foul smell resembling rotten fish</p>.
+                        <h3><b>Chemical Control</b></h3><p class="text">
+                        Common bunt. Hyphae infect plants shortly after the seed germinates and before seedlings emerge, which makes control possible with fungicide seed
+                        treatments because a high concentration of the fungicide is placed directly in the infection court. Currently, seed treatment chemicals that contain carboxin or
+                        pentachloronitrobenzene are commonly used in the USA and provide excellent control of CB. However, both of these chemicals, at commonly used application
+                        rates, are less effective at controlling infection from high levels of soilborne inoculum (Hoffmann and Waldher 1981, Gaudet et al. 1989). Despite this, the
+                        continued use of fungicides that control seedborne inoculum has apparently reduced the number of soilborne teliospores to the extent that they are not
+                        presently a significant problem. CB may occur in trace amounts even where seed treatments are commonly used (Mathre and Johnson 1976, Ballinger and
+                        Gould1989). This low incidence occasionally provides sufficient inoculum to produce significant disease when seed is not properly treated (Williams and Gough
+                        1984, Gaudet et al. 1992).</p>
+                        <h3><b>Cultural Practices</b></h3><p class="text">
+                        As discussed earlier, DB incidence can be reduced by deep sowing, or by very early or late planting to avoid the plant stages that are the most susceptible.
+                        However, these practices may not provide effective control and may reduce yields and cause plants to be more vulnerable to other diseases. In contrast, CB
+                        incidence may be reduced by seeding shallow and significantly reduced or controlled by seeding into warm soil (Purdy and Kendrick 1963, Gaudet and
+                        Puchalski 1990). The effects of timing and method of cultivation, no-till, and stubble burning on teliospore germination or survival, or incidence of DB and CB,
+                        have not been investigated.</p>
+                </p>
+                <h4></h4>
+            </div>
+
+
+        <div id="hover8" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Alternaria Leaf Spot</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                            <img src="{% static 'img/alternaria.jpeg' %}" style="height:300px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="{% static 'img/alternaria2.jpeg' %}" style="height:300px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="{% static 'img/alternaria2.jpg' %}" style="height:300px;">
+                                </div>
+                            </div>
+
+                </div>
+            </div>
+            <p>
+                <h3><b>Intro</b></h3><p class="text">
+                    This pathogen is a saprobe, meaning it survives on dead plant material. It can survive off of plant debris both on the surface of soil or below ground. It can also survive in plant seeds. In the spring the fungi will produce spores that are spread by the wind or rain. Assuming the weather conditions are viable, secondary cycles can occur. Once the pathogen has infected its host, leaves will develop an array of dark spots. Eventually as the plant weakens, they will fall and survive on plant debris for next season.</p>
+                    
+                    <h3><b>Symptoms :</b></h3><p class="text">
+                        An infected host will develop a number of lesions on the surface of leaves. Lesions will appear as small circular spots with light brown centers surrounded by dark concentric rings. Spotting is most prevalent on lower, older leaves, but new leaves are susceptible too. Spots that are close together may combine to form one large spot. Heavily spotted leaves will quickly turn yellow, wilt, and fall due to lack of water. Leaves suffer the most from these symptoms, but stems, flowers, and seed pods can all be affected.
+
+                    </p>
+                    <h3><b>Cultural control:</b><h3><p class="text">
+                        Primarily, removing diseased plants upon detection and at the end of the season will deter further development and spread. The spores of the disease rest in dead plant materials, so this is an important step in reducing fungi populations. Proper seed selection is a necessary preventative measure to avoid introducing new diseases to new areas. Providing wider space between plants will help air circulation and sunlight penetration, allowing plants to dry faster. The longer plants stay wet, the more favorable it is for fungal development. Also, if there are any tall grasses or weeds surrounding crops, removing them can help lower humidity levels and promote air flow. Tilling in the fall will aid in breaking down the remaining residue left from infected plants. Rotating crops for one or two years can be useful if there’s an economically viable alternative crop. </p>
+                    
+                    <h3><b>Chemical Control</b></h3><p class="text">
+                        Fungicide is the most viable chemical control for controlling alternaria leaf spot. As long as applications are properly timed, disease should be less incidental after application. Treating seeds with fungicide can also help reduce chances of infection. When using fungicides, be sure to read the label for cautionary advice and application guidelines.  </p>
+            </p>
+            <h4></h4>
+        </div>
+
+
+
+        <div id="hover7" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Collar Rot</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                            <img src="{% static 'img/collarrot.jpeg' %}" style="height:300px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="{% static 'img/collarrot.jpg' %}" style="height:300px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="{% static 'img/collarrot1.jpg' %}" style="height:300px;">
+                                </div>
+                            </div>
+
+                </div>
+            </div>
+            <p>
+                <h3><b>Description:</b></h3><p class="text">
+                    Purple to black horn like bodies that replace grains in the head. Most species have bodies that are larger than
+                    the grain and protrude from the head, so they are usually easy to see at harvest. During flowering yellow
+                    droplets of sugary slime on the head are the first sign of the disease.
+                    Ergot contamination in grain samples is more commonly due to Ergot of Annual Ryegrass or Darnel growing as
+                    a weed in the crop.</p>
+                    <h3><b>Symptons: </b></h3><p class="text">
+                    After initial infection, the entire kernel is converted into a sorus consisting of a dark brown to black mass of
+                    teliospores covered by a modified periderm, which is thin andpapery.The sorus is light to dark brown and is
+                    called a bunt ball. The bunted heads are slender, bluish-green and may stay greener longer than healthy
+                    heads. The bunt balls change to a dull gray-brown at maturity, at which they become conspicuous. The fragile
+                    covering of the bunt balls are ruptured at harvest, producing clouds of spores. The spores have a fishy
+                    odor(trimethylamine). Plants with common bunt may be moderately stunted but infected plants cannot be easily
+                    recognized until near maturity and even then it is seldom conspicuous.</p>
+                    <h3><b>Prevention</b></h3><p class="text"> 
+                    Recognition of the potential for exposure to contaminated feed and actions to prevent or minimize exposure are the best ways to
+                    reduce risks of developing ergot toxicosis.The safest course of action would be Not to use contaminated grain or straw.If circumstances
+                    require their use, thencontinually monitor the grain or straw for the presence of ergot using two methods. The first method is
+                    continual inspection of the grain or straw for the presence of sclerotia as the product is used. The more vigilant the inspection, the
+                    more likely sclerotia, if present, will be detected.The second method is chemical analysis of specimens of feed or straw. Ideally, a
+                    representative specimen from every batch or bale should be collected and submitted for analysis so that results are available in
+                    advance of use. That way,if hazardous concentrations of ergot alkaloids are detected, time will be available to take whatever action
+                    is needed to control the risk of feeding the contaminated feed.</p>
+                    <h3><b>Disease control:</b></h3><p class="text">
+                    The disease is externally seed BORNE and systemic infection is there -as such spray of fungicides is not effective in
+                    controlling the disease. Systemic fungicides like carboxin, vitavax and benlate @ 2.0 g/Kg seed and Tilt(propioconazole)
+                    25 EC @ 0.1% are used for seed treatment. A combination of vitavax with thiram is very effective for diseasecontrol. The
+                    most successful method is the use of resistant varieties.Crop rotation at suitable intervals is also effective indsieaseconrto.l</p>
+            </p>
+            <h4></h4>
+        </div>
+
+    
+
+        <div id="hover2" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Late Leaf Spot</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                            <img src="{% static 'img/latelreafspot.png' %}" style="height:300px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="{% static 'img/lateleafspot1.jpg' %}" style="height:300px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="{% static 'img/lateleafspot2.jpeg' %}" style="height:300px;">
+                                </div>
+                            </div>
+
+                </div>
+            </div>
+            
+            <p>
+                <h3><b>Intro</b></h3><p class="text">Late leaf spot(lls)  caused by Cercosporidium personatum, generally is most aggressive. Late leaf spot causes dark brown to black spots that may or may not have halos. Late leaf spots produce dark brown spores, usually on the underside of the leaf.late leaf spot has a adverse influence on seed quality as well as quality of haulms.The agents that cause leaf spot to occur are fungi. Sources of primary infection are infected seeds, alternate hosts and infected debris. Sick plants produce low yield compared to healthy ones..</p>
+                <h3> <b>Symptoms</b> </h3><p class="text"> the symptoms of late leaf spot are it has a dark brown lesions (spots), usually on the underside of affected leaves.second symptoms is that spores of the late leaf spot are arranged in concentric circles and these are visible on spots on the lower leaf surface</p>
+                <h3> <b>Cultural method</b></h3><p class="text">Before sowing, plan to plant the new crops as far away as possible from older ones, especially if
+                    they are infected by leaf spots. If it is not possible to avoid planting near old crops, do not plant downwind from them,
+                    otherwise spores will easily spread to the new crop in wind and rain.
+                    Plant improved groundnut varieties (samnut 22 and 23) for more vigorous plants
+                    Use correct planting density (50 cm x 30 cm or 50 cm x 40 cm)
+                    Mix crops of groundnut with maize or sorghum
+                    Remove weeds at 3 and 6 weeks after planting
+                    </p>
+                <h3><b>Chemical method</b></h3><p class="text"> Inspect the crop at least once a week, and if growing the crop for sale, and fungicides are
+                    affordable and available, spray with chlorothalonil as soon as leaf spots are seen, even if they appear only on one or a
+                    few plants. Spray every 10-14 days, continuing until 14 days before harvest. Chlorothalonil controls both leaf spots and
+                    rust disease. Mancozeb can also be used. Spray more often (7-10 days) if:
+                    • The first treatment is late and there are many plants with spots. In most cases, spraying should begin no later than
+                    30-35 days after planting.
+                    • Rainfall is high and disease control is poor. 
+                    </p>
+            </p>
+            <h4></h4>
+        </div>
+
+
+
+
+        <div id="hover6" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%"> Stem Rot</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="{% static 'img/stemrot.jpeg' %}" style="height:300px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="{% static 'img/stemrot1.jpeg' %}" style="height:300px;">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                    <div class="thumbnail">
+                                        <img src="{% static 'img/stemrot2.jpeg' %}" style="height:300px;">
+                                    </div>
+                                </div>
+    
+                    </div>
+                </div>
+                <p>
+                    <h3><b>Intro</b></h3><p class="text">stem rot is caused by sclerotium rolfsii
+                    </p>
+                    <h3><b>Symptoms</b></h3>
+                    <p class="text">
+                        The first symptoms are development of white fungal threads over affected plant tissue particularly on stem which results in sudden wilting of a branch which is completely or partially in contact with the soil. The leaves turn brown and wilt but remain attached to the plant. As the disease advances, a white mycelium web spreads over soil and basal canopy of the plant. The white sclerotia of mustard seed size produced in the infected tissues which later turn to brown colour as the disease develops and spreads. The entire plant may be killed or only two or three branches may be affected. Infections of pegs can take place independent together with stem. Lesions on the developing pegs can retard pod development and seeds in the infected pods show a characteristic bluish-grey discolouration.
+
+
+                </p>
+                    <h3><b>Cultural method</b></h3>
+                    <p class="text">
+                        Cultural practices such as deep burial of organic matter, plant debris before sowing is particularly useful in reducing the sclerotium wilt.
+                        Deep ploughing and cultivation of groundnut in flat or slightly raised beds is helpful.
+                        Crop rotation with wheat, corn and soya bean may minimize the incidence of stem rot.
+                        Soil application of castor cake or neem cake @ 10q/ha.
+                        </p>
+                    <h3><b>Chemical method</b></h3>
+                    <p class="text">
+                        Seed treatment with Carbendizim/Thiram/Capton @2-3 g/kg seed is effective or another alternative is 
+                        Seed treatment with 4gm Trichoderma viride formulation followed by application of 2.5 kg Trichoderma viride formulation mixed with 100kg farm yard manure before sowing is recommended
+                        
+                        .</p>
+                </p>
+                <h4></h4>
+            </div>
+
+
+
+
+
+
+
+            <div id="link-change">
+                    <div class="container"  style="width: 65%;">
+                     <div class="row">
+                          <div class="col-lg-4">
+                            <div class="thumbnail">
+                                 <div class="card" style="height: 430px;">
+                                    <img src="{% static 'img/lateleafspot1.jpg' %}" alt="John" style="width:100%;height: 230px;">
+                                    <h1>Late Leaf Spot</h1>
+                                    <p class="title">CEO & , Example</p>
+                                    <p><b>Causal Organism : Puccinia Graminis</b></p>
+                                    <div style="margin: 24px 0;">
+                                        <button class="hover-link" id="hover2-hidden">Click</button>
+                
+                                    </div>
+                
+                                </div>
+                
+                       </div>
+                   </div>
+               
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                    <div class="card" style="height:430px;">
+                                            <img src="{% static 'img/earlyleafspot.jpg' %}" alt="John" style="width:100%;height: 230px;">
+                                            <h1>Early Leaf Spot</h1>
+                                            <p class="title"> & Founder, Example</p>
+                                            <p><b>Causal Organism : Puccinia Recondia</b></p>
+                                            <div style="margin: 24px 0;">
+                                                <button class="hover-link" id="hover3-hidden">Click</button>
+                                            </div>
+                        
+                                     </div>
+                  
+                                </div>
+                    </div>
+                
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                        <div class="card" style="height:430px;">
+                                                <img src="{% static 'img/stemrot.jpeg' %}" alt="John" style="width:100%" height="230px">
+                                                <h1>Stem Rot</h1>
+                                                <p class="title">CEO & Founder,</p>
+                                                <p><b>Causal Organism : Puccinia Striiformis</b></p>
+                                                <div style="margin: 24px 0;">
+                                                        <button class="hover-link" id="hover6-hidden">Click</button>                    
+                                                </div>
+                                            </div>   
+                    
+                                 </div>
+                        </div>
+                    </div>
+                 </div>
+                 
+           
+        
+        
+        
+        
+        
+        
+        
+        
+           <div class="container" style="margin-top:2%; width: 65%;">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                             <div class="card" style="height:430px;">
+                                     <img src="{% static 'img/charcolrot.JPG' %}" alt="John" style="width:100%; height:230px;">
+                                     <h1>Charcol Rot</h1>
+                                     <p class="title">CEO & , Example</p>
+                                     <p><b>Causal Organism : Tilletia Caries and T.Foetida</b></p>
+                                     <div style="margin: 24px 0;">
+                                         <button class="hover-link" id="hover9-hidden">Click</button>
+                 
+                                     </div>
+                 
+                                 </div>
+                 
+                        </div>
+                    </div>
+                
+                     <div class="col-lg-4">
+                             <div class="thumbnail">
+                                     <div class="card" style="height:430px;">
+                                             <img src="{% static 'img/collarrot.jpeg' %}" alt="John" style="width:100%;height: 230px;">
+                                             <h1>Collar Rot</h1>
+                                             <p class="title"> & Founder, Example</p>
+                                             <p><b>Causal Organism :Claviceps Purpurea</b></p>
+                                             <div style="margin: 24px 0;">
+                                                 <button class="hover-link" id="hover7-hidden">Click</button>
+                                             </div>
+                         
+                                      </div>
+                   
+                                 </div>
+                     </div>
+                 
+                         <div class="col-lg-4">
+                                 <div class="thumbnail">
+                                         <div class="card" style="height:430px;">
+                                                 <img src="{% static 'img/alternaria.jpeg' %}" alt="John" style="width:100%" height="230px">
+                                                 <h1>Alternaria Leaf Spot</h1>
+                                                 <p class="title">CEO & Founder,</p>
+                                                 <p><b>Causal Organism : Pyrenophora Tritici-Repem</b></p>
+                                                 <div style="margin: 24px 0;">
+                                                         <button class="hover-link" id="hover8-hidden">Click</button>                    
+                                                 </div>
+                                             </div>   
+                     
+                                  </div>
+                         </div>
+                     </div>
+                  </div>
+                  
+            </div>
+        
+        
+        
+        
+        
+        
+       
+        
+        
+        
+
+
+
+
+
+
+        <div>
+            <marquee class="opo"><b>Public Relation Officer:</b> Sh.Anil K Sharma , <b>Phone:</b> 91-11-25843301 ,
+                <b>Email:</b> anil.cpro@gmail.com <br /></marquee>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <script src="{% static 'js/project.js' %}"></script>
+</body>
+
+</html>

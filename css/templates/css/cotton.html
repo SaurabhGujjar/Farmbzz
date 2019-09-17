@@ -1,0 +1,632 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/css/wheat.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    
+
+   
+</head>
+
+<body>
+    <div class="back-body">
+        <div class="header" style="background-image: url('{% static 'img/crop3.jpg' %}');">
+            <h1><img src="{% static 'img/Farmbzz.png' %}" width="10%"> <b>Farmbzz-A Farmer Friendly Web App</b>
+            </h1>
+        </div>
+
+
+        <nav class="navbar navbar-inverse" style="margin-top:-10px;">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:25px;" class="navbar-brand" href="http://127.0.0.1:8000">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Disease Book <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a  href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+                        </ul>
+
+
+
+
+
+
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Insect Book <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'mango' %}">Mango</a></li>
+                        <li><a href="{% url 'irice' %}">Rice</a></li>
+                        <li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+                        <li><a href="{% url 'icotton' %}">Cotton</a></li>
+                        <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                        <li><a href="{% url 'ipotato' %}">Potato</a></li>
+                    </ul>
+
+
+
+                    </li>
+                    <li><a href="#">Weather</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">E-Shikayat</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">Soil Testing</a></li>
+                    <li><a href="{% url 'auto' }">Auto Diagnosis</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        <h1>Cotton</h1>
+
+
+
+
+       
+       
+        <div class="container" style=" width: 100%; padding: 20px; margin-top: -20px;">
+            <div class="w3-content w3-section">
+                <img class="mySlides" src="{% static 'img/c1.jpg' %}">
+                <img class="mySlides" src="{% static 'img/c2.jpg' %}">
+                <img class="mySlides" src="{% static 'img/c3.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/c4.png' %}">
+            </div>
+        <!--<div class="mnb">-->
+            <p class="asx">Cotton is a soft, fluffy staple fiber that grows in a boll, or protective case, around the seeds of the cotton plants of the genus Gossypium in the mallow family Malvaceae.
+                The fiber is almost pure cellulose. Under natural conditions, the cotton bolls will increase the dispersal of the seeds.
+               Current estimates for world production are about 25 million tonnes or 110 million bales annually, accounting for 2.5% of the world's arable land.
+               
+               <br/>cultivation>
+               Successful cultivation of cotton requires a long frost-free period, plenty of sunshine, and a moderate rainfall, usually 
+               from 60 to 120 cm (24 to 47 in)[citation needed]. Soils usually need to be fairly heavy, although the level of nutrients does not need to be exceptional.
+               Production of the crop for a given year usually starts soon after harvesting the preceding autumn.
+                Cotton is naturally a perennial but is grown as an annual to help control pests.
+                Cotton is used to make a number of textile products. These include terrycloth for highly absorbent bath towels and robes; denim 
+                for blue jeans; cambric, popularly used in the manufacture of blue work shirts (from which we get the term "blue-collar"); and corduroy, seersucker, and cotton twill.
+                Cotton is an enormously important commodity throughout the world. However, many farmers in developing 
+                countries receive a low price for their produce, or find it difficult to compete with developed countries.
+                
+            </p>
+        </div>
+        
+        <br /> <br /> <br />
+        <div class="container" style=" width: 100%; padding: 20px;">
+        <!--<div class="mnv"></div>-->
+            <p class="asx">
+                <temp>
+                    temperatures
+                    Favorable travel temperature range: below 25 °C (77 °F)
+                    Optimum travel temperature: 21 °C (70 °F)
+                    Glow temperature: 205 °C (401 °F)
+                    Fire point: 210 °C (410 °F)
+                    Autoignition temperature: 360 °C (680 °F) - 425 °C (797 °F)[96]
+                    Autoignition temperature (for oily cotton): 120 °C (248 °F)
+                    
+                    water>
+                    The modest requirement of water can be met by an average annual rainfall of 50- 100 cm. However, it is successfully grown in areas of lesser rainfall with the help of irrigation. About one-third of the total area under cotton cultivation is irrigated.
+                     In the year 1988-89 an area of 24 77 lakh hectares out of a total of 73.43 lakh hectares i.e. 33.73 per cent of the total area under cotton was irrigated.
+                    
+                    About 80 per cent of the total irrigated area under cotton is in Punjab, Haryana, Gujarat and Rajasthan. Moist weather and heavy rainfall at the time of boll-opening
+                     and picking are detrimental to cotton as the plant becomes vulnerable to pests and diseases. High amount of rainfall in beginning and sunny and dry weather at ripening 
+                    time are very useful for a good crop.
+                    
+                    Cotton is a kharif crop which requires 6 to 8 months to mature. </p>
+        </div>
+    
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <div>
+            <h1>Common Diseases of Wheat:</h1>
+        </div>
+        <br>
+        <br>
+        
+
+
+
+        <div id="hover3" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Wilt</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                            <img src="{% static 'img/wilt.jpg' %}" style="height:300px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="{% static 'img/wilt1.jpeg' %}" style="height:300px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="{% static 'img/wilt2.jpeg' %}" style="height:300px;">
+                                </div>
+                            </div>
+
+                </div>
+            </div>
+            <p>
+                <h3><b>Intro</b></h3><p class="text">Wilt is one of the major disease of cotton,found wherever the crop is grown.It is belived to be originated in Mexico or Central America.In India the disease was reported from Maharashtra,Tamil Nadu,and some other states.The fungus also effects the other hosts like brinjal,chilli,tobacco and bhendi. </p>
+                <h3 ><b>Symptoms</b></h3>
+                <p class="text">
+                    Earliest -seedling is the yellowing and browning of the cotyledons. Leaves lose their turgidity
+                    first turn yellow and then brown and finally drop off. The tap root stunted and laterals are less
+                    abundant. Browning and blackening of vascular tissues. Discolorations of leaves starts from the
+                    margins and spread towards midribs. Wilting may be complete or partial. </p>
+                <h3><b> Chemical method</b></h3>
+                <p class="text">
+                    Chemical options to manage Fusarium wilt are limited. Seed treatments that eliminate F. oxysporum f. sp.
+                    vasinfectum from seed have been reported from China, India (40), and Australia (1). These treatments
+                    will likely be ineffective in fields already infested with the pathogen, but may be important in limiting the
+                    spread of the pathogen on seed to new areas. Fusarium wilt can be controlled with soil fumigation with
+                    methyl bromide (40), but fumigation is expensive and not economical for a crop like cotton which is
+                    planted over large areas. Although fumigation to manage nematodes does reduce Fusarium wilt
+                    (43,47,91), there are currently only two fumigants labeled for use in cotton, 1,3-dichloropropene and
+                    metamsodium. Fumigation has generally been regarded as too expensive to provide an economic return,
+                    but recent data indicate that fumigation with 1,3-dichloropropene to reduce infection of M. incognita can
+                    provide an economic return in some situations (108). The ability of aldicarb, a contact nematicide applied
+                    in the furrow at planting, to reduce nematode populations and root galling has been widely demonstrated
+                    (59), but information on its effect on Fusarium wilt is limited. The effect of aldicarb (Temik 15G) on
+                    severity of the disease complex in eight cotton cultivars with different levels of resistance to the disease
+                    complex was tested in 1994 and 1995 (19). Across all cultivars, the application of aldicarb reduced root
+                    galling and stem discoloration. These differences resulted in increased seed cotton yield and lint
+                    percentage..</p>
+                <h3><b>Cultural method</b></h3>
+                <p class="text">
+                    If susceptible varieties are planted, the following cultural practices may make the disease less severe:
+                    Plant as early as possible to avoid high soil temperatures during fruiting. Use no more nitrogen fertilizer
+                    than is appropriate to achieve desired yields. When soil tests indicate deficiencies, fertilize with
+                    phosphorus, potassium and sulfur before planting. Prevent water stress by irrigating sufficiently. </p>
+            </p>
+            <h4></h4>
+        </div>
+
+        <div id="hover9" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Verticillium Wilt</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="{% static 'img/verticillium2.jpg' %}" style="height:300px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="{% static 'img/verticilliumwilt.jpg' %}" style="height:300px;">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                    <div class="thumbnail">
+                                        <img src="{% static 'img/verticilliumwilt2.jpg' %}" style="height:300px;">
+                                    </div>
+                                </div>
+    
+                    </div>
+                </div>
+                <p>
+                    <h3><b>Description</b></h3><p class="text">
+                        Verticillium survives in the soil as microsclerotia that germinate in the vicinity of roots. Disease severity depends on the number
+                        of root penetrations. Verticillium wilt is favored by cool air and soil temperatures.</p>
+                        <h3><b>Symptoms</b></h3><p class="text">
+                            The symptoms are seen when the crop is in squares and bolls. Plants infected at early stages are severely stunted.
+                            The first symptoms can be seen as bronzing of veins. It is followed by interveinal chlorosis and yellowing of leaves.
+                            Finally the leaves begin to dry, giving a scorched appearence. At this stage, the characteristic diagnostic feature is
+                            the drying of the leaf margins and areas between veins, which gives a “Tiger stripe” or “Tiger claw” appearance.
+                            The affected leaves fall off leaving the branches barren. Infected stem and roots, when split open, show a pinkish
+                            discolouration of the woody tissue which may taper off into longitudinal streaks in the upper parts and branches.
+                            The infected leaf also shows brown spots at the end of the petioles. The affected plants may bear a few smaller
+                            bolls with immature lint.</p>.
+                        <h3><b>Chemical Control</b></h3><p class="text">
+                            There are no (cost-) effective chemical controls available to reduce the soilborne Verticillium wilt
+                            disease in field crops. In cotton, crop rotation with grains such as corn or wheat or with
+                            dicotyledonous crops such as sorghum, safflower or alfalfa seems to be (beside the use of
+                            tolerant varieties) the only way to reduce significantly the incidence of this disease.</p>
+                        <h3><b>Cultural Practices</b></h3><p class="text">
+                            Use tolerant varieties. These may include most modern Acala and Pima varieties; however, the
+                            Verticillium resistance evaluation programs of the University of California and most seed
+                            companies are less rigorous than in the past. In areas with a history of Verticillium wilt, be
+                            cautious when planting large areas with varieties where resistance to Verticillium is unknown.
+                            Many of the non-Acala Upland varieties are more susceptible. Rotate cotton with corn, wheat,
+                            barley, sorghum, safflower, or rice. Delay first irrigation if disease pressure is high (more than 10
+                            microsclerotia per gram of soil) and air temperatures are cool.</p>
+                </p>
+                <h4></h4>
+            </div>
+
+<!--
+        <div id="hover8" class="html-hidden">
+
+            <h2><img class="normal-content" src="images/i.png" width="3%">Tan spot</h2>
+            <p>
+                <h3><b>Intro</b></h3><p class="text">
+                    Tan spot,caused by the fungus Pyrenophora tritici-repentis, is a major leaf spot disease of winter wheat in the Great Plains of North
+                    America.It is more severe in wheat cropping systems that maintain crop residue on the soil surface . Although tan spot can be a
+                    serious threat by itself, it occurs more often as part of a leaf spot complex involving tan spot, Septoria leaf blotch, and spot
+                    blotch.The most severe damage occurs from the boot stage to the dough
+                    stage and is great-est on late tillers.Susceptible hosts of P.tritici-repentis include all classes ofwheat,bromegrass,wheatgrass,rye, and several
+                    native prairie grasses that may serve as sources of inoculum as well as sources of genetic diversity forthe pathogen.</p>
+                    
+                    <h3><b>Symptoms tan spot:</b></h3><p class="text">
+                    The initial symptoms of tan spot are small dark brown spots that expand to become tan elliptical or diamond-shaped lesions with a yellow halo. Frequently, there is a small, dark-brown spot in the center of the lesion. The lesions often merge as they grow, result- ing in large
+                    sections of affected tissue. Older infected leaves eventually begin to die from the tip back. In Kansas, the first tan spot symptoms usually appear in
+                    late March. When the infection is severe, fields planted with a susceptible variety may become yellow in less than a week. The appearance of these
+                    fields usually improves as plants grow and new leaves mask the old, infected leaves. If weather remains conducive, the disease is likely to move
+                    onto the middle and upper leaves. Tan spot is capable of infecting the developing grain, but kernel infection is rare in Kansas.Several similar
+                    diseases can be confused with tan spot.
+                    <h3><b>Cultural control:</b><h3><p class="text">
+                    A unique three-year conservation tillage rotation system called ecofarming (ecofallow) can be used to reduce the threat of tan
+                    spot. Ecofarming is a crop rotation system of controlling weeds and conserving soil moisture with minimum disturbance of crop
+                    
+                    residue. In this system, corn or sorghum is seeded directly into winter wheat stubble in a winter wheat-grain sorghum or corn-
+                    fallow rotation. In the ecofarming system a crop is planted directly into the residue of a different crop, rather than into the
+                    
+                    residue of the same crop. This crop rotation-fallow system effectively breaks disease cycles which involve host specific
+                    pathogens such the tan spot fungus that survive in crop residue.</p>
+                    
+                    <h3><b>Chemical Control</b></h3><p class="text">
+                    Foliar fungicides can be applied to control tan spot if the disease becomes serious during the crucial post-boot stage of wheat
+                    development.Crop scouting should begin early in the growing season and should continue on a regular basis until disease is
+                    detected or a decision to spray is made based on the observed disease level.</p>
+            </p>
+            <h4></h4>
+        </div>
+
+-->
+
+        <div id="hover7" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Leaf Curl</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                            <img src="{% static 'img/leafcurl.jpg' %}" style="height:300px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="{% static 'img/leafcurl1.jpeg' %}" style="height:300px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="{% static 'img/leafcurl2.jpg' %}" style="height:300px;">
+                                </div>
+                            </div>
+
+                </div>
+            </div>
+            <p>
+                <h3><b>Description:</b></h3><p class="text">
+                    Cotton Leaf Curl Virus is a single stranded DNA virus. Cotton Leaf Curl Virus is a member of
+                        “Begomovirus” and family “Geminiviridae”. This virus is neither seed born nor soil borne. It has some
+                        alternate hosts where it survives these alternate hosts are Tomato, Tobacco, Lehli, Dhatura, Okra, China
+                        Rose etc. The most important means of virus transmission is whitefly (Bemisia tabaci), some scientists
+                        also considered Bemisia argentifoli as insect vector of cotton leaf curl virus. Whitefly has 473 different
+                        host plants. This whitefly acquires the virus from infected plant and transmits it to the healthy ones. Ones
+                        the virus is acquired by the whitefly it remains in it throughout its life. Cotton leaf curl virus requires 30
+                        minutes of feeding on infected plant to acquire the virus and a latent period of 24 hours and then 30
+                        minutes of feeding on healthy plant to transmit the virus leading to unnoticeable changes at the initial
+                        stage to remarkable variations in growth patterns at later stages of cotton plant development.</p>
+                    <h3><b>Symptons: </b></h3><p class="text">
+                        Two types of symptoms are associated with Cotton leaf curl virus-infected cotton. A typical, severe upward or
+                        downward leaf curl symptom accompanied by foliar discoloration and mosaic is commonly reported in most African
+                        countries and in India and Pakistan. There are also reports of a less severe symptom phenotype referred to as
+                        small vein thickening which is characterized by foliar enations, a slight mosaic and leaf curling. Both symptoms
+                        have been documented in Nigeria and Sudan, while the severe phenotype is prevalent in Pakistan. It is possible
+                        that these symptom phenotypes caused by CLCuV are variety specific, or that more than one virus and/or strain is
+                        involved (Bedford, 1938; Bougher, 1947; Brown, 1992, 1994; Brunt et al., 1990; Mahbub et al., 1992).</p>
+                    <h3><b>Prevention</b></h3><p class="text"> 
+                        Reflective mulches and floating row covers deter and protect plants from whitefly infestations, respectively. This is
+                        relevant to cotton-vegetable mixed cropping systems because only certain kinds of vegetables in certain production
+                        
+                        settings are economically feasible. Row covers are effective only if plants are protected during early- and mid-
+                        growth stages because once plants become infected with begomoviruses, growth is arrested and fruit is
+                        
+                        harvestable primarily from the portion of the plant in production at the time of removal. Row covers are expensive
+                        and not practical for cotton production and large-scale vegetable production. Greenhouses and screen houses
+                        (e.g., for ornamentals or controlled environment vegetable production such as tomatoes and peppers) can be
+                        protected by outfitting the structures with fine mesh screens to protect against whitefly infestation and therefore
+                        reduced inoculation that results in transmission of virus to plants by dispersing, viruliferous whiteflies. This is not
+                        practical for field crops.</p>
+                    <h3><b>Disease control:</b></h3><p class="text">
+                        The solution of various diseases is the development of disease tolerant varieties. In cotton, host plant resistance is
+                        the best long term and explored strategy to protect the plants from CLCuD (Solomon-Blackburn and Bradshaw,
+                        2007). Cotton leaf curl disease spread from the primary inoculum that is present in off season in the form of weeds
+                        and other hosts. The management of CLCuD includes control of vector whitefly and eradication of weeds that
+                        contribute the hospitality of Cotton leaf curl virus. The seed treatment with appropriate and consistent insecticides
+                        
+                        may prevent the cotton crop up to 50-60 days. By using insecticides even if infection occurs at later stage the
+                        severity of losses can be avoided considerably, as symptoms appearance will begin after 65-90 days and plants
+                        avoid the most susceptible stage.</p>
+            </p>
+            <h4></h4>
+        </div>
+
+    
+
+        <div id="hover2" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Angular leaf Spot</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                            <img src="{% static 'img/angularleafspot.jpeg' %}" style="height:300px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="{% static 'img/angularleafspot1.jpg' %}" style="height:300px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="{% static 'img/angularleaf spot2.jpg' %}" style="height:300px;">
+                                </div>
+                            </div>
+
+                </div>
+            </div>
+            
+            <p>
+                <h3><b>Intro</b></h3><p class="text"> Angular wilt of cotton is a disease affecting the cotton plant resulting from infection by Xanthomonas
+                    axonopodis pathovar malvacearum (Xcm) a Gram negative, motile rod-shaped, non spore-forming bacterium
+                    
+                    with a single polar flagellum.</p>
+                <h3> <b>Symptoms</b> </h3><p class="text"> Bacterial blight (angular leaf) infections can affect any above-ground portions of the plant and at
+                    any point of plant development. Lesions associated with Xanthamonas begin as an angular leaf
+                    spot with a red to brown border . Tissues surrounding lesions may also become yellow, giving
+                    the appearance of a "halo" surrounding the lesion. The angular appearance of lesions is due to
+                    restriction of the lesion by fine veins of the cotton leaf, and bacteria may spread along the leaf
+                    veins causing blackened lesions along major veins. Leaf petioles and stems may also become
+                    infected which can lead to premature defoliation of the plant. Black cankers on stems or
+                    branches may girdle the plant causing the portions to die above the canker. Additionally, a white
+                    waxy crust containing the bacterium may also form on old leaf spots or cankers. Infected bolls
+                    have round, as opposed to angular, lesions that initially may appear water-soaked, and then
+                    become sunken and dark brown to black. Bolls infected with Xanthamonas may result in rotted
+                    seed and discolored lint.</p>
+                <h3> <b>Cultural method</b></h3><p class="text"> X. axonopodis pv. malvacearum cannot survive in the soil outside of crop residues and is therefore readily
+                    controlled with rotations. One crop season without cotton is usually sufficient to virtually eliminate crop residues as
+                    a source of primary inoculum. If this is combined with seed certification to ensure that crops used for seed
+                    production are free of bacterial blight, the disease can be controlled even where susceptible varieties are grown
+                    (Schnathorst, 1966). Cotton seed can also be treated with bactericides to reduce the risk of seed transmission (see
+                    Seed Treatment under Seedborne Aspects of Disease).</p>
+                <h3><b>Chemical method</b></h3><p class="text"> Copper-based bactericides are often necessary to reduce the severity of angular leaf spot in warm, humid
+                    production regions. A four to seven day spray interval is often necessary when conditions are highly favorable
+                    for disease development. Chemical controls are most effective when integrated with sound cultural control
+                    practices.</p>
+            </p>
+            <h4></h4>
+        </div>
+
+
+
+
+        <div id="hover6" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%"> Root Rot</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="{% static 'img/rootrot.jpeg' %}" style="height:300px;">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                    <img src="{% static 'img/rootrot1.jpeg' %}" style="height:300px;">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                    <div class="thumbnail">
+                                        <img src="{% static 'img/rootrot2.JPG' %}" style="height:300px;">
+                                    </div>
+                                </div>
+    
+                    </div>
+                </div>
+                <p>
+                    <h3><b>Intro</b></h3><p class="text">Root rot (also known as Phymatotrichopsis root rot, Phymatotrichum root rot, cotton root rot, or, in the older literature, Ozonium root rot) is a pathogen fairly common in Mexico and the southwestern United States that causes sudden wilt and deathof affected plants, usually during the warmer months. It is a soil-borne fungus of the species Phymatotrichopsis omnivora  that attacks the roots of susceptible plants. It was first discovered in 1888, and was named by Duggar in 1916.</p>
+                    <h3><b>Symptoms</b></h3>
+                    <p class="text">
+                        The pathogen causes three types of symptoms viz., seedling disease, sore-shin and root rot. Germinating seedlings and seedlings of one to two weeks old are attacked by the fungus at the hypocotyl and cause black lesions, girdling of stem and death of the seedling, causing large gaps in the field. In sore-shin stage (4 to 6 weeks old plants), dark reddish-brown cankers are formed on the stems near the soil surface, later turning dark black and plant breaks at the collar region leading to drying of the leaves and subsequently the entire plant.
+                        Typical root rot symptom appears normally at the time of maturity of the plants. The most prominent symptom is sudden and complete wilting of plants in patches. Initially, all the leaves droop suddenly and die with in a day or two. The affected plants when pulled reveal the rotting of entire root system except tap root and few laterals. The bark of the affected plant shreds and even extends above ground level. In badly affected plants the woody portions may become black and brittle. A large number of dark brown sclerotia are seen on the wood or on the shredded bark.
+                    </p>
+                    <h3><b>Cultural method</b></h3>
+                    <p class="text">
+                        When choosing a vineyard site, consider the prior cropping history. Avoid locations where cotton or alfalfa was grown previously, since there is greater risk for presence of the inoculum. Planting sites with a soil pH below 6.5 will be much less likely to have problems with Phymatotrichum root rot.</p>
+                    <h3><b>Chemical method</b></h3>
+                    <p class="text">
+                        There are no chemical management options for Phymatotrichum root rot.</p>
+                </p>
+                <h4></h4>
+            </div>
+
+
+
+
+
+
+
+            <div id="link-change">
+                    <div class="container"  style="width: 65%;">
+                     <div class="row">
+                          <div class="col-lg-4">
+                            <div class="thumbnail">
+                                 <div class="card" style="height: 430px;">
+                                    <img src="{% static 'img/download (11).jpeg' %}" alt="John" style="width:100%;height: 230px;">
+                                    <h1>Angular Leaf spots</h1>
+                                    <p class="title">CEO & , Example</p>
+                                    <p><b>Causal Organism :Xanthomonas Campestris </b></p>
+                                    <div style="margin: 24px 0;">
+                                        <button class="hover-link" id="hover2-hidden">Click</button>
+                
+                                    </div>
+                
+                                </div>
+                
+                       </div>
+                   </div>
+               
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                    <div class="card" style="height:430px;">
+                                            <img src="{% static 'img/cotton_fusarium_wilt.jpg' %}" alt="John" style="width:100%;height: 230px;">
+                                            <h1>Wilt</h1>
+                                            <p class="title"> & Founder, Example</p>
+                                            <p><b>Causal Organism :Fusarium Oxysporum</b></p>
+                                            <div style="margin: 24px 0;">
+                                                <button class="hover-link" id="hover3-hidden">Click</button>
+                                            </div>
+                        
+                                     </div>
+                  
+                                </div>
+                    </div>
+                
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                        <div class="card" style="height:430px;">
+                                                <img src="{% static 'img/c.jpg' %}" alt="John" style="width:100%" height="230px">
+                                                <h1>Root Rot</h1>
+                                                <p class="title">CEO & Founder,</p>
+                                                <p><b>Causal Organism :Rhizoxtonia Batoticola</b></p>
+                                                <div style="margin: 24px 0;">
+                                                        <button class="hover-link" id="hover6-hidden">Click</button>                    
+                                                </div>
+                                            </div>   
+                    
+                                 </div>
+                        </div>
+                    </div>
+                 </div>
+                 
+           
+        
+        
+        
+        
+        
+        
+        
+        
+           <div class="container" style="margin-top:2%; width: 65%;">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                             <div class="card" style="height:430px;">
+                                     <img src="{% static 'img/v.jpg' %}" alt="John" style="width:100%; height:230px;">
+                                     <h1>Verticillium Wilt</h1>
+                                     <p class="title">CEO & , Example</p>
+                                     <p><b>Causal Organism :Verticillium Dahilae</b></p>
+                                     <div style="margin: 24px 0;">
+                                         <button class="hover-link" id="hover9-hidden">Click</button>
+                 
+                                     </div>
+                 
+                                 </div>
+                 
+                        </div>
+                    </div>
+                
+                     <div class="col-lg-4">
+                             <div class="thumbnail">
+                                     <div class="card" style="height:430px;">
+                                             <img src="{% static 'img/ply067.jpg' %}" alt="John" style="width:100%;height: 230px;">
+                                             <h1>Leaf Curl</h1>
+                                             <p class="title"> & Founder, Example</p>
+                                             <p><b>Causal Organism :CLCV</b></p>
+                                             <div style="margin: 24px 0;">
+                                                 <button class="hover-link" id="hover7-hidden">Click</button>
+                                             </div>
+                         
+                                      </div>
+                   
+                                 </div>
+                     </div>
+                 <!--
+                         <div class="col-lg-4">
+                                 <div class="thumbnail">
+                                         <div class="card" style="height:430px;">
+                                                 <img src="image/TanSpot01.jpg" alt="John" style="width:100%" height="230px">
+                                                 <h1>Tan Spot</h1>
+                                                 <p class="title">CEO & Founder,</p>
+                                                 <p><b>Causal Organism : Pyrenophora Tritici-Repem</b></p>
+                                                 <div style="margin: 24px 0;">
+                                                         <button class="hover-link" id="hover8-hidden">Click</button>                    
+                                                 </div>
+                                             </div>   
+                     
+                                  </div>
+                         </div>
+-->
+                     </div>
+                  </div>
+                  
+            </div>
+        
+        
+        
+        
+        
+        
+       
+        
+        
+        
+
+
+
+
+
+
+        <div>
+            <marquee class="opo"><b>Public Relation Officer:</b> Sh.Anil K Sharma , <b>Phone:</b> 91-11-25843301 ,
+                <b>Email:</b> anil.cpro@gmail.com <br /></marquee>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <script src="{% static 'js/project.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+{% load static %}
+<html lang="en">
+<head>
+    <title>Farmbzz-Mailer</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/css/explorer.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <style>
+        *{
+            font-family: 'Raleway','sans-serif';
+        }
+       </style>
+</head>
+<body>
+
+
+
+
+ <div class="lll" style="width:100%; margin-left:0px; margin-top:0px; background-color: rgb(255,255,225)">
+
+        <div class="header" style="background-image: url('{% static 'css/images/crop3.jpg' %}'); margin-top:-20px;">
+            <h1><img src="{% static 'css/images/Farmbzz.png' %}" width="9%"><b>  Farmbzz-A Farmer Friendly Web App</b>
+            </h1>
+        </div>
+
+
+        <nav class="navbar navbar-inverse" style="margin-top:-10px; border-radius: px;">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:25px;" class="navbar-brand" href="http://127.0.0.1:8000/">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Disease Book <span
+                            class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+                        </ul>
+
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Insect Book <span
+                            class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'mango' %}">Mango</a></li>
+                            <li><a href="{% url 'irice' %}">Rice</a></li>
+                            <li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'icotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                            <li><a href="{% url 'ipotato' %}">Potato</a></li>
+                        </ul>
+
+
+                    </li>
+                    <li><a href="{% url 'weather' %}">Weather</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer/">E-Shikayat</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer/">Soil Testing</a></li>
+                    <li><a href="{% url 'auto' %}">Auto Diagnosis</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+
+
+
+    <div class="container">
+        <form method='POST'>
+            <h1>Fill the details and hit enter:</h1>
+            <h5>(Enter your name, subject, phone number, address and your problem in Name, Subject, Phone, Address and Complaint fields respectively and then press Submit!)</h5>
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+    </div>
+
+
+<a href="http://127.0.0.1:8000/mailer/add/">
+    <h4  style="color:green" class="glyphicon glyphicon-plus-sign" aria-hidden="true">Add-Answer</h4> </a>
+
+        <br>
+        <br>
+
+        <marquee class="opo " width="100% " direction="rtl "><b>Public Relation Officer:</b> Sh.Anil K Sharma , <b>Phone:</b> 91-11-25843301 , <b>Email:</b> anil.cpro@gmail.com <br/></marquee>
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,641 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/css/wheat.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+   
+</head>
+
+<body>
+    <div class="back-body">
+        <div class="header" style="background-image: url('{% static 'img/crop3.jpg' %}');">
+            <h1><img src="{% static 'img/Farmbzz.png' %}" width="10%"> <b>Farmbzz-A Farmer Friendly Web App</b>
+            </h1>
+        </div>
+
+
+        <nav class="navbar navbar-inverse" style="margin-top:-10px;">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:25px;" class="navbar-brand" href="http://127.0.0.1:8000">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Disease Book <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                       <li><a  href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+                        </ul>
+
+
+
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Insect Book <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'mango' %}">Mango</a></li>
+                        <li><a href="{% url 'irice' %}">Rice</a></li>
+                        <li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+                        <li><a href="{% url 'icotton' %}">Cotton</a></li>
+                        <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                        <li><a href="{% url 'ipotato' %}">Potato</a></li>
+                    </ul>
+
+
+                    </li>
+                    <li><a href="{% url 'weather' %}">Weather</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer/">E-Shikayat</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer/">Soil Testing</a></li>
+                    <li><a href="#">Auto Diagnosis</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        
+
+
+
+
+       
+       
+        <div class="container" style=" width: 100%; padding: 20px; margin-top: -20px;">
+            <h1 style="margin-top:0px">Rice</h1>
+            <div class="w3-content w3-section">
+                <img class="mySlides" src="{% static 'img/r1.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r2.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r3.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r4.jpeg' %}">
+            </div>
+        <!--<div class="mnb">-->
+            <p class="asx" style="padding:20px;"> Rice is the seed of the grass species Oryza sativa(Asian rice) or Oryza glaberrima(African rice).
+                It is a cereal grain belongs to the grass family of Graminae and native to the deltas of the great Asian rivers,<br/>
+                 the Ganges, the Chang (Yangtze), and the Tigris and Euphrates. The rice plant grows from 2 to 6 ft tall, with a
+                  round, jointed stem and long pointed leaves and edible seeds borne in dense head on separate stalks. Rice is one 
+                  of the most cultivated as grain crops in India as well as in Asian countries and a stap diet of major part of 
+                  India.India is an important centre for rice cultivation and consumption.India stands<br/> in second position after
+                  China in the production of rice. Methods of growing rice differ greatly in different regions,but in the most Asian countries 
+                  including India,the traditional hand methods of cultivating and <br/> in harvesting rice are still practiced. The Modern 
+                  farming of rice started in most of the countries which drastically reduced the labour problems and cost of the cultivation.                   
+                
+                
+            </p>
+        </div>
+        
+        <br /> 
+        <div class="container" style=" width: 100%; padding: 20px;">
+        <!--<div class="mnv"></div>-->
+            <p class="asx" style="padding:20px;">
+                    <b> Ideal temperature:-</b>Paddy can be grown under widely varying conditions of altitude and climate. Rice can be cultivated as high as 3000 m 
+                    (mean sea level). Basically Rice crop requires hot and humid climatic conditions for its successful cultivation. Rice crop is suited for the 
+                    regions where abundant water supply, high humid and prolonged sunshine is available. The ideal temperature required throughout the life period of 
+                    the crop ranges from 20°C to 40°C.However, the rice crop can tolerate the temperature up to 42°C.
+
+               <br/> <b>Nutrition value:-</b>
+                  Rice is a good source of energ.Rice help in blood Pressure management. Rice help in cancer prevention. Rice can also helps in preventing chronic constipation.<br/> 
+                  Rice is a good source of niacin, vitamin D ,calcium, fibre ,iron thiamine and riboflavin.<br/>
+                <b>Irrigation:- </b>With water scarcity becoming a major issue in agriculture, already there are studies & n bsp; going on drip irrigation for paddy cultivation.
+                 However,the most popular <br/>System of Rice Intensification “SRI” method uses around 120 to 150 lakhs liters per hectare to produce 7 tonnes of rice. During initial period, 
+                 paddy field requires abundant water supply especially in wetLands. Water supply should be reduced periodically before harvesting the crop.
+               </p>
+         </div>
+    
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <div>
+            <h1>Common Diseases of Rice:</h1>
+        </div>
+        <br>
+        <br>
+        
+
+
+
+        <div id="hover3" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Sheath Blight</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/Sheathblight3.jpg' %}" style="width:300px; height:300px;">
+                <img src="{% static 'img/Sheathblight.jpg' %}" style="width:300px; height:300px;">
+                <img src="{% static 'img/Sheathblight2.jpg' %}" style="width:300px; height:300px;">
+            </div>
+            <p>
+                <h3><b>Description:</b></h3><p class="text">
+                     Rice sheath blight is one of the most economically significant rice diseases worldwide. This disease causes significant 
+                     grain yield and quality losses. Yield losses of up to 50% have been reported under most conducive environments. Sheath 
+                     blight is a soilborne disease caused by the fungus Rhizoctonia solani AG1-IA. The fungus belongs to the phylum Basidiomycota,
+                      family Ceratobasidiaceae.</p>
+                <h3 ><b>Symptoms:</b></h3>
+                <p class="text">
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;">
+                        <li> Early symptoms usually develop on the leaf sheaths at or just above the water line as circular, oval or ellipsoid, water-soaked 
+                                spots which are greenish-gray in color.</li>
+                        <li>  As the disease progresses, they enlarge and tend to coalesce forming larger lesions with grayish white centers surrounded by tan to dark brown irregular borders or outlines.  </li>        
+                        <li>
+                                The lesions can develop extensively and coalesce on partial or whole leaf blades, which may produce a rattlesnake skin pattern.
+                        </li>
+                    </ul >
+                    </p>
+                <h3><b> Chemical method:</b></h3>
+                <p class="text">
+                    <ul style=" font-size: 20px;
+                  margin-left: 10px;
+                  margin-right: 10px;
+                  color: green;
+                  line-height: 40px;">
+                        <li>
+                                Fungicides can be one of the most effective tools for control of sheath blight.    
+                        </li>
+                        <li>   A single fungicide application is currently recommended to reduce production costs and maximize production returns.  </li>
+                         <li> The timing of the application is critical for effective control of sheath blight. The disease should be scouted and monitored periodically during 
+                                the development of the rice crop through heading. </li>                    
+                    </ul>
+                          </p>
+                <h3><b>Cultural method:</b></h3>
+                <p class="text">
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;">
+                        <li>
+                                Rice variety selection is the first important step towards reducing crop yield losses due to the disease.    
+                        </li>
+                        <li> At present, there are no rice varieties with complete resistance against sheath blight. </li>
+                        <li> Most of the hybrid varieties are more resistant to the disease than most of the inbred varieties. </li>
+                    </ul>
+                         </p>
+                      <h3><b>Prevention:</b></h3>
+                      <p class="text">
+                          <ul style=" font-size: 20px;
+                          margin-left: 10px;
+                          margin-right: 10px;
+                          color: green;
+                          line-height: 40px;">
+                              <li>
+                                    Seed treatment with Pseudomonas fluorescens @ of 10g/kg of seed followed by seedling dip @ of 2.5 kg or products/ha dissolved in 100 litres and dipping for 30 minutes.
+                              </li>
+                              <li>
+                                    Soil application of P.fluorescens @ of 2.5 kg/ha after 30 days of transplanting (This product should be mixed with 50 kg of FYM/Sand and then applied.
+                              </li>
+                              <li>
+                                    Foliar spray of Pseudomonas fluorescens at 0.2% concentration ,commencing from 45 days after transplanting at 10 days interval for 3 times depending upon the intensity of disease.
+                         
+                              </li>
+                          </ul>
+                          
+                         
+                            </p>
+                    </p>
+            <h4></h4>
+        </div>
+
+        <div id="hover9" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Stem Rot</h2>
+                <div class="container"  style="width: 70%; ">
+                    <img src="{% static 'img/stem-rot.jpg' %}" style="width:300px; height:300px;">
+                    <img src="{% static 'img/Stemrot2.JPG' %}" style="width:300px; height:300px;">
+                    <img src="{% static 'img/stemrot1.png' %}" style="width:300px; height:300px;">
+                </div>
+                <p>
+                    <h3><b>Description:</b></h3><p class="text">
+                             Stem rot leads to formation of lesions and production of chalky grains and unfilled panicles.</p>
+                        <h3><b>Symptoms:</b></h3><p class="text">
+                             Initial symptoms are small, irregular black lesions on the outer leaf sheath near water level. Lesions expand as the disease advances. Infected stem rots.
+                              Visible numerous tiny white and black sclerotia and mycelium inside the infected culms. Infected culm lodges and caused unfilled panicles and chalky grain.
+                               Severe infection causes tiller death. The disease aggravates the plants to lodge.</p>.
+                        <h3><b>Chemical Control:</b></h3><p class="text">
+                             Fentin hydroxide sprayed at the mid-tillering stage, Thiophanate-Methyl sprayed at the time of disease initiation can reduce stem rot incidence. The use of 
+                             other fungicides such as Ferimzone and Validamycin A also show effectively against the fungus.</p>
+                        <h3><b>Cultural Practices:</b></h3><p class="text">
+                             Stem rot is favored by excessive nitrogen fertilization, aerobic soils, and drought stress. High nitrogen rates and nitrate nitrogen increase rice susceptibility
+                              to the disease. Extended drain periods may also encourage the disease by aerating the soil, by converting ammonium to nitrate, and by causing drought stress to rice.
+                               Use proper seed sampling and testing to identify and avoid the use of blast-infested seed in areas where blast is not a problem. This may help limit the introduction 
+                               of the disease into noninfestedareas. Water seeding is recommended to reduce or eliminate disease transmission from seed to seedlings. Drill seeding is not recommended 
+                               because it may allow seed transmission, nitrate formation, and result in drought stress. Continuous flooding is recommended to limit blast development. Avoid field drainage, 
+                               especially for extended periods because it allows the formation of nitrate and may cause drought stress. Some studies in other areas suggest that shallow water is more favorable 
+                               to blast development than deeper water.</p>
+                        <h3><b>Precaution:</b></h3><p class="text">
+                             Stem rot management in California requires implementing a variety of cultural practices (destruction of infested residue, use of noninfestedseed, water seeding, continuous flooding, 
+                             and avoiding excess nitrogen). Environmental conditions in California appear to be permissive for blast development but are usually not conducive. In other areas of the world where 
+                             conditions are not conducive, the disease is most easily controlled by resistant cultivars, but resistant cultivars are not yet available in California. Fungicides are available, but 
+                             are only needed when unusually wet conditions occur during the California growing season.
+
+                        </p></p>
+                </p>
+                <h4></h4>
+            </div>
+
+
+        <div id="hover8" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">False Smut</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/falsesmut2.jpeg' %}" style="width:300px; height:300px;">
+                <img src="{% static 'img/false_smut1.jpg' %}" style="width:300px; height:300px;">
+                <img src="{% static 'img/falsesmut.jpg' %}" style="width:300px; height:300px;">
+            </div>
+            <p>
+                <h3><b>Intro</b></h3><p class="text">
+                             False smut causes chalkiness of grains which leads to reduction in grain weight. It also reduces seed germination.</p>
+                    
+                    <h3><b>Symptoms:</b></h3><p class="text">
+                             Individual rice grain transformed into a mass of yellow fruiting bodies. Growth of velvetty spores that enclose floral parts.
+                              Infected grain has greenish smut balls with a velvetty appearance.
+                             The smut ball appears small at first and grows gradually up to the size of 1 cm. It is seen in between the hulls and encloses 
+                             the floral parts. Only few grains in a panicle are usually infected and the rest are normal. As the fungi growth intensifies, 
+                             the smut ball bursts and becomes orange then later yellowish-green or greenish-black in color. Infection usually occurs during 
+                             the reproductive and ripening stages, infecting a few grains in the panicle and leaving the rest healthy.
+                               </p>                            
+                    <h3><b>Cultural control:</b><h3><p class="text">
+                             Among the cultural control, destruction of straw and stubble from infected plants is recommended to reduce the disease. Use varieties 
+                             that are found to be resistant or tolerant against the disease in India. Avoid field activities when the plants are wet. Early planted 
+                             crop has less smut balls than the late planted crop.At the time of harvesting, diseased plants should be removed and destroyed so that 
+                             sclerotia do not fall in the field. This will reduce primary inoculum for the next crop.  Field bunds and irrigation channels should be 
+                             kept clean to eliminate alternate hosts. Excess application of nitrogenous fertilizer should be avoided. Regular monitoring of disease 
+                             incidence during rabi season is very essential. Proper Destruction of straw and stubble.</p>
+                    
+                    <h3><b>Chemical Control:</b></h3><p class="text">
+                             Spraying of copper oxychloride at 2.5 g/litre or Propiconazole at 1.0 ml/litre at boot leaf and milky stages will be more useful to prevent
+                              the fungal infection. Seed treatment with carbendazim 2.0g/kg of seeds. At tillering and preflowering stages, spray Hexaconazole @ 1ml/lit 
+                              or Chlorothalonil 2g/lit. In areas where the disease may cause yield loss, applying captan, captafol, fentin hydroxide, and mancozeb can be 
+                              inhibited conidial germination. At tillering and preflowering stages, spraying of carbendazim fungicide and copper base fungicide can effectively 
+                              control the disease.</p>
+                            
+                     <h3><b>Prevention:</b></h3><p class="text">
+                             Use of disease-free seeds that are selected from healthy crop. Seed treatment with carbendazim 2.0g/kg of seeds. Control insect pests. Split application 
+                             of nitrogen is recommended. Removal and proper disposal of infected plant debris.
+
+                        </p></p></h3>
+            <h4></h4>
+        </div>
+
+
+
+        <div id="hover7" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Bakanae Diseases</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/bakanae-1.jpg' %}" style="width:300px; height:300px;">
+                <img src="{% static 'img/bakanea.jpeg' %}" style="width:300px; height:300px;">
+                <img src="{% static 'img/bakanea2.JPG' %}" style="width:300px; height:300px;">
+            </div>
+            <p>
+                <h3><b>Description:</b></h3><p class="text">
+                         Bakanae is a seedborne fungal disease. 
+                         The fungus infects plants through the roots or crowns. It then grows systemically within the plant.
+                         Infected plants are abnormally tall with pale, thin leaves, produce fewer tillers, and produce only partially 
+                         filled or empty grains.</p>
+                    <h3><b>Symptons: </b></h3><p class="text">
+                         On rice, G. fujikuroi causes bakanae, foot rot, seedling rot, grain sterility and discoloration (Ou, 1985). 
+                         Seedlings with bakanae in the seedbed are several inches taller than normal plants, thin and yellowish-green. 
+                         Affected seedlings are very conspicuous, and are scattered throughout the field. Severely diseased seedlings die
+                         before transplanting, and those that survive may die after transplanting. Not all infected seedlings have bakanae 
+                         symptoms, sometimes they are stunted or they may appear normal.  Yamanaka and Honkura (1978) classified the following 
+                         types of bakanae symptoms: elongation; elongation then normal growth; elongation, then stunted growth; stunted growth; 
+                         and no growth. In crops reaching maturity, infected rice plants show tall, lanky tillers bearing pale-green flag leaves 
+                         which are conspicuous above the general level of the crop. Infected plants usually have only a small number of tillers 
+                         and the leaves dry up one after another from below and die in a few weeks. Occasionally, infected plants survive until 
+                         maturity but bear only empty panicles. White or pink growth of the fungus may be noticed on the lower parts of the dying
+                          plants. In Japan, panicles are often infected; these are referred to as pink panicles. Pink panicles are also caused by 
+                          Fusarium roseum. In India, infected plants developed adventitious roots from the lower nodes (Thomas, 1931). In Japan, 
+                          the angle of the leaf with the stem was found to be wider in diseased plants than in healthy plants (Imura, 1940).The 
+                          symptoms of diseases caused by Fusarium species on other crops are described by Booth (1971). G. fujikuroi caused withering 
+                          of shoots resulting in dead heart or white earheads in Imphal, Manipur, India; diseased plants were stunted and white mycelial 
+                          growth was present at the base of diseased shoots (Singh et al., 1996).</p>
+                    <h3><b>Prevention:</b></h3><p class="text"> 
+                         The most effective means of control for this disease is the use of noninfested seed. Also, when possible, burning plant residues 
+                         with known infection in fall may help limit the disease. Research is under way to identify effective seed treatments. Field trials 
+                         indicate that a seed treatment with sodium hypochlorite (Ultra Clorox Germicidal Bleach) is effective at reducing the incidence of 
+                         this disease. Using a thoroughly premixed solution of 5 gallons of bleach to 100 gallons of water, seed is soaked for 2 hours, then 
+                         drained and soaked in fresh water.</p>
+                    <h3><b>Cultural control:</b></h3><p class="text">
+                         In greenhouse tests, a soil drench with difenoconazole gave the best control of bakanae on rice cultivar Basmati-385, followed by 
+                         benomyl (Ilyas and Iftikhar, 1997). Carbendazim applied as a soil drench also controlled bakanae (Aurangzeb et al., 1998). Mancozeb 
+                         and propiconazole applied at the boot leaf stage gave the best control of grain discoloration of rice; G. fujikuroi was one of the 
+                         fungi associated with grains (Deka et al., 1996). A solution containing Plantpro-45 inhibited growth of conidia suspended for less 
+                         than 30 seconds. Furthermore, seed rot was controlled without diminishing seedling survival at 10 mg per kg maize seed. Thus, G. 
+                         fujikuroi can be suppressed and/or controlled at the postinfection stage with Plantpro-45 (Yates et al., 2003).</p>
+                    <h3><b>Chemical control:</b></h3><p class="text">
+                         As G. fujikuroi is primarily transmitted by seed, generally, seed dressings containing MBC fungicides such as thiophanate-methyl or 
+                         thiram may effectively control bakanae disease of rice and other crops, but development of resistance to benzimidazoles has been 
+                         observed. Newer seed treatments containing DMI fungicides (e.g. azoles) or QoI fungicides (also known as strobilurins) are very 
+                         effective and have not shown any resistance problems up to now.
+                </p></p>
+            <h4></h4>
+        </div>
+
+    
+
+        <div id="hover2" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Brown Spots</h2>
+
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/brown-spot-2.jpg' %}" style="width:300px; height:300px;">
+                <img src="{% static 'img/brownspot1.jpg' %}" style="width:300px; height:300px;">
+                <img src="{% static 'img/brown-spot-3.jpg' %}" style="width:300px; height:300px;">
+            </div>
+            <p>
+                <h3><b>Intro</b></h3><p class="text"> 
+                     Brown spot has been historically largely ignored as one of the most common and most damaging rice diseases.</p>
+                <h3> <b>Symptoms:</b> </h3><p class="text"> 
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;">
+                        <li>The fungus attacks the crop 
+                                from seedling in nursery to milk stage in main field.</li>
+                                <li>The disease appears first as minute brown dots, later 
+                                        becoming cylindrical or oval to circular (resemble sesame seed)</li>
+                                        <li>Infection also occurs on panicle, neck 
+                                                with brown colour appearance.</li>
+                    </ul>
+                     </p>
+                <h3> <b>Cultural method:</b></h3><p class="text"> 
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;">
+                        <li> The use of resistant 
+                                varieties is the most economical means of control. </li>
+                                <li>Growing Resistant varieties like ADT 44,PY 4,CORH 1,CO 44,CAUVERY,
+                                        BHAVANI,TPS 4 and Dhanu.</li>
+                                        <li>Providing proper nutrition for optimum plant growth and prevention of water stress seem to be 
+                                                the most important factors in controlling brown spot.</li>
+                                                <li>Soils known to be low in plant-available silicon should be amended with calcium silicate slag before planting.</li>
+                    </ul>
+                     </p>
+                <h3><b>Chemical method:</b></h3><p class="text"> 
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;">
+                        <li>Spray Mancozeb (2.0g/lit) or Edifenphos (1ml/lit) 
+                                - 2 to 3 times at 10 - 15 day intervals.</li>
+                                <li>Seed treatment with Agrosan or Ceresan 2.5 g/kg seed to ward off seedling blight stage, Spraying copper fungicides 
+                                        to control secondary spread,
+                                        Grisepfulvin, nystatin, aureofungin, and similar antibiotics have been found effective in preventing primary seedling infection.</li>
+                                        <li>seed soak / seed treatment with Captan or  Thiram at 2.0g /kg of seed. Spray Mancozeb (2.0g/lit) or Edifenphos (1ml/lit) 
+                                                - 2 to 3 times at 10 - 15 day intervals. Spray preferably during early hours or afternoon at flowering and post - flowering 
+                                                stages.</li>
+                    </ul>
+                      </p>
+                <h3><b>Prevention:</b></h3><p class="text">
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;">
+                        <li>
+                                Seed treatment with Pseudomonas fluorescens @ 10g/kg of seed followed by seedling dip @ of 2.5 kg or products/ha dissolved in 100 litres 
+                                and dipping for 30 minutes.
+                        </li>
+                        <li>
+                                Seed treatment with Agrosan or Ceresan 
+                                2.5 g/kg seed to ward off seedling blight stage. Since the fungus is seed transmitted, a hot water seed treatment (53-54°C) for 10-12 minutes 
+                                may be effective before sowing.
+                        </li>
+                        <li>
+                                This treatment controls primary infection at the seedling stage. Presoaking the seed in cold water for 8 hours 
+                                increases effectivity of the treatment.
+                        </li>
+                    </ul>
+                       </p>
+                    </p>
+            <h4></h4>
+        </div>
+
+
+
+
+        <div id="hover6" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%"> Blast</h2>
+                <div class="container"  style="width: 70%; ">
+                    <img src="{% static 'img/blast-jupiter-8.jpg' %}" style="width:300px; height:300px;">
+                    <img src="{% static 'img/rice_blast.jpg' %}" style="width:300px; height:300px;">
+                    <img src="{% static 'img/leafblast1.png' %}" style="width:300px; height:300px;">
+                </div>
+                <p>
+                    <h3><b>Intro:</b></h3><p class="text">
+                         Blast is caused by the fungus Magnaporthe oryzae. It can affect all above ground parts of a rice plant: 
+                         leaf, collar, node, neck, parts of panicle, and sometimes leaf sheath.</p>
+                    <h3><b>Symptoms:</b></h3>
+                    <p class="text">
+                         Attacks the crop at all stages from seedlings in Nursery to heading in main field.  On the leaves, the 
+                         lesions start as small water soaked bluish green flecks, soon enlarge and spindle shaped spots with grey 
+                         centre and dark brown margin. Infected Nodes, irregular black areas encircle the nodes.  It may break up all
+                          the plant parts above the infected nodes may die.At the flower emergence, the fungus attacks the peduncle 
+                          which is engirdled, and the lesion turns to brownish – black. Grain filling does not occur.
+                    </p>
+                    <h3><b>Cultural method:</b></h3>
+                    <p class="text">
+                         Avoid stagnating of water in the field. Use IR-64/MTU-1005, Jaya and Jyothi varieties. Do not use high dose 
+                         of nitrogenous fertilizers.</p>
+                    <h3><b>Chemical method:</b></h3>
+                    <p class="text">
+                         Seed dress with either tricyclazole 75 WP or carbendazim 50 WP @ 2g/kg of seed. Spray 1g of carbendazim (780g/acre)
+                          or 1 ml edifenphos (780ml/acre) or 0.6g of  tricyclazole (120g/acre)  in 1 liter of water, depending on severity 
+                          repeat spray at 10-12 days of first spray.</p>
+                    <h3><b>Prevention:</b></h3>
+                    <p class="text">
+                         Use of resistant varieties like Gauthami, IR-36, IR-64, Parijatha, Rasi, Sasyashree, Salivahana, Simhapuri, Srinivas,
+                          Tikkana .Burn previously blast affected straw and stubbles. Use of disease free seeds.  Use of balanced rates of 
+                          nutrition based on soil test- split applications of nitrogen . (Excessive N use can promote excessive luxuriant crop 
+                          growth which increases the relative humidity and leaf wetness of the crop canopy. This can lead to increased infection).
+                 </p>
+                <h4></h4>
+            </div>
+
+
+
+
+
+
+
+            <div id="link-change">
+                    <div class="container"  style="width: 65%;">
+                     <div class="row" >
+                          <div class="col-lg-4">
+                            <div class="thumbnail">
+                                 <div class="card" style="height: 430px;">
+                                    <img src="{% static 'img/download (12).jpeg' %}"  style="width:100%;height: 230px;">
+                                    <h1>Brown Spots</h1>
+                                    <p class="title">CEO & , Example</p>
+                                    <p><b>Causal Organism : Drechslera Oryzae</b></p>
+                                    <div style="margin: 24px 0;">
+                                        <button class="hover-link" id="hover2-hidden">Click</button>
+                
+                                    </div>
+                
+                                </div>
+                 
+                       </div>
+                   </div>
+               
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                    <div class="card" style="height:430px;">
+                                            <img src="{% static 'img/download (13).jpeg' %}" alt="John" style="width:100%;height:230px;">
+                                            <h1>Sheath Blight</h1>
+                                            <p class="title"> & Founder, Example</p>
+                                            <p><b>Causal Organism : Rhizoctonia Solani</b></p>
+                                            <div style="margin: 24px 0;">
+                                                <button class="hover-link" id="hover3-hidden">Click</button>
+                                            </div>
+                        
+                                     </div>
+                  
+                                </div>
+                    </div>
+                
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                        <div class="card" style="height:430px;">
+                                                <img src="{% static 'img/download (14).jpeg' %}" alt="John" style="width:100%" height="230px">
+                                                <h1>Blast</h1>
+                                                <p class="title">CEO & Founder,</p>
+                                                <p><b>Causal Organism : Pyricularia Oryzae</b></p>
+                                                <div style="margin: 24px 0;">
+                                                        <button class="hover-link" id="hover6-hidden">Click</button>                    
+                                                </div>
+                                            </div>   
+                    
+                                 </div>
+                        </div>
+                    </div>
+                 </div>
+                 
+           
+        
+        
+        
+        
+        
+        
+        
+        
+           <div class="container" style="margin-top:2%; width: 65%;">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                             <div class="card" style="height:430px;">
+                                     <img src="{% static 'img/stem-rot.jpg' %}" alt="John" style="width:100%; height:230px;">
+                                     <h1>Stem Rot</h1>
+                                     <p class="title">CEO & , Example</p>
+                                     <p><b>Causal Organism : Helminthosporium</b></p>
+                                     <div style="margin: 24px 0;">
+                                         <button class="hover-link" id="hover9-hidden">Click</button>
+                 
+                                     </div>
+                 
+                                 </div>
+                 
+                        </div>
+                    </div>
+                
+                     <div class="col-lg-4">
+                             <div class="thumbnail">
+                                     <div class="card" style="height:430px;">
+                                             <img src="{% static 'img/bakanae-1.jpg' %}" alt="John" style="width:100%;height: 230px;">
+                                             <h1>Bakanae </h1>
+                                             <p class="title"> & Founder, Example</p>
+                                             <p><b>Causal Organism :Fusarium Moniliforme</b></p>
+                                             <div style="margin: 24px 0;">
+                                                 <button class="hover-link" id="hover7-hidden">Click</button>
+                                             </div>
+                         
+                                      </div>
+                   
+                                 </div>
+                     </div>
+                 
+                         <div class="col-lg-4">
+                                 <div class="thumbnail">
+                                         <div class="card" style="height:430px;">
+                                                 <img src="{% static 'img/download (15).jpeg' %}" alt="John" style="width:100%" height="230px">
+                                                 <h1>False Smut</h1>
+                                                 <p class="title">CEO & Founder,</p>
+                                                 <p><b>Causal Organism : Ustilaginoidea Virens</b></p>
+                                                 <div style="margin: 24px 0;">
+                                                         <button class="hover-link" id="hover8-hidden">Click</button>                    
+                                                 </div>
+                                             </div>   
+                     
+                                  </div>
+                         </div>
+                     </div>
+                  </div>
+                  
+            </div>
+        
+        
+        
+        
+        
+        
+       
+        
+        
+        
+
+
+
+
+
+
+        <div>
+            <marquee class="opo"><b>Public Relation Officer:</b> Sh.Anil K Sharma , <b>Phone:</b> 91-11-25843301 ,
+                <b>Email:</b> anil.cpro@gmail.com <br /></marquee>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <script src="{% static 'js/project.js' %}"></script>
+</body>
+
+</html>

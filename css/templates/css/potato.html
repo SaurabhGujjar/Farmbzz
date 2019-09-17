@@ -1,0 +1,603 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/css/wheat.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+   
+</head>
+
+<body>
+    <div class="back-body">
+        <div class="header" style="background-image: url('{% static 'img/crop3.jpg' %}');">
+            <h1><img src="{% static 'img/Farmbzz.png' %}" width="10%"> <b>Farmbzz-A Farmer Friendly Web App</b>
+            </h1>
+        </div>
+
+
+        <nav class="navbar navbar-inverse" style="margin-top:-10px;">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:25px;" class="navbar-brand" href="http://127.0.0.1:8000">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Disease Book <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a  href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+                        </ul>
+
+
+
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Insect Book <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'mango' %}">Mango</a></li>
+                        <li><a href="{% url 'irice' %}">Rice</a></li>
+                        <li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+                        <li><a href="{% url 'icotton' %}">Cotton</a></li>
+                        <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                        <li><a href="{% url 'ipotato' %}">Potato</a></li>
+                    </ul>
+
+
+                    </li>
+                    <li><a href="{% url 'weather' %}">Weather</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">E-Shikayat</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">Soil Testing</a></li>
+                    <li><a href="{% url 'auto' %}">Auto Diagnosis</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        <h1>Potato</h1>
+
+
+
+
+       
+       
+        <div class="container" style=" width: 100%; padding: 20px; margin-top: -20px;">
+            <div class="w3-content w3-section">
+                <img class="mySlides" src="{% static 'img/potato.jpeg' %}" >
+                <img class="mySlides" src="{% static 'img/potato-3.jpg' %}" >
+                <img class="mySlides" src="{% static 'img/potato1.jpg' %}" >
+                <img class="mySlides" src="{% static 'img/potato2.jpeg' %}" >
+            </div>
+        <!--<div class="mnb">-->
+            <p class="asx"> 
+                    Potato(Solanum tuberosum) is annual plant in the nightshade family (Solanaceae), grown for its starchy edible tubers. The potato is native to the Peruvian-Bolivian Andes
+                    and is one of the world’s main food crops. Potatoes are frequently served whole or mashed as a cooked vegetable and are also ground into potato flour, used in baking and
+                    as a thickener for sauces. The tubers are highly digestible and supply vitamin C, protein, thiamin, and niacin.
+                   
+                   Each leaf is 20–30 cm (about 8–12 inches) long and consists of a terminal leaflet and two to four pairs of leaflets. The white, lavender, or 
+                   purple flowers have five fused petals and yellow stamens. The fruit is a small poisonous berry with numerous seeds.
+                   
+                   The humble potato has fallen in popularity in recent years, due to the interest in low-carb foods.
+                   
+                   However, the fiber, vitamins, minerals, and phytochemicals it provides can help ward off disease and benefit human health.
+                   
+                   They are now the biggest vegetable crop in the United States (U.S.), where the average person eats 55 pounds,
+                    or 35 kilograms (kg) of potatoes every year. They are an important staple food in many countries around the world.
+                   
+                   Here are some key points about potatoes. More detail is in the main article.
+                   Some evidence suggests that potatoes might help reduce inflammation and constipation
+                   A medium potato contains around 164 calories and 30 percent of the recommended daily B6 intake.
+                   A baked potato on a winter's day makes an economical, warming, and nutritious treat.
+                   <br/>
+                
+            </p>
+        </div>
+        
+        <br /> <br /> <br />
+        <div class="container" style=" width: 100%; padding: 20px;">
+        <!--<div class="mnv"></div>-->
+            <p class="asx">
+                <b> Ideal temperature:-</b>
+         
+                potatoes like cool weather and well-drained, loose soil that is about 45 to 55°F (7 to 13°C). In warmer climates, potatoes can be grown as a winter crop.  
+                  <br/>
+              <b>WHEN TO PLANT POTATOES:-</b>
+              Potatoes can be started 0 to 2 weeks after last spring frost. You may
+              plant earlier, as soon as soil can be worked, but be aware that some crops may be ruined by a frost or wet soil.
+             In the trench, place a seed potato piece, cut side down, every 12 to 14 inches and cover with 3 to 4 inches of soil.
+             12 to 16 days after planting, when sprouts appear, use a hole to gently fill in the trench with another 3 to 4 inches of soil, leaving a few inches of the plants exposed.
+             Repeat in several weeks, leaving the soil mounded up 4 to 5 inches above ground level (this is called “hilling”).
+               <br />
+             <b>WATER:-</b>
+               Maintain even moisture, especially from the time when sprouts appear until several weeks after they blossom. The plants need 1 to 2 inches of water per week. If you
+             water too much right after planting and not enough as the potatoes begin to form, the tubers can become misshapen.
+           </div>
+    
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <div>
+            <h1>Common Diseases of Potato:</h1>
+        </div>
+        <br>
+        <br>
+        
+
+
+
+        <div id="hover3" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Brown Rot</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/brownrot.jpg' %}" style="width: 30%;">
+                <img src="{% static 'img/brownrot1.jpg' %}" style="width: 30%;">
+                <img src="{% static 'img/brownrot2.JPG' %}" style="width: 30%;">
+            </div>
+            <p>
+                <h3><b>Introduction:</b></h3><p class="text">Potato brown rot poses a serious threat to GB potato production and
+                     vigilance is required to prevent its introduction and spread. Several isolated cases have occurred linked to 
+                     the presence of the causative bacterium (Ralstonia solanacearum) in certain watercourses and is a notifiable 
+                     disease.</p>
+                <h3 ><b>Symptoms:</b></h3>
+                <p class="text">
+                        Symptom expression is favoured by warm temperatures and high soil moisture. Early symptoms in the field can 
+                        include wilting of the youngest leaflets at the ends of the leaves during the hottest part of the day, plants
+                         may appear to recover at night as temperatures cool. In cool climate wilting does not always occur. Under 
+                         favourable conditions the disease develops, leading to stunting of plants, general wilting and yellowing of 
+                         foliage and eventual plant death. If the stem is cut a mass of white bacterial slime may exude from the vascular tissue.
+ 
+                        Symptoms are most obvious in the tuber; initially a brown staining of the vascular ring (hence brown rot) starting at the
+                        stolon end, with further disease progression the vascular tissue rots away completely and a pale coloured sticky ooze may 
+                        appear at the eyes lenticels and/or stolon end of the tuber to which soil may adhere.</p>
+                <h3><b> Disease Control:</b></h3>
+                <p class="text">
+                        Adopt rotations with pastures, cereals and non-solanaceous crops for periods exceeding five years.
+                        Use of certified seed from reliable sources. Exclusion of the disease may be exercised by quarantine or 
+                        other legislative measures. For example, Tasmania, which so far has not recorded bacterial wilt, is very 
+                        careful to import only healthy seed. New Zealand and South Africa ban the importation of seed from areas known 
+                        to have the disease. Other measures of control include:
+                        Planting in areas where bacterial wilt has not occurred previously.
+                        Control self-sown potatoes.
+                        Control weed hosts such as nightshade, thorn apple, Narrawa burr around dames, along channels and in the paddocks after cropping potatoes.
+                        Avoid deep ploughing – the organisms survive in the deep, cool layers of soil.
+                        Irrigation water should never be allowed to run freely over or below the soil surface. It should never be allowed to return to the dam or
+                         stream from which it is pumped, nor to any other irrigation source.
+                        Regular crop inspection for disease symptoms and remove and destroy diseased plants, tubers and immediate neighbours.
+                        </p>
+                <h3><b>Prevention:</b></h3>
+                <p class="text">
+                        Certified seed free from brown rot disease should be planted.
+                        In case cut potato tubers are being used, they should be kept at 120 C for four days so that the cut surface hardens. The tubers can also be treated same way as whole tubers.
+                        The crop debris should be collected and burnt.
+                        Bacterial - wilt disease can be controlled through Use of disease free whole seed tubers,Early planting,Blind earthing up.Soil application of bleaching powder @ 12 kg/ha at planting.
+                        The disease can be checked by selecting disease-free seed tubers and by adopting various field sanitation measures.
+      A crop rotation to avoid potato, tomato and egg plant in the field for not less than two and preferably three years would help in starving out the pathogen.
+      Varieties which are known to be resistant or tolerant to the disease should be grown.</p>
+            </p>
+            <h4></h4>
+        </div>
+
+        <div id="hover9" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Pink Eye</h2>
+                <div class="container"  style="width: 70%; ">
+                    <img src="{% static 'img/pinkeye.jpeg' %}" style="width: 37%;">
+                    <img src="{% static 'img/pinkeye1.jpg' %}" style="width: 29%;">
+                    <img src="{% static 'img/pinkeye2.jpg' %}" style="width: 28%;">
+                </div>
+                <p>
+                    <h3><b>Description</b></h3><p class="text">
+                            Pink eye is characterized by pink to brown blotches on the skin, usually around the eyes at the apical 
+                            (bud) end of tubers. When the disease is severe, a shallow, reddish brown rot occurs beneath the discolored 
+                            areas. Pink eye is often prevalent on varieties such as Kennebec and Superior, which are highly susceptible 
+                            to verticillium wilt, and commonly occurs during and after a wet harvest season. As a rule, the disease is 
+                            not commercially serious in tablestock or seed potatoes stored under cool, relatively dry conditions. Tuber 
+                            appearance may be somewhat marred, but the affected skin and superficial rot usually dry up. However, in the 
+                            case of chipstock held at warm temperatures and high relative humidity, pink eye often opens the door to secondary 
+                            soft rotting bacteria, which frequently cause extremely heavy losses.</p>
+                        <h3><b>Symptoms</b></h3><p class="text">
+                                The pinkish brown blotching mentioned above shows up readily on moist, freshly dug tubers, but is usually difficult 
+                                to notice on dry, unwashed potatoes. In severe cases, a reddish brown decay extends a few millimeters (2-3) into the
+                                 flesh. The rot may be confused with that caused by late blight, but it is not granular and is more superficial than 
+                                 the latter. If tubers are kept cool and dry, the only symptom commonly encountered is scaly, flaky skin over the affected
+                                  areas. However, tissue weakened by pink eye is often invaded by soft rotting bacteria if potatoes are held at warm (above 45° F) 
+                                  temperatures and high relative humidity. The end result is often the slimy, foul-smelling decay typical of bacterial soft rot.</p>.
+                        <h3><b>Prevention</b></h3><p class="text">
+                              Unexpectedly wet weather obviously cannot be circumvented in humid areas such as the Northeast. But selection of well-drained soils 
+                              will help to reduce the effects of excessive rains. In irrigated regions, restriction of soil moisture at the end of the growing season 
+                              is feasible and to be recommended. Because of the frequent correlation between pink eye and verticillium wilt, it is wise to avoid planting
+                               highly pink eye susceptible varieties on fields that have a history of serious wilt problems. Wilt-resistant varieties should be resorted to
+                                if land availability prohibits such a choice. If possible, tubers should be kept cool and dry after harvest to prevent further development of
+                                 pink eye and secondary soft rot problems.</p>
+                        <h3><b>Cultural Practices</b></h3><p class="text">
+                                One of the most successful and important approaches to pink rot control is to reduce the amount of inoculum in soil by removing crop 
+                                 and volunteer and cull potatoes from the field. Crop rotation with non-host plants can also reduce the amount of inoculum in the soil.
+                                  A 3- to 4-year rotation including legumes is useful to reduce the buildup of P. erythroseptica inoculum in the soil. Soil moisture management
+                                   is also an effective approach to the management of pink rot.  </p>
+                                
+                  </p>
+                <h4></h4>
+            </div>
+
+<!--
+        <div id="hover8" class="html-hidden">
+
+            <h2><img class="normal-content" src="images/i.png" width="3%">Ring Rot</h2>
+            <p>
+                <h3><b>Intro</b></h3><p class="text">
+                    Tan spot,caused by the fungus Pyrenophora tritici-repentis, is a major leaf spot disease of winter wheat in the Great Plains of North
+                    America.It is more severe in wheat cropping systems that maintain crop residue on the soil surface . Although tan spot can be a
+                    serious threat by itself, it occurs more often as part of a leaf spot complex involving tan spot, Septoria leaf blotch, and spot
+                    blotch.The most severe damage occurs from the boot stage to the dough
+                    stage and is great-est on late tillers.Susceptible hosts of P.tritici-repentis include all classes ofwheat,bromegrass,wheatgrass,rye, and several
+                    native prairie grasses that may serve as sources of inoculum as well as sources of genetic diversity forthe pathogen.</p>
+                    
+                    <h3><b>Symptoms tan spot:</b></h3><p class="text">
+                    The initial symptoms of tan spot are small dark brown spots that expand to become tan elliptical or diamond-shaped lesions with a yellow halo. Frequently, 
+                    there is a small, dark-brown spot in the center of the lesion. The lesions often merge as they grow, result- ing in large
+                    sections of affected tissue. Older infected leaves eventually begin to die from the tip back. In Kansas, the first tan spot symptoms usually appear in
+                    late March. When the infection is severe, fields planted with a susceptible variety may become yellow in less than a week. The appearance of these
+                    fields usually improves as plants grow and new leaves mask the old, infected leaves. If weather remains conducive, the disease is likely to move
+                    onto the middle and upper leaves. Tan spot is capable of infecting the developing grain, but kernel infection is rare in Kansas.Several similar
+                    diseases can be confused with tan spot.
+                    <h3><b>Cultural control:</b><h3><p class="text">
+                    A unique three-year conservation tillage rotation system called ecofarming (ecofallow) can be used to reduce the threat of tan
+                    spot. Ecofarming is a crop rotation system of controlling weeds and conserving soil moisture with minimum disturbance of crop
+                    
+                    residue. In this system, corn or sorghum is seeded directly into winter wheat stubble in a winter wheat-grain sorghum or corn-
+                    fallow rotation. In the ecofarming system a crop is planted directly into the residue of a different crop, rather than into the
+                    
+                    residue of the same crop. This crop rotation-fallow system effectively breaks disease cycles which involve host specific
+                    pathogens such the tan spot fungus that survive in crop residue.</p>
+                    
+                    <h3><b>Chemical Control</b></h3><p class="text">
+                    Foliar fungicides can be applied to control tan spot if the disease becomes serious during the crucial post-boot stage of wheat
+                    development.Crop scouting should begin early in the growing season and should continue on a regular basis until disease is
+                    detected or a decision to spray is made based on the observed disease level.</p>
+            </p>
+            <h4></h4>
+        </div>
+-->
+
+
+        <div id="hover7" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Early Blight</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/earlyblight1.jpg' %}" style="width: 28%;">
+                <img src="{% static 'img/erlyblight.jpeg' %}" style="width: 28%;">
+                <img src="{% static 'img/erlyblight2.jpeg' %}" style="width: 38%;">
+            </div>
+            
+            <p>
+                <h3><b>Description:</b></h3><p class="text">
+                    Purple to black horn like bodies that replace grains in the head. Most species have bodies that are larger than
+                    the grain and protrude from the head, so they are usually easy to see at harvest. During flowering yellow
+                    droplets of sugary slime on the head are the first sign of the disease.
+                    Ergot contamination in grain samples is more commonly due to Ergot of Annual Ryegrass or Darnel growing as
+                    a weed in the crop.</p>
+                    <h3><b>Symptons: </b></h3><p class="text">
+                            Symptoms of early blight occur on fruit, stem and foliage of tomatoes and stem, foliage and tubers 
+                            of potatoes.  Initial symptoms on leaves appear as small 1-2 mm black or brown lesions and under conducive 
+                            environmental conditions the lesions will enlarge and are often surrounded by a yellow halo (Figures 2 and 3).
+                             Lesions greater than 10 mm in diameter often have dark pigmented concentric rings.  This so-called “bullseye” 
+                             type lesion is highly characteristic of early blight (Figure 4). As lesions expand and new lesions develop entire 
+                             leaves may turn chlorotic and dehisce, leading to significant defoliation.  Lesions occurring on stems are often 
+                             sunken and lens-shaped with a light center, and  have the typical concentric rings (Figure 5). On young tomato 
+                             seedlings lesions may completely girdle the stem, a phase of the disease known as “collar rot,” which may lead to
+                               reduced plant vigor or death.</p>
+                    <h3><b>Chemical method:</b></h3><p class="text"> 
+                            Fungicides with  protectant and curative properties are registered for use against early blight on potato. The cheaper
+                             protectant fungicides such as mancozeb and chlorothalonil are the foundation of most early blight management programs.
+                              These fungicides must be reapplied every 7-10 days to provide protection of new growth as well as to counter the 
+                              effects of weathering which progressively removes the chemical from the leaf surface. Advantages of these types of 
+                              products include their reliable efficacy and multi-site mode of action, which reduces the risk of resistant isolates 
+                              developing in the pathogen population; therefore, they are useful as tank mix partners or used in rotation with other 
+                              fungicides. Disadvantages include the need to apply regularly and their relatively high use rates.</p>
+                    <h3><b>Cultural method:</b></h3><p class="text">
+                            In many cases employing sound cultural practices that maintain potato and tomato plants in good health will keep early 
+                            blight losses below economic levels.  Because the pathogen over winters on infected crop debris, in-field sanitation 
+                            procedures  that reduce initial inoculum in subsequent crops are beneficial.  Consideration should be given to removing
+                             potentially infected material such as decaying vines and fruits from the vicinity of production fields.  Controlling 
+                             volunteers and weeds, such as nightshade and horsenettle which serve as alternative hosts for the disease, prior to planting 
+                             the new crop will help to reduce the risk of transmission of disease.  Ensuring seed or transplants are pathogen free 
+                             before placing out in the field and rotating fields to a non susceptible host crop will also help to reduce buildup of 
+                             inoculum in the soil.  Optimal tuber maturity is the most important factor for control of tuber infection.  Tubers 
+                             harvested before maturing are susceptible to wounding and infection.  Tuber infection can be reduced by careful handling
+                             during harvest to minimize wounding as well as avoiding harvesting during wet conditions if possible.  Tubers should be
+                             stored at 50 to 55 F, at high relative humidity and with plenty of aeration to promote wound healing which will reduce 
+                             the amount and severity of tuber infections that develop in storage.</p>
+            </p>
+            <h4></h4>
+        </div>
+
+    
+
+        <div id="hover2" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Phoma leaf spot</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/phomaleafspot1.jpg' %}" style="width: 30%;">
+                <img src="{% static 'img/phomaleafspot.jpeg' %}" style="width: 30%;">
+                <img src="{% static 'img/phomaleafspot2.jpeg' %}" style="width: 30%;">
+            </div>
+            
+            <p>
+                <h3><b>Intro</b></h3><p class="text"> 
+                        Potato (Solanum tuberosum L.) leaf spot diseases are caused by different necrotrophic phytopathogens.
+                         They are sometimes confused with late blight, which is caused by Phytophthora infestans. Leaf spot 
+                         diseases are most frequently seen in Bolivia’s cold, damp Andean highlands (they are far less common 
+                         in the warmer regions of the country), usually affecting native crops such as imillas (Solanum tuberosum
+                          subsp. andigena), bitter (Solanum×juzepczukii) and phurejas (Solanum phureja) potatoes .The main production
+                           areas of the Andean highlands in the Departments of La Paz (>4000 m) and Cochabamba (>3500 m) are permanently
+                          cloudy, very damp, and cold - typical of the transition zone between the lowlands and the Andean Region or Cordillera
+                           Real.</p>
+                <h3> <b>Symptoms</b> </h3><p class="text"> 
+                         Small blackish lesions, usually up to 2.5 mm, but sometimes reaching 10 mm wide,
+                         develop on leaves. It differs from symptoms of early blight (Alternaria solani) in that the affected tissues are not 
+                         depressed into the leaf tissue as with early blight. Leaf spots appear first on lower leaves, later on the whole plant.
+                         Coalescence of lesions may occur, with large lesions delimited by leaf veins. Leaves turn black as if scorched. Initially
+                         remaining attached, they later drop. Elongate lesions develop on petioles and stems. The ostioles of pale conidiomata emerge
+                         through the upper epidermis (observation requires a microscope).</p>
+                <h3> <b>Cultural method</b></h3><p class="text"> 
+                         In oilseed rape there are two types of resistance against the phoma pathogens: R-gene
+                         (single gene) and multiple gene (quantitative). R-genes act within the leaf and can be very effective. However, phoma populations
+                         can change rapidly and influence the effectiveness of any particular R-gene. AHDB-funded work has found regional differences in the
+                         effectiveness of different R-genes. Many plant breeders agree that varieties should aim to combine effective R-gene resistance with
+                         background quantitative resistance (that acts within petioles and stems).
+                         The stem canker resistance ratings in the AHDB Recommended List provide information on varietal resistance in winter oilseed rape on
+                          a 1 (susceptible) to 9 (resistant) scale. These annually updated ratings are compiled from final assessments of stem canker severity
+                           in late spring and do not include phoma leaf spotting data, nor do they distinguish between phoma species. Where phoma leaf spot is
+                            a target for management, varieties with a stem canker rating of 5 or above should be selected.</p>
+                <h3><b>Chemical method</b></h3><p class="text"> 
+                         AHDB’s fungicide performance work shows that good control of phoma leaf spot and stem canker can be achieved with two sprays at half the
+                          recommended label rate. It should be noted that all azoles offer protection when applied prior to infection, though product choice will 
+                          also be influenced by requirements for curative activity when small plants are infected. PGR effects of some actives should also be taken
+                           into account where plants are small. Some varieties are also likely to require an autumn fungicide (November) for light leaf spot control 
+                           (if there is a risk) and this should be considered when planning autumn programmes.</p>
+            </p>
+            <h4></h4>
+        </div>
+
+
+
+        <div id="hover6" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%"> Ring Rot</h2>
+                <div class="container"  style="width: 70%; ">
+                    <img src="{% static 'img/ringrot.jpg' %}" style="width: 32%;">
+                    <img src="{% static 'img/ringrot1.jpeg' %}" style="width: 28%;">
+                    <img src="{% static 'img/ringrot2.jpg' %}" style="width: 32%;">
+                </div>
+                <p>
+                    <h3><b>Intro</b></h3><p class="text">Clavibacter michiganensis is one species of phytopathogenic 
+                        bacteria divided into 5 sub-species (subsp.).
+                            Clavibacter michiganensis subsp. sepedonicus (Cms)
+                            causes wilt and ring rot in potato. The bacterium is a
+                            gram-positive, non-spore forming actinomycete with
+                            rod-shaped cells.The main source of Cms infection is from infected
+                            tubers which contaminate other tubers via direct
+                            contact or the contamination of farm machinery and
+                            equipment. Infection is aided by contamination of
+                            knives and ant equipment that may wound tubers.</p>
+                    <h3><b>Symptoms</b></h3>
+                    <p class="text">
+                            Cms causes wilting, stunting and tuber rot. The effects
+                            of the disease on the tubers can be obvious and are
+                            shown in the pictures above. Early tuber symptoms are
+                            a glassy, water-soaked appearance of the vascular
+                            tissues in cut tubers developing to give a pale yellow
+                            ‘cheese-like’ ooze (left). Rotting continues around the
+                            vascular ring, tissues darken, tubers breakdown further
+                            and internal cracks/hollowing occurs (right). Yellowing,
+                            followed by browning can occur during leaf infections.
+                            ‘Latent’ infections of tubers can occur which provides a
+                            long-term source of potential re-infection (bacteria are
+                            present but not showing disease symptoms).</p>
+                </p>
+                    <h3><b>Cultural method</b></h3>
+                    <p class="text">
+                            Seed potatoes must be sourced from certified sources,
+                            which employ a zero-tolerance approach to the disease.
+                            UK Legislation prevents import of seed potatoes from
+                            outside the EU (except Switzerland) and restricts the
+                            movement of potatoes for human consumption (ware
+                            potatoes) from outside of the EU.
+                            Those sites at which ring rot has been found, are
+                            subject to stringent ‘clean-up’ procedures including
+                            incineration or deep burial of infected material and
+                            decontamination of machinery using disinfectants. No
+                            potato tubers, plants or other potential hosts of the
+                            pathogen can be planted until fields are found free of
+                            volunteer potato plants for several years.</p>
+                    <h3><b>Chemical method</b></h3>
+                    <p class="text">
+                            There are no effective biological or chemical control
+                            methods for the disease, and resistance to the disease
+                            in potato stocks has not been found. Control relies
+                            upon keeping the pathogen out. It is a quarantine
+                            disease and notifiable in the UK. </p>
+                </p>
+                <h4></h4>
+            </div>
+
+
+
+
+
+
+
+            <div id="link-change">
+                    <div class="container"  style="width: 65%;">
+                     <div class="row">
+                          <div class="col-lg-4">
+                            <div class="thumbnail">
+                                 <div class="card" style="height: 430px;">
+                                    <img src="{% static 'img/download (9).jpeg' %}" alt="John" style="width:100%"height="230px">
+                                    <h1>P. leaf spot</h1>
+                                    <p class="title">CEO & , Example</p>
+                                    <p><b>Causal Organism : Phoma Andigena Var. Andina</b></p>
+                                    <div style="margin: 24px 0;">
+                                        <button class="hover-link" id="hover2-hidden">Click</button>
+                
+                                    </div>
+                
+                                </div>
+                
+                       </div>
+                   </div>
+               
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                    <div class="card" style="height:430px;">
+                                            <img src="{% static 'img/download (4).jpeg' %}" alt="John" style="width:100%"height="230px">
+                                            <h1>Brown Rot</h1>
+                                            <p class="title"> & Founder, Example</p>
+                                            <p><b>Causal Organism : Pseudomonas Solanacearum</b></p>
+                                            <div style="margin: 24px 0;">
+                                                <button class="hover-link" id="hover3-hidden">Click</button>
+                                            </div>
+                        
+                                     </div>
+                  
+                                </div>
+                    </div>
+                
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                        <div class="card" style="height:430px;">
+                                                <img src="{% static 'img/download (7).jpeg' %}" alt="John" style="width:100%" height="230px">
+                                                <h1>Ring Rot</h1>
+                                                <p class="title">CEO & Founder,</p>
+                                                <p><b>Causal Organism : Corynebacterium Sepedonicum</b></p>
+                                                <div style="margin: 24px 0;">
+                                                        <button class="hover-link" id="hover6-hidden">Click</button>                    
+                                                </div>
+                                            </div>   
+                    
+                                 </div>
+                        </div>  
+                    </div>
+                 </div>
+               
+           
+        
+        
+        
+        
+        
+        
+        
+        
+           <div class="container" style="margin-top:2%; width: 65%;">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                             <div class="card" style="height:430px;">
+                                     <img src="{% static 'img/download (6).jpeg' %}" alt="John" style="width:100%; height:230px;">
+                                     <h1>Pink Eye</h1>
+                                     <p class="title">CEO & , Example</p>
+                                     <p><b>Causal Organism : Pseudomonas Fluorescensi</b></p>
+                                     <div style="margin: 24px 0;">
+                                         <button class="hover-link" id="hover9-hidden">Click</button>
+                 
+                                     </div>
+                 
+                                 </div>
+                 
+                        </div>
+                    </div>
+                
+                     <div class="col-lg-4">
+                             <div class="thumbnail">
+                                     <div class="card" style="height:430px;">
+                                             <img src="{% static 'img/download (10).jpeg' %}" alt="John" style="width:100%"height="230px">
+                                             <h1>Early Blight</h1>
+                                             <p class="title"> & Founder, Example</p>
+                                             <p><b>Causal Organism : Alternaria Solani</b></p>
+                                             <div style="margin: 24px 0;">
+                                                 <button class="hover-link" id="hover7-hidden">Click</button>
+                                             </div>
+                         
+                                      </div>
+                   
+                                 </div>
+                     </div>
+                 <!--
+                         <div class="col-lg-4">
+                                 <div class="thumbnail">
+                                         <div class="card" style="height:430px;">
+                                                 <img src="image/TanSpot01.jpg" alt="John" style="width:100%" height="230px">
+                                                 <h1>Ring Rot</h1>
+                                                 <p class="title">CEO & Founder,</p>
+                                                 <p><b>Causal Organism : Pyrenophora Tritici-Repem</b></p>
+                                                 <div style="margin: 24px 0;">
+                                                         <button class="hover-link" id="hover8-hidden">Click</button>                    
+                                                 </div>
+                                             </div>   
+                     
+                                  </div>
+                         </div>-->
+                     </div>
+                  </div>
+                  
+            </div>
+        
+        
+        
+        
+        
+        
+       
+        
+        
+        
+
+
+
+
+
+
+        <div>
+            <marquee class="opo"><b>Public Relation Officer:</b> Sh.Anil K Sharma , <b>Phone:</b> 91-11-25843301 ,
+                <b>Email:</b> anil.cpro@gmail.com <br /></marquee>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <script src="{% static 'js/project.js' %}"></script>
+</body>
+
+</html>

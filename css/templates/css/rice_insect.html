@@ -1,0 +1,642 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/css/wheat.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+   
+</head>
+
+<body>
+    <div class="back-body">
+        <div class="header" style="background-image: url('{% static 'img/crop3.jpg' %}');">
+            <h1><img src="{% static 'img/Farmbzz.png' %}" width="10%"> <b>Farmbzz-A Farmer Friendly Web App</b>
+            </h1>
+        </div>
+
+
+        <nav class="navbar navbar-inverse" style="margin-top:-10px;">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:25px;" class="navbar-brand" href="http://127.0.0.1:8000/">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Disease Book <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a  href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+                        </ul>
+
+
+
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Insect Book <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'mango' %}">Mango</a></li>
+                        <li><a href="{% url 'irice' %}">Rice</a></li>
+                        <li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+                        <li><a href="{% url 'icotton' %}">Cotton</a></li>
+                        <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                        <li><a href="{% url 'ipotato' %}">Potato</a></li>
+                    </ul>
+
+
+
+                    </li>
+                    <li><a href="{% url 'weather' %}">Weather</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">E-Shikayat</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">Soil Testing</a></li>
+                    <li><a href="{% url 'auto' %}">Auto Diagnosis</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        
+
+
+
+
+       
+       
+        <div class="container" style=" width: 100%; padding: 20px; margin-top: -20px;">
+            <h1 style="margin-top:0px">Rice</h1>
+            <div class="w3-content w3-section">
+                <img class="mySlides" src="{% static 'img/r1.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r2.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r3.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r4.jpeg' %}">
+            </div>
+        <!--<div class="mnb">-->
+            <p class="asx"> Rice is the seed of the grass species Oryza sativa(Asian rice) or Oryza glaberrima(African rice).
+                It is a <br/>cereal grain belongs to the grass family of Graminae and native to the deltas of the great Asian rivers,<br/>
+                 the Ganges, the Chang (Yangtze), and the Tigris and Euphrates. The rice plant grows from 2 to 6 ft tall,<br/> with a
+                  round, jointed stem, long pointed leaves and edible seeds borne in dense head  separate stalks.<br/> Rice is one 
+                  of the most cultivated grain crops in India as well as in Asian countries and a staple diet of major part of 
+                  India. India is an important centre for the rice cultivation and consumption. India stands in<br/> second position after
+                  China  the production of rice. Major rice producing state are Haryana ,Tamil Nadu, West Bengal , Uttar Pradesh 
+                  , Andhra Pradesh . Methods  growing rice differ greatly in different regions, <br/>but in most Asian countries 
+                  including India, the traditional hand methods of cultivating and harvesting<br/> rice are still practiced.Modern 
+                  farming of rice started in most of the countries which drastically reduced<br/> the labour problems and the cost of cultivation.
+                   There are machines available from planting  harvesting<br/> the rice crop. Some parts of Indian rural areas still depend 
+                   on the wet buffalos for land preparation and manpower in plantation and harvesting. People often confuses with paddy 
+                   and rice. Rice when it is still covered by the brown hull is known as paddy. Rice fields are also called paddy fields or rice paddies.
+                     
+                
+                
+            </p>
+        </div>
+        
+        <br /> 
+        <div class="container" style=" width: 100%; padding: 20px; ">
+        <!--<div class="mnv"></div>-->
+        <div class="row">
+                <div class="col-lg-6">
+                    <div class="thumbnail" style="border-color:transparent">
+                    <img src="{% static 'img/ricegraph.png' %}" alt="">
+                </div>
+            </div>
+                <div class="col-lg-6"> 
+                    <div class="thumbnail" style="border-color:transparent;">
+                    <p class="asx" style="padding:50px;">Rice is the staple food for around half of the world’s population. Rice production is largely concentrated in Asia, where it is the major food
+                            source, and weeds, animal pests and pathogens are regularly of economic importance despite regional differences. In India, the overall yield
+                            losses in rice due to insect pests were estimated to be around 37.4 (2003). As per the data available the yield loss due to animal pest were
+                            estimated to be around 15.1%(2001-2003). As per the data available the yield loss due to weeds were estimated to be around 10.2%
+                            (2001-2003). As per the data available the yield loss due to pathogens were estimated to be around 10.8 (2001-2003).As per the data available
+                            the yield loss due to virus were estimated to be around 1.4%(2001-2003).
+                             </p>
+                </div>
+            </div>
+            </div>
+         </div>
+    
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <div>
+            <h1>Common Insects of Rice:</h1>
+        </div>
+        <br>
+        <br>
+        
+
+
+
+        <div id="hover3" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Rice Hispa</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/ricehispa.jpeg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/ricehispa1.jpg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/ricehispa2.jpg' %}" style="width: 300px; height: 300px;">
+            </div>
+            <p>
+                
+                <h3 ><b>Symptoms:</b></h3>
+                <p class="text">
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;">
+                        <li>
+                                Adult beetles feed externally on the upper epidermis, causing a characteristic pattern of white, parallel streaks along the main axis of the leaf.
+                        </li>
+                        <li>
+                                In case of severe infestation, even the veins can be affected, leading to the appearance of large, white blotches. Infested leaves dry up, and present a white appearance in the field. From a distance, severely damaged fields look burnt
+                        </li>
+                        <li>
+                                Adults are often present on the damaged leaves, generally on the upper side. The larvae feed on the green tissue between the two epidermis of the leaves, tunneling along the veins and causing white patches.
+                        </li>
+                    </ul>
+                    </p>
+                    <h3> <b>Triger:</b></h3><p class="text">
+                        <ul style=" font-size: 20px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        color: green;
+                        line-height: 40px;">
+                            <li>
+                                    Damage is caused by the adults and larvae of the rice hispa, Dicladispa armigera. Adult beetles  scrape the upper surface of leaf blades leaving only the lower epidermis.
+                            </li>
+                            <li>
+                                    Eggs are laid inside minute slits on the tender leaves, generally toward the tip. The grub is whitish yellow and flattened. 
+                            </li>
+                            <li>
+                                    It feeds inside the leaf tissue by mining along the leaf axis, and subsequently pupates internally. The adult beetle is somewhat square-shaped, about 3-5 mm in length and width.
+                            </li>
+                        </ul>
+                        
+                        </p>
+                    <h3><b> Chemical method:</b></h3>
+                <p class="text">
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;">
+                        <li>
+                                Always consider an integrated approach with preventive measures together with biological treatments if available.
+                        </li>
+                        <li>
+                                In cases of severe infestation, several chemical formulations containing the following active ingredients could be used to control populations: chlorpyriphos, malathion, cypermethrin, fenthoate
+                        </li>
+                    </ul>
+                    
+                    
+                     
+                        </p>
+                <h3><b>Biological method:</b></h3>
+                <p class="text">
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;" >
+                        <li>
+                                The biological control of this pest is still under study. The larval parasitoid, Eulophus femoralis, has been introduced in Bangladesh and India and may reduce the hispa problem in these areas.
+                        </li>
+                        <li>
+                                The conservation of indigenous natural enemies may also play an important role in the management of this pest. For example, there are small wasps that attack the eggs and larvae and a reduviid bug that eats on the adults.
+                        </li>
+                    </ul>
+                    
+                    
+                      
+                        </p>
+                      <h3><b>Prevention:</b></h3>
+                      <p class="text">
+                          <ul style=" font-size: 20px;
+                          margin-left: 10px;
+                          margin-right: 10px;
+                          color: green;
+                          line-height: 40px;"><li>
+                                No effective resistance trait to this pest is available in rice. Use narrower plant spacing with greater leaf densities that can tolerate higher hispa numbers.
+                          </li>
+                          <li>
+                                Grow crops early in the season to avoid peak populations. Cut the shoot tip to prevent egg laying. Collect adult bugs with a sweeping net, preferably early in the morning when they are less mobile.
+                          </li>
+                          <li>
+                                Remove any kind of weed from the rice field during the crop-free season. Infested leaves and shoots should be clipped and burned, or buried deep in the mud. Avoid excessive nitrogen fertilization in infested fields.
+                          </li>
+                        </ul>
+                            
+                           </p>
+                    </p>
+            <h4></h4>
+        </div>
+
+        <div id="hover9" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Leaf Minor Flies</h2>
+                <div class="container"  style="width: 70%; ">
+                    <img src="{% static 'img/leafminerflies.jpeg' %}" style="width: 300px; height: 300px;">
+                    <img src="{% static 'img/leafminerflies1.jpeg' %}" style="width: 300px; height: 300px;">
+                    
+                </div>
+                <p>
+                        
+                           <h3> <b>Symptoms:</b> </h3><p class="text">   Irregular or serpentine pale grey lines appear on both sides of the leaf blades as the larvae feed. These burrows are usually limited by the leaf veins and contain black fecal material visible as slim trace inside the tunnels. Entire leaves may be covered with mines. Damaged leaves may drop prematurely (defoliation). Defoliation can reduce yield and fruit size and expose fruit to sunburn.
+            
+                               </p>
+                               <h3> <b>Triger:</b></h3><p class="text">   Symptoms are cause by several flies belonging to the family of the Agromyzidae, with  several thousand species worldwide. In spring, females puncture leaf tissues and lay their eggs, usually along the margins. The larvae feed between the upper and the lower leaf surface. They produce large white meandering tunnels with a trail of black fecal material (frass) left behind as they feed. Once they have reached maturity, larvae open a hole on teh underside of the leaf and fall to the ground, where they pupate. Plant debris near the host are alternative pupating places. Leafminer flies are attracted to the color yellow.
+                                </p>
+                               <h3> <b>Biological method:</b></h3><p class="text"> 
+                                    Always consider an integrated approach with preventive measures together with biological treatments if available. Broad-spectrum insecticides of the organophosphates, carbamates and pyrethroids families prevent adults from laying eggs, but they do not kill the larvae. Moreover, they can lead to the decrease of natural enemies and the development of resistance in the fly, which in some cases can actually result in an increase in their numbers. Products such as abamectin, bifenthrin, methoxyfenozide, chlorantraniliprole or spinetoram can be used in a rotation to avoid development of resistance.</p>
+                           <h3><b>Chemical method:</b></h3><p class="text">
+                               
+              Minor infestation just leads to cosmetic damage and does not affect productivity. Parasitic wasps that kill leaf-miner larvae in the mine are commercially available. Ladybirds are also predators of the leaf miner fly. Neem oil,  Neem Seed Kernal Extract (NSKE 5%), Neem oil (15000 ppm) @ 5ml/l or Spinosad deter adults from feeding and reduce egg laying, thus limiting damage. These products have a low impact on natural enemies and pollinators. 
+                               </p>
+                           <h3><b>Prevention:</b></h3><p class="text">
+                                Plant seedlings free of eggs of leafminer flies. Choose varieties with curled leaves that are less susceptible to the pest. Avoid planting alternative hosts next to infested fields. Monitor fields for signs of the insect on leaves. Use yellow sticky traps or yellow basins filled with water to catch the flies. Handpick and destroy mined leaves or heavily-infested plants. Plant hedge rows of flowering plants to prevent migration of the fly. Remove weeds and volunteer plants in and around the fields. Apply mulch around plants to prevent the flies from breeding in the soil. Do not use broad-spectrum insecticide that could affect natural enemies. Plow deep to expose the miners to natural enemies. Alternatively, burn infected plant debris after harvest. Rotate crops with non-susceptible crops.
+            
+                              </p>
+                              
+                </p>
+                <h4></h4>
+            </div>
+
+
+        <div id="hover8" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Rice Case Worm</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/casewarm1.jpeg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/caseworm.jpeg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/caseworm2.jpg' %}" style="width: 300px; height: 300px;">
+            </div>
+            <p>
+                      <h3> <b>Symptoms:</b> </h3><p class="text"> 
+                            The young P. stagnalis larva causes linear grazing of leaves. Rice case worms cut off rice leaves tips at right angles to make leaf cases. Caseworm damage is characterized by leaves cut at right angles as with a pair of scissors and leaf cases floating on water. Larvae feed by scraping the leaf tissue, leaving the papery upper layer of the leaf. Leaves that were fed upon are also left with a ladder-like structures of hard fibers. Damage symptoms can be confused with other defoliating insect pests. To confirm caseworm, visually inspect: first, the ladder-like leaf tissues; second, cut leaves; and third, the presence of leaf cases attached onto leaf sheaths and floating in the water.
+                            </p>
+                           <h3> <b>Triger:</b></h3><p class="text">
+                                The insect is most likely to be found in rice fields with standing water, in both wetland and irrigated environments. It survives on weeds and weedy rice in the field and nearby areas and infect new rice crops when the conditions are favorable. Transplanting young seedlings also favors the development of the insect. Poor preparatory cultivation and soils having deficiency in Zinc will predispose the crop to this disease. However, despite all of this, the insect is commonly found in rice fields in low populations.
+            
+                                </p>
+                           <h3> <b>Biological method:</b></h3><p class="text"> 
+                               
+                                   Encourage biological control agents such as snails (feed on eggs), hydrophilid and dytiscid water beetles (feed on larvae), spiders, dragonflies, and birds (feed on adults). Apply ash or spray neem leaf extracts to the place where insects are found.
+                                     </p>
+                            <h3><b>Chemical method:</b></h3><p class="text"> 
+                                   
+              Always consider an integrated approach with preventive measures together with biological treatments if available. Use foliar treatments of authorized carbamate insecticides and avoid pyrethroids, to which the pest has become tolerant.
+
+                                    </p>
+                       <h3><b>Prevention:</b></h3><p class="text">
+                            Early planting reduces the incidence. Use wider spacing (30 × 20 cm) when planting. Transplant older seedlings and destroy possible remaining eggs. Drain the field and use filters to catch worms when re-irrigating after 2-3 days. Use recommended fertilizer applications, avoiding excess application. Remove weeds and weedy rice in the field and nearby areas to remove alternate hosts. Make sure that adequate potassium is used.
+            
+                           </p>
+
+                </p>
+            
+        </div>
+
+
+
+        <div id="hover7" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Yellow Stem Borer </h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/yellowstemborer.jpeg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/yellowstemborer1.jpg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/yellowstemborer2.jpeg' %}" style="width: 300px; height: 300px;">
+            </div>
+            <p>
+                       <h3> <b>Symptoms:</b> </h3><p class="text"> 
+                            Feeding damage at the base of the plant or along the central stem causes dead tillers at the vegetative stages ('deadhearts') and whitish unfilled panicles ('whiteheads') at the reproductive stages. After hatching, the larvae bore into the leaf sheath and feed on the inner surface of the stem. Tiny holes, frass and fecal matter can be observed on the damaged plant tissues. The larvae can move from one internode to another. During the vegetative stage, larval feeding may not cause visible symptoms because the plant compensates for the damage by producing extra tillers. But, this costs energy and ultimately yield will be affected.</p>
+                           <h3> <b>Triger:</b></h3><p class="text">
+                                The damage is caused by the larvae of the yellow stem borer, Scirpophaga incertulas, a pest of deepwater rice. It is found in plants or leaf-over stubbles in aquatic environments where there is continuous flooding. Young larvae wrap part of a leaf around their body and detach themselves from the plant, falling onto the water surface. They then attach themselves to the base of  a new plant and bore into the stem. High nitrogenous field are highly favorable. Fields planted later in the season also favor the insect, whose population has built up in fields that have been planted earlier. As a comparison, the pest can cause about 20% yield loss in early planted rice, and 80% in late-planted crops.</p>
+                           <h3> <b>Biological method:</b></h3><p class="text"> 
+                                Treatments include the application of products containing bacteria and fungi that affect the larvae (before it penetrate the stem). Neem extracts can also be used for that purpose (15 ml/L of water). Light traps can also be set up to attract the moths. Use pheromone traps or mass traps from 15 days after transplanting (@ 3/acre or @ 8/acre, respectively). Replace on 25, 46 and 57 days after transplanting. Finally, five to six releases of the egg parasitoid Trichogramma japonicum (100,000/ha) starting from 15 days after planting can be planned. Natural predators and parasitoids are numerous and include several species of ants, beetles, grasshoppers, flies, wasps, nematodes, mites, earwigs, birdsdragonflies, damselflies and spiders.
+                              </p>
+                            <h3><b>Chemical method:</b></h3><p class="text"> 
+                                    Always consider an integrated approach with preventive measures together with biological treatments if available. Preventive chemical treatment include the soaking of the roots of the seedlings in 0.02 % chlorpyriphos for 12-14 hrs before transplanting (30 days protection). Apply granular insecticides based on fipronil 0.3G (25 kg/ha), chlorpyrifos or chlorpyrifos methyl 10G (10 kg/ha)or chlorntraniliprole @ 10kg/ha. Spray chlorpyrifos 20 EC or (2000 ml/ha) or fipronil 5SC (800 ml/ha) or chlorantraniliprole (0.3 ml/l) once the threshold is reached (25-30 male moths/trap/week)
+                           </p>
+                       <h3><b>Prevention:</b></h3><p class="text">
+                            Look for varieties that are resistant to this pest. Plant early in the season to avoid the worst damage. Synchronize planting with neighboring farmers. Before transplanting, cut the leaf-top to reduce carry-over of eggs. Avoid planting seedlings too close to each other. Monitor the seedbeds and fields regularly. Handpick and destroy egg masses in seedbeds and during transplanting. Control weeds and volunteer plants in and around the field. Pull out and destroy affected plants. Make a moderate use of nitrogenous fertilizers or manures. Apply the fertilizers in split applications during the season. Raise level of irrigation water periodically to kill the eggs. Do not use broad-spectrum insecticides to fight pests. Harvest the crops at ground level to remove the larvae in stubble. Remove stubbles, plant debris and destroy them after harvest. Plow and flood the field after harvest to drown remaining larvae.
+            
+                           </p>
+                </p>
+            <h4></h4>
+        </div>
+
+    
+
+        <div id="hover2" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Rice Leafroller</h2>
+
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/riceleafroller.jpeg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/riceleafroller.1.jpeg' %}" style="width: 300px; height: 300px;">
+                <img src="{% static 'img/riceleafroller2.jpeg' %}" style="width: 300px; height: 300px;">
+            </div>
+            <p>
+                <h3> <b>Symptoms:</b> </h3><p class="text"> 
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;">
+                        <li>
+                                The adult moths are about the length of your fingernail and have brownish zig-zag lines on the wings. Eggs are usually laid at the tip of the leaf. 
+                        </li>
+                        <li>
+                                Caterpillars fold a rice leaf around themselves and attach the leaf margins together with silk strands. They then feed inside the tubular folded leaf creating longitudinal whitish and transparent streaks on the blade.
+                        </li>
+                        <li>
+                                Also called leaffolder. Sometimes, leaves are folded from tip to basal part. Presence of disc-shaped ovoid eggs laid singly or of fecal matter are also signs of infection.
+                        </li>
+                    </ul>
+
+
+
+                     </p>
+                    <h3> <b>Triger:</b></h3><p class="text">
+                        <ul style=" font-size: 20px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        color: green;
+                        line-height: 40px;">
+                            <li>
+                                    Rice leaffolders occur in all rice environments and are more abundant during the rainy seasons. High humidity, shady areas of the field, and the presence of grassy weeds from rice fields and surrounding borders favor the development of the pest.
+                            </li>
+                            <li>
+                                    Expanded rice areas with irrigation systems, multiple rice cropping and insecticide-induced resurgences are important factors in the insect’s abundance. Heavy use of fertilizer encourages rapid multiplication of the insect. 
+                            </li>
+                            <li>
+
+                         In tropical rice areas, they are active year-round, whereas in temperate countries they are active from May to October. Optimum temperature and humidity are 25-29°C and 80%, respectively.
+                         The young and green rice plants are more severely infested</li>
+                        </ul>
+                         </p>
+                    <h3> <b>Biological method:</b></h3><p class="text">
+                        <ul style=" font-size: 20px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        color: green;
+                        line-height: 40px;">
+                            <li>
+                                    Five to six releases of the egg parasitoid Trichogramma chilonis (100,000 adults/ha) starting from 15 days after planting is effective and economical. Also the protection of natural enemies, like spiders, predatory beetles, frogs and dragon flies.
+                            </li>
+                            <li>
+                                    Pathogenic fungi or bacteria and also some viruses provides good population control. Spread of Neem leaves randomly in the field deters adults from laying eggs
+                            </li>
+                        </ul> 
+              </p>
+                <h3><b>Chemical method:</b></h3><p class="text"> 
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;">
+                        <li>
+                                Always consider an integrated approach with preventive measures together with biological treatments if available. If infestations are high (&g;50%) during booting stage, spray flubendiamide @ 0.1ml or chlorantraniliprole @ 0.3ml/l of water. Other insecticides based on chlorpyriphos, chlorantraniliprole, indoxacarb, azadirachtin, gamma- or lamda-cyhalothrin are also helpful, particularly if infestation is severe.
+
+                        </li>
+                        <li>
+                                Other insecticides include alpha-cypermethrin, abamectin 2% to kill the larvae. Care should be taken not to use chemicals causing resurgence of the insect.
+                        </li>
+                    </ul>
+                  </p>
+                <h3><b>Prevention:</b></h3><p class="text">
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;">
+                        <li>
+                                Use resistant varieties to prevent outbreaks. Monitor fields for signs of the pest. Reduce sowing rates at planting. 
+                        </li>
+                        <li>
+                                Ensure that rice plants get enough water along the season. Plan a balanced fertilization using split nitrogen applications. Make use of light traps or sticky traps to attract and collect adults.
+                        </li>
+                        <li>
+                                Remove grassy weeds from fields and borders. Use thorn wood on the leaves to chase insects away. Avoid ratooning, that is, leaving the cut tillers for the next season. Control insecticide use so that predators (spiders, parasitic wasps, predatory beetles, frogs and dragon flies) can control populations of rice leafroller.
+                        </li>
+                    </ul>
+                     </p>
+                </p>
+                   
+                </p>
+            <h4></h4>
+        </div>
+
+
+
+
+        <div id="hover6" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%"> Asian Rice Gall Midge</h2>
+                <div class="container"  style="width: 70%; ">
+                    <img src="{% static 'img/asianricemidge.jpeg' %}" style="width: 300px; height: 300px;">
+                    <img src="{% static 'img/asianricemidge1.jpeg' %}" style="width: 300px; height: 300px;">
+                    <img src="{% static 'img/asianricemidge2.jpeg' %}" style="width: 300px; height: 300px;">
+                </div>
+                <p>
+                    <h3 ><b>Symptoms:</b></h3>
+                   <p class="text">
+                        Rice gall midge forms a tubular gall at the base of tillers, producing elongated silvery leaf sheaths called onion leaf or silver shoot (about 1 cm wide and 10−30 cm long). The affected tiller inhibits growth of leaves and fails to produce panicles. Plant stunting and leaf deformity, wilting and rolling are also symptoms caused by drought, potassium deficiency, salinity, and by rice thrips. To confirm cause of problem, check for presence of insects. Particularly, elongated-tubular eggs and maggot-like larva feeding inside developing buds. 
+                    </p>
+                       <h3> <b>Triger:</b></h3><p class="text">  The Asian rice gall midge is found in irrigated or rainfed wetland rice environment during the tillering stage of the rice crop. It is also common in upland and deep-water rice. The insect remains dormant in the pupa stage but become active again when the buds start growing after the rains. Population density is favored by cloudy or rainy weather, cultivation of high-tillering varieties, intensive management practices.</p>
+                       <h3><b> Chemical method:</b></h3>
+                   <p class="text">
+                        Always consider an integrated approach with preventive measures together with biological treatments if available. Use time insecticide applications accurately to control outbreak by spraying on emergence of rice gall brood. Products based on chlorpyriphos can be used against the Asian rice gall midge to control its population.
+                      </p>
+                   <h3><b>Biological method:</b></h3>
+                   <p class="text">Parasitization with platygasterid, eupelmid, and pteromalid wasps (parasitize the larvae), phytoseiid mites (feed on eggs), spiders (feed on adults) have successfully been used. Planting more flowering plant that attract the insects around the rice field also helps.
+                    </p>
+                         <h3><b>Prevention:</b></h3>
+                                     <p class="text">
+
+              Use resistant varieties available locally.,Plant early, at the beginning of the rainy season.,Use a wider space between plants or a looser sowing rate.,Plant trap plants that attract beneficial insects around the rice fields.,Remove all off-season plant hosts around the rice field.,Check the optimum recommendation of nitrogen and potash fertilizer.,Use light traps along with sticky board with oil or glue to collect the moths.,Plow plant debris of the previous crop immediately after harvest.,Keep land fallow some weeks or months during off season.
+            
+                              </p>
+                   
+                 </p>
+                <h4></h4>
+            </div>
+
+
+
+
+
+
+
+            <div id="link-change">
+                    <div class="container"  style="width: 65%;">
+                     <div class="row" >
+                          <div class="col-lg-4">
+                            <div class="thumbnail">
+                                 <div class="card" style="height: 430px;">
+                                    <img src="{% static 'img/riceleafroller4.jpg' %}" alt="John" style="width:100%;height: 230px;">
+                                    <h1>Rice Leafroller</h1>
+                                    <p class="title"></p>
+                                    <p><b>Cnaphalocrocis Medinalis</b></p>
+                                    <div style="margin: 24px 0;">
+                                        <button class="hover-link" id="hover2-hidden">Click</button>
+                
+                                    </div>
+                
+                                </div>
+                 
+                       </div>
+                   </div>
+               
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                    <div class="card" style="height:430px;">
+                                            <img src="{% static 'img/ricehispa.jpeg' %}" alt="John" style="width:100%;height:230px;">
+                                            <h1>Rice Hispa</h1>
+                                            <p class="title"></p>
+                                            <p><b>Dicladispa Armigera</b></p>
+                                            <div style="margin: 24px 0;">
+                                                <button class="hover-link" id="hover3-hidden">Click</button>
+                                            </div>
+                        
+                                     </div>
+                  
+                                </div>
+                    </div>
+                
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                        <div class="card" style="height:430px;">
+                                                <img src="{% static 'img/asianricemidge.jpeg' %}" alt="John" style="width:100%" height="230px">
+                                                <h1>Asian Rice Gall Midge</h1>
+                                                <p class="title"></p>
+                                                <p><b>Orseolia oryzae</b></p>
+                                                <div style="margin: 24px 0;">
+                                                        <button class="hover-link" id="hover6-hidden">Click</button>                    
+                                                </div>
+                                            </div>   
+                    
+                                 </div>
+                        </div>
+                    </div>
+                 </div>
+                 
+           
+        
+        
+        
+        
+        
+        
+        
+        
+           <div class="container" style="margin-top:2%; width: 65%;">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                             <div class="card" style="height:430px;">
+                                     <img src="{% static 'img/leafminerflies.jpeg' %}" alt="John" style="width:100%; height:230px;">
+                                     <h1>Leaf Minor Flies</h1>
+                                     <p class="title"></p>
+                                     <p><b>Causal Organism : Helminthosporium</b></p>
+                                     <div style="margin: 24px 0;">
+                                         <button class="hover-link" id="hover9-hidden">Click</button>
+                 
+                                     </div>
+                 
+                                 </div>
+                 
+                        </div>
+                    </div>
+                
+                     <div class="col-lg-4">
+                             <div class="thumbnail">
+                                     <div class="card" style="height:430px;">
+                                             <img src="{% static 'img/yellowstemborer.jpeg' %}" alt="John" style="width:100%;height: 230px;">
+                                             <h1>Yellow Stem Borer </h1>
+                                             <p class="title"></p>
+                                             <p><b>Scirtothaga Incertulas</b></p>
+                                             <div style="margin: 24px 0;">
+                                                 <button class="hover-link" id="hover7-hidden">Click</button>
+                                             </div>
+                         
+                                      </div>
+                   
+                                 </div>
+                     </div>
+                 
+                         <div class="col-lg-4">
+                                 <div class="thumbnail">
+                                         <div class="card" style="height:430px;">
+                                                 <img src="{% static 'img/casewarm1.jpeg' %}" alt="John" style="width:100%" height="230px">
+                                                 <h1>Rice Case Worm</h1>
+                                                 <p class="title"></p>
+                                                 <p><b>Causal Organism : Ustilaginoidea Virens</b></p>
+                                                 <div style="margin: 24px 0;">
+                                                         <button class="hover-link" id="hover8-hidden">Click</button>                    
+                                                 </div>
+                                             </div>   
+                     
+                                  </div>
+                         </div>
+                     </div>
+                  </div>
+                  
+            </div>
+        
+        
+        
+        
+        
+        
+       
+        
+        
+        
+
+
+
+
+
+
+        <div>
+            <marquee class="opo"><b>Public Relation Officer:</b> Sh.Anil K Sharma , <b>Phone:</b> 91-11-25843301 ,
+                <b>Email:</b> anil.cpro@gmail.com <br /></marquee>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <script src="{% static 'js/project.js' %}"></script>
+</body>
+
+</html>

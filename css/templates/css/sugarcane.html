@@ -1,0 +1,605 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/css/wheat.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+   
+</head>
+
+<body>
+    <div class="back-body">
+        <div class="header" style="background-image: url('{% static 'img/crop3.jpg' %}');">
+            <h1><img src="{% static 'img/Farmbzz.png' %}" width="10%"> <b>Farmbzz-A Farmer Friendly Web App</b>
+            </h1>
+        </div>
+
+
+        <nav class="navbar navbar-inverse" style="margin-top:-10px;">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:25px;" class="navbar-brand" href="http://127.0.0.1:8000">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Disease Book <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                       <li><a  href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+                        </ul>
+
+
+
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Insect Book <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'mango' %}">Mango</a></li>
+                        <li><a href="{% url 'irice' %}">Rice</a></li>
+                        <li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+                        <li><a href="{% url 'icotton' %}">Cotton</a></li>
+                        <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                        <li><a href="{% url 'ipotato' %}">Potato</a></li>
+                    </ul>
+
+
+                    </li>
+                    <li><a href="{% url 'weather' %}">Weather</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">E-Shikayat</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">Soil Testing</a></li>
+                    <li><a href="{% url 'auto' %}">Auto Diagnosis</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        <h1>Sugarcane</h1>
+
+
+
+
+       
+       
+        <div class="container" style=" width: 100%; padding: 20px; margin-top: -20px;">
+            <div class="w3-content w3-section">
+                    <img class="mySlides" src="{% static 'img/sugarcane2.jpg' %}">
+                    <img class="mySlides" src="{% static 'img/sugarcane1.jpg' %}">
+                    <img class="mySlides" src="{% static 'img/M.jpeg' %}">
+            </div>
+         <!--<div class="mnb">-->
+            <p class="asx"> 
+                 Sugarcane (Saccharum officinarum L.) is the main sources of sugar in India and holds a prominent position as a cash crop. India is the world’s largest consumer and the 
+                 second largest producer of sugar, topped only by Brazil. Nearly 2.8 lakh farmers have been cultivating sugarcane in the vast area of 4.4 lakh acres and over 11 crore
+                 people are directly or indirectly dependent on the sugar industry in the country. Sugarcane is one of the important commercial crops of India, grown in an area of
+                 3.93 m.ha with annual production of 170 M.T. Sugarcane productivity in India is around 67 t/ha. It is 
+                 one of the most important food-cum-cash crop grown in the country, providing employment to a larger number of people, in addition to earning considerable foreign exchange.<br/>
+                 <b> Climate:-</b>
+                 Sugarcane is able to grow over a prolonged season. Under warm humid conditions, it can continue its growth, unless terminated by flowering. Temperatures above 50°C arrest
+                 For ripening, it needs a cool, dry season; but where rainfall is too heavy and prolonged, the quality of the juice tends to be low, and where the weather remains
+                 its growth; those below  20°C slow it down markedly and severe frost proves fatal. The crop does best in the tropical regions receiving a rainfall of 750-1200mm.
+                 comparatively.<br/>
+                
+
+            </p>
+        </div>
+        
+        <br /> <br /> <br />
+        <div class="container" style=" width: 100%; padding: 20px;">
+        <!--<div class="mnv"></div>-->
+            <p class="asx">
+                    <b> Seed treatment:-</b>
+                     The availability of good quality cane seed materials (setts) from a nursery crop of 10-11 months are essential for better germination and good growth. 
+                     <br/>
+                    <b>Sowing:-</b>
+                     Planting of sugarcane is done in three seasons that is suru- January-February, adsali - July-August and pre seasonal- October-November for planting generally ridges and
+                     furrows are prepared on 100-120cm spacing. For planting one hectare area 25-30 thousand three eye buded cane setts are required.
+                     <br/>
+                    <b>Irrigation:-</b>
+                     During germination phase (1-35 days) there should be enough moisture in the soil for better germination but waterlogging is undesirable as it leads to rotting of setts. 
+                     During this period irrigation can be scheduled at weekly intervals. But irrigation at 10 days interval during tillering stage (36-100 days) is sufficient. 
+                     use only well-rotted manure, mix thoroughly 5% Aldrin or Chlordane dust with the soil; if the standing 
+                     crop is attacked, apply Aldrin E.C. at 3kg a.i/ha diluted with 2,000 litres of water as near the roots as possible. </p>
+           </div>
+    
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <div>
+            <h1>Common Diseases of Sugarcane:</h1>
+        </div>
+        <br>
+        <br>
+        
+
+
+
+        <div id="hover3" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Whip Smutt</h2>
+            <div class="container"  style="width: 70%; ">
+            <img src="{% static 'img/whipamut.jpg' %}" style="width: 30%;">
+            <img src="{% static 'img/whipsmut1.jpg' %}" style="width: 30%;">
+            <img src="{% static 'img/whipsmut2.jpg' %}" style="width: 35%;">
+            </div>
+            <p>
+                <h3><b>Intro</b></h3><p class="text">sugarcane smut is a fungal disease of sugarcane caused by the fungus Sporisorium scitamineum. The disease is known as culmicolous,
+                        which describes the outgrowth of fungus of the stalk on the cane. It attacks several sugarcane species and has been reported to occur on a few other
+                        grass species as well, but not to a critical amount. The most recognizable characteristic of this disease is a black or gray growth that is referred 
+                       to as a "smut whip".[1] Resistance to sugarcane smut is the best course of action for management, but also the use of disease free seed is important.
+                        On smaller scale operations treatments using hot water and removing infected plants can be effective. The main mode of spore dispersal is the wind but
+                        the disease also spreads
+                        through the use of infected cuttings. Sugarcane smut is a devastating disease in sugarcane growing areas globally.</p>
+                <h3 ><b>Symptoms:</b></h3>
+                <p class="text">
+                        Sugarcane smut infects all sugarcane species unless the species is resistant. The damage caused depends on the susceptibility of the species.
+                        Sugarcane fields are planted using vegetative cuttings from mother plants so they have the same genetic make-up of the parent plant.
+                        Seeds are not used in propagation because sugarcane is a multi-species hybrid and therefore is difficult to breed. Sugarcane smuts can 
+                       also infect some other grass species outside of sugarcane. However, mostly it remains on plants of the genus Saccharum.
+                       Two to four months after the fungus has infected the plant, black whip-like structures, instead of a spindle leaf, emerge from the meristem, or growing point,
+                        of the plant. The developing whip is a mixture of plant tissue and fungal tissue. The whip reaches maturity between the sixth and the seventh month. 
+                       When spores that are contained inside the whip are released, the core of the whip remains behind and is a straw-like color.
+                       Plants infected with the fungus usually appear to have thin stalks and are often stunted. They end up tillering much more than normal and this
+                        results in leaves that are more slender and much weaker. They sometimes appear more grass-like than non-infected plants. Less common symptoms of the 
+                       disease are stem or leaf galls and proliferating buds.</p>
+                <h3><b> Chemical method:</b></h3>
+                <p class="text">
+                        Apply any one of the following insecticides if the pest crosses ETL.
+
+                        Carboryl +Lindane (Sevidol) 4% G 12.5 kg, lindane 10 G 12.5 kg, Carbofuron 3G 33 kg (Soil application). 
+                        The granular application should be immediately followed by irrigation.
+                        
+                        Chlorpyriphos 1000 ml a sticker like Teepol (250 ml / 500 l of water) can also be added to make the solution stick on to the surface of
+                         the crop and it is preferable to use high volume sprayer to be most effective.</p>
+                <h3><b>Cultural method:</b></h3>
+                <p class="text">
+                        Use resistant varities like CO 312, CO 421, CO 661, CO 917 and CO 853
+
+                        Early planting during December – January escapes the shoot borer incidence.
+                        
+                        Daincha intercropped sugarcane record the lowest early shoot borer incidence.
+                        
+                        Trash mulching along the ridges to a thickness of 10-15 cm 3 days after planting.
+                        
+                        Ensure adequate moisture to bring down the soil temperature and increase humidity (unfavourable condition
+                         for the multiplication of early shoots borer).</p>
+            </p>
+            <h4></h4>
+        </div>
+
+        <div id="hover9" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Sett Rot</h2>
+                <div class="container">
+                <img src="{% static 'img/redrot.jpg' %}" >
+            </div>
+                <p>
+                    <h3><b>Description:</b></h3><p class="text">
+                            this is one of the most severe of the known diseases of sugarcane. It was first described from Java by Went in 1893.
+                            It is widely distributed throughout the sugar­cane-growing countries of the world, and in fact it is extremely doubtful if there are any sugarcane-growing 
+                           areas where it does not exist
+                           , although it may be much more destructive in some places than others.</p>
+                        <h3><b>Symptoms:</b></h3><p class="text">
+                                The disease primarily affects the setts usually two to three weeks after planning. The fungus is soil-borne and enters through cut ends and
+                                proliferates rapidly in the parenchymatous tissues. The affected tissues first develop a reddish colour which turns to brownish black in the later stages. 
+                               The severely affected setts show internodal cavities covered with the mycelium and abundant spores. A characteristic pineapple smell is associated with
+                                the rotting tissues. The setts may decay before the buds germinate or the shoots may die after reaching a height of about 6-12 inches. Infected shoots are stunted.
+                               </p>.
+                        <h3><b>Chemical Control:</b></h3><p class="text">
+                                Chemicals are used to help supplement all the other management techniques. Chemicals are used to eradicate Phytophthora from production equipment, water, and soil.
+                                Other chemicals are used to protect plant tissues from infection or to inhibit further growth of the fungus in plant tissues.
+                               
+                               Starting with clean tools and production areas will help prevent many diseases. Several kinds of disinfectants are used to treat greenhouse benches, pots, tools, 
+                               
+                               and equipment used for planting and harvesting. Not only will they kill Phytophthora but many other disease-causing organisms. Although they are useful as disinfectants,
+                                these products have a very short residual time and will not be effective as long term fungicides or bactericides. These materials include products with peroxide,
+                                quaternary ammonium, and/or sodium hypochlorite (bleach) bases. Some, such as dilute bleach solutions, are highly corrosive to metal tools or surfaces.
+                                To get the best value from these products, soil or plant debris must be cleaned from objects and surfaces.
+                                Increasing contact time with the disinfectant will also improve the products’ efficacy. Since they are quickly tied up by organic matter do not use on soil or gravel.
+                                 </p>
+                        <h3><b>Cultural Practices:</b></h3><p class="text">
+                                Regulating water is an important way to control sett rot diseases. This includes both the amount, frequency, and duration of water coming to plants and
+                                the way water is conducted away from plants. sett rot generally require free water for a long duration to infect plants. These organisms are not 
+                               active until the soil is at or above field capacity.
+                                In other words, when water does not move down through the soil with the force of gravity.
+                               
+                               Water can be regulated easily where irrigation is used. Methods include longer times between irrigations, shorter irrigations, using the correct size of
+                                nozzle or drip emitter, and preventing irrigation water from constantly contacting tree trunks. In Oregon nurseries, we have noticed that many of the same
+                                crops categorized as “low water users” also tend to be the ones with the most problems with sett rot diseases.
+                               </p>
+                </p>
+                <h4></h4>
+            </div>
+
+
+        <div id="hover8" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%"> Mosaic</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/mosaic.jpg' %}" style="width: 30%;">
+                <img src="{% static 'img/mosaic1.jpg' %}" style="width: 30%;">
+                <img src="{% static 'img/mosaic2.jpg' %}" style="width: 30%;">
+                </div>
+            <p>
+                <h3><b>Intro</b></h3><p class="text">
+                    Sugarcane Mosaic Virus (SCMV) is a plant pathogenic virus of the family Potyviridae. The virus was first noticed in Puerto
+                     Rico in 1916 and spread rapidly throughout the southern United States in the early 1920s.SCMV is of great concern because
+                      of the high economic impact it has on sugarcane and maize.</p>
+                    
+                    <h3><b>Symptoms:</b></h3><p class="text">
+                        The disease appears more prominently on the basal portion of the younger foliage as chlorotic or yellowish stripes 
+                        alternate with normal green portion of the leaf. As infection becomes severe, yellow stripes appear on the leaf sheath
+                         and stalks.  Elongated necrotic lesions are produced on the stalks and stem splitting occurs. The necrotic lesions also
+                          develop on the internodes and the entire plant becomes stunted and chlorotic.  </p>
+                    <h3><b>Prevention:</b><h3><p class="text">
+                            Sugarcane mosaic is managed by resistant varieties and disease-free (approved) seed. Only a small percentage
+                            of varieties are considered too susceptible to be grown
+                            commercially in Australia because we have a mild strain
+                            of the virus.
+                            Regularly obtaining disease-free (approved) seed is important
+                            in the management of mosaic. Disease-free seed plots must
+                            be regularly inspected for mosaic and, if infected plants are
+                            found, they must be immediately destroyed to prevent further
+                            spread. Disease-free seed plots should be located away from
+                            known sources of mosaic infection.Controlling weeds on which the aphid vectors can breed within
+                            fields and surrounding headlands may help to reduce spread.
+                            Quarantine is important to prevent the spread of infected
+                            plants to districts where mosaic is not present and to prevent
+                            exotic strains of mosaic from entering Australia</p>
+                    
+                    <h3><b>Disease Control:</b></h3><p class="text">
+                   
+                         Roguing of infected plants and use of disease free planting material.
+                         Chemical sprays to manage the insect vector population in early crop stage.
+                            G row mosaic-resistant or, at least, tolerant varieties.
+                         Breeding mosaic-resistant varieties is needed.
+                            Saccharum spontaneum L. And  S. Barberi (Jesweit) carry resistance to mosaic and so varieties with this background must be preferred.
+                         Rogue out the diseased clumps periodically. Select setts from the healthy fields as the virus is sett-borne Aerated Steam Therapy (AST) 
+                         at 56˚C for 3 hrs, for setts before planting is advised.
+                         </p>
+            </p>
+            <h4></h4>
+        </div>
+
+
+
+        <div id="hover7" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Leaf Scald</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/leaf-scald.jpg' %}" style="width: 25%;">
+                <img src="{% static 'img/leafscald2.png' %}" style="width: 33%;">
+                <img src="{% static 'img/lrafscald1.jpg' %}" style="width: 40%;">
+                </div>
+            <p>
+                <h3><b>Description:</b></h3><p class="text">
+                          The disease spreads mainly through the infected setts. Xanthomonas albilineans is notorious for its latency and has spread 
+                         surreptitiously in different areas defying even the most ‘vigilant eye’. Mechanical transmission by harvesting and sett 
+                         cutting implements is the most important mode of dissemination of this pathogen. Transmission through fluff (true seed) 
+                         -has also been reported. Depending on the intensity and type of infection the disease may assume serious proportion.</p>
+                    <h3><b>Symptons: </b></h3><p class="text">
+                         Disease symptoms appear in two phases, the chronic and acute phases.
+                         In the chronic phase, "white pencil line" extending entire length of lamina reaching the margin of young leaves and 
+                         stripes diffuse later resulting in leaf etiolation. Drying from tip onwards presents a scalded appearance. Different 
+                         degrees of chlorosis from total albinism to interveinal chlorosis in young leaves during summer, germination of buds 
+                         in acropetal manner with bushy appearance in standing cane, cut open stalks showing dark red vascular strands, prominent
+                          streaks at node invariably in the side shoots, are other prominent symptoms of chronic phase.
+                         In the acute phase the symptoms appear suddenly and die without any major leaf symptoms. The masking of symptoms is more 
+                         common during monsoon and symptoms may appear suddenly any time during crop growth.
+                  </p>
+                    <h3><b>Prevention:</b></h3><p class="text"> 
+                         Leaf scald may be controlled effectively by the simultaneous use of several methods. The cultivation of resistant 
+                         varieties should be supplemented with the use of disease-free cuttings from nurseries. These cuttings should be 
+                         established using sets which have undergone a cold soak/long hot-water treatment in which the cuttings are soaked 
+                         in cold running water for 48 h followed by hot-water treatment at 50°C for 3 h.
+
+                         It is necessary to disinfect cutting instruments regularly when cuttings are prepared and during harvest because X.
+                         albilineans is transmitted by knives and harvesters. Legislation and quarantine are important to regulate the movement
+                          of sugarcane plant material (Frison and Putter, 1993).</p>
+                    <h3><b>Disease control:</b></h3><p class="text">
+                         Control of leaf scald involves a combination of deploying
+                         resistant varieties, disease-free or approved seed schemes and
+                         hygiene. Some level of varietal resistance is required to control
+                         the disease.
+                         Disease-free seed is produced for distribution to farmers by
+                         repeated cold-soak long hot-water treatment (40 hour soak in
+                         water at ambient temperature followed by 50o
+                         C for 3 hours)
+                         of nucleus or mother plot cane. If leaf scald is common in an
+                         area, the mother plot and approved seed plot may have to be
+                         located in a low risk area.</p>
+                    
+                </p>
+            <h4></h4>
+        </div>
+
+    
+
+        <div id="hover2" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Red Rot</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/redrot.jpeg' %}" style="width: 22%;">
+                <img src="{% static 'img/redrot1.jpeg' %}" style="width: 40%;">
+                <img src="{% static 'img/redrot3.png' %}" style="width: 30%;">
+                </div>
+            
+            <p>
+                <h3><b>Intro</b></h3><p class="text"> This is one of the most severe of the known diseases of sugarcane. It was first described from Java by Went in 1893. 
+                        It is widely distributed throughout the sugar苞ane-growing countries of the world, and in fact it is extremely doubtful if there are any sugarcane-growing areas
+                         where it does not exist, although it may be much more destructive in some places than others.
+                         disease was very widespread and virulent in North Behar and Eastern part of the United Provinces during 1939 and 1942. 
+                        It was so destructive that it almost whipped out the sugarcane plantations in those areas.</p>
+                <h3> <b>Symptoms:</b> </h3><p class="text"> The first external evidences of disease are the drooping, withering, and finally yellowing of the upper leaves. This is followed by a similar wilting of the
+                        entire crown,
+                        and finally the entire plant shows indications of disease and dies. When not severe, the eyes frequently die and blacken and the dead areas extend out from the nodes.
+                       
+                       Infection in the stem being internal, the presence of the disease is not visible externally. Upon splitting a diseased cane during the early stages of the disease,
+                        it will be found that the fibro-vascular bundles near the base are reddish in colour. The host tissue reacts vigorously to the presence of the fungus and some
+                        kind of reaction or change sets in the host cells in advance of the hyphal invasion.
+                       
+                       The protoplasm changes colour and a gummy dark-red material oozes out of the cells filling the in負ercellular spaces. The soluble pigment present in this ooze,
+                        is absorbed by the cell wall producing the characteristic red rot appearance.</p>
+                <h3> <b>Cultural method:</b></h3><p class="text"> Selection of Geographical area which on the basis of the favourable temperature and humidity requirement for a particular crop but unflavored to the fungi 
+                        and bacteria.
+                        ny soil borne diseases are controlled by proper selection of the field. It is quite possible that a particular field soil contains a pathogen species.
+                         In that case the particular crop is not sown in that field for several years. The causal organism of Red rot of sugarcane Colletotrichum falcatum survives 
+                        in the soil for several months.
+                         Water drainage is also taken care of while selecting the field.</p>
+                <h3><b>Chemical method:</b></h3><p class="text"> Avoid planting of highly susceptible varieties.
+
+                        Follow the long furrow method or pair row method of layout for planting and irrigation.
+                        
+                        Planting material should be collected from the seed nursery.
+                        
+                        Before primary and general cane planting set treatment with 0-1% carbendazim (Bavistin) for 15-20 minutes dipping should be followed.
+                        
+                        To control the secondary spread of the disease, follow the following practices
+                        
+                        Rogue out the affected clumps & destroy it by burning. Stools should not buried in the soil or should not be kept or thrown on bunds.
+                       	
+                        After roguing, drench the spot with the 0.1% carbendazim containing fungicide.
+                       	
+                        Foliar application of the Bavistin (0.1%), or Baynlate 70% w.p. (0.1% to 0.15%) by 2 to 3 times at an interval of 10 to 12 days may be tried. 
+                        Spraying may be done immediately after the disease incidence.
+                      	
+                        After the harvest of the diseased crop, left over trash with stools should be burnt immediately.
+                        </p>
+            </p>
+            <h4></h4>
+        </div>
+
+
+
+
+        <div id="hover6" class="html-hidden">
+                
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%"> Wilt</h2>
+                <div class="container"  style="width: 70%; ">
+                    <img src="{% static 'img/wilt.jpeg' %}" style="width: 30%;">
+                    <img src="{% static 'img/wilt1.JPG' %}" style="width: 30%;">
+                    <img src="{% static 'img/wilt2.jpeg' %}" style="width: 35%;">
+                    </div>
+                <p>
+                    <h3><b>Intro</b></h3><p class="text">
+                         Wilt is also an important fungal disease of sugarcane.  The term ‘wilt’ is a misnomer in sugarcane as affected plants
+                          dry up gradually without displaying any conventional wilt syndrome as evidenced in other crops (there is no suddenness
+                           in death/drying of plant). The causal organism of this disease has been shrouded in controversy for long, but now it 
+                           is believed that it is a ‘disease complex’ produced by different pathogens rather than the act of a single pathogen 
+                           species. The fungi implicated in wilt disease are namely, Fusarium moniliforme var. subglutinans, F. sacchari (Cephalosporium 
+                           sacchari) and Acremonium spp. (Acremonium implicatum in particular).</p>
+                    <h3><b>Symptoms:</b></h3>
+                    <p class="text">
+                         Typical wilt symptoms appear during monsoon and post monsoon periods.
+                         Affected plant appears wilted and conspicuously stunted.
+                         The crown leaves turn yellow, loose turgor and eventually withers.
+                         Wilt-affected canes loose their normal colour and are light in weight.
+                         The most characteristic symptom during the early stage of infection is the presence of diffused reddish brown patches on the internal tissue.
+                         Later canes become light, hallow and shrink.
+                         Disease reduces germination and in severe cases total cane yield losses occur due to drying up of shoots and wilting of the stalks.
+                  
+                </p>
+                    <h3><b>Cultural method:</b></h3>
+                    <p class="text">
+                         Leaf scald may be controlled effectively by the simultaneous use of several methods. The cultivation of resistant 
+                         varieties should be supplemented with the use of disease-free cuttings from nurseries. These cuttings should be 
+                         established using sets which have undergone a cold soak/long hot-water treatment in which the cuttings are soaked 
+                         in cold running water for 48 h followed by hot-water treatment at 50°C for 3 h.
+
+                         It is necessary to disinfect cutting instruments regularly when cuttings are prepared and during harvest because X. 
+                          albilineans is transmitted by knives and harvesters. Legislation and quarantine are important to regulate the movement
+                         of sugarcane plant material (Frison and Putter, 1993).</p>
+                    <h3><b>Chemical method:</b></h3>
+                    <p class="text">
+                         Leaf scald may be controlled effectively by the simultaneous use of several methods. The cultivation of resistant 
+                         varieties should be supplemented with the use of disease-free cuttings from nurseries. These cuttings should be 
+                         established using sets which have undergone a cold soak/long hot-water treatment in which the cuttings are soaked 
+                         in cold running water for 48 h followed by hot-water treatment at 50°C for 3 h.
+ 
+                         It is necessary to disinfect cutting instruments regularly when cuttings are prepared and during harvest because X.
+                         albilineans is transmitted by knives and harvesters. Legislation and quarantine are important to regulate the movement
+                          of sugarcane plant material (Frison and Putter, 1993).</p>
+                </p>
+                <h4></h4>
+            </div>
+
+
+
+
+
+
+
+            <div id="link-change">
+                    <div class="container"  style="width: 65%;">
+                     <div class="row">
+                          <div class="col-lg-4">
+                            <div class="thumbnail">
+                                 <div class="card" style="height: 430px;">
+                                    <img src="{% static 'img/b.jpg' %}" alt="John" style="width:100%"height="230px">
+                                    <h1>Red Rot</h1>
+                                    <p class="title">CEO & , Example</p>
+                                    <p><b>Causal Organism : Colletotrichum  Falcatum</b></p>
+                                    <div style="margin: 24px 0;">
+                                        <button class="hover-link" id="hover2-hidden">Click</button>
+                
+                                    </div>
+                
+                                </div>
+                
+                       </div>
+                   </div>
+               
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                    <div class="card" style="height:430px;">
+                                            <img src="{% static 'img/download (17).jpeg' %}" alt="John" style="width:100%"height="230px">
+                                            <h1>Whip Smutt</h1>
+                                            <p class="title"> & Founder, Example</p>
+                                            <p><b>Causal Organism : Ustilago  Scitaminea</b></p>
+                                            <div style="margin: 24px 0;">
+                                                <button class="hover-link" id="hover3-hidden">Click</button>
+                                            </div>
+                        
+                                     </div>
+                  
+                                </div>
+                    </div>
+                
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                        <div class="card" style="height:430px;">
+                                                <img src="{% static 'img/download (18).jpeg' %}" alt="John" style="width:100%" height="230px">
+                                                <h1>Wilt</h1>
+                                                <p class="title">CEO & Founder,</p>
+                                                <p><b>Causal Organism : Fusarium  Moniliforme</b></p>
+                                                <div style="margin: 24px 0;">
+                                                        <button class="hover-link" id="hover6-hidden">Click</button>                    
+                                                </div>
+                                            </div>   
+                    
+                                 </div>
+                        </div>
+                    </div>
+                 </div>
+                 
+           
+        
+        
+        
+        
+        
+        
+        
+        
+           <div class="container" style="margin-top:2%; width: 65%;">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                             <div class="card" style="height:430px;">
+                                     <img src="{% static 'img/redrot.jpg' %}" alt="John" style="width:100%; height:230px;">
+                                     <h1>Sett Rot</h1>
+                                     <p class="title">CEO & , Example</p>
+                                     <p><b>Causal Organism : Ceratocystis  paradoxam</b></p>
+                                     <div style="margin: 24px 0;">
+                                         <button class="hover-link" id="hover9-hidden">Click</button>
+                 
+                                     </div>
+                 
+                                 </div>
+                 
+                        </div>
+                    </div>
+                
+                     <div class="col-lg-4">
+                             <div class="thumbnail">
+                                     <div class="card" style="height:430px;">
+                                             <img src="{% static 'img/download (19).jpeg' %}" alt="John" style="width:100%"height="230px">
+                                             <h1>Leaf Scald</h1>
+                                             <p class="title"> & Founder, Example</p>
+                                             <p><b>Causal Organism : Xanthomonas albilinean</b></p>
+                                             <div style="margin: 24px 0;">
+                                                 <button class="hover-link" id="hover7-hidden">Click</button>
+                                             </div>
+                         
+                                      </div>
+                   
+                                 </div>
+                     </div>
+                 
+                         <div class="col-lg-4">
+                                 <div class="thumbnail">
+                                         <div class="card" style="height:430px;">
+                                                 <img src="{% static 'img/g.jpg' %}" alt="John" style="width:100%" height="230px">
+                                                 <h1> Mosaic</h1>
+                                                 <p class="title">CEO & Founder,</p>
+                                                 <p><b>Causal Organism : Sugarcane Mosaic Virus</b></p>
+                                                 <div style="margin: 24px 0;">
+                                                         <button class="hover-link" id="hover8-hidden">Click</button>                    
+                                                 </div>
+                                             </div>   
+                     
+                                  </div>
+                         </div>
+                     </div>
+                  </div>
+                  
+            </div>
+        
+        
+        
+        
+        
+        
+       
+        
+        
+        
+
+
+
+
+
+
+        <div>
+            <marquee class="opo"><b>Public Relation Officer:</b> Sh.Anil K Sharma , <b>Phone:</b> 91-11-25843301 ,
+                <b>Email:</b> anil.cpro@gmail.com <br /></marquee>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <script src="{% static 'js/project.js' %}"></script>
+</body>
+
+</html>

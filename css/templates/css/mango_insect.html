@@ -1,0 +1,635 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/css/wheat.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+   
+</head>
+
+<body>
+    <div class="back-body">
+        <div class="header" style="background-image: url('{% static 'img/crop3.jpg' %}');">
+            <h1><img src="{% static 'img/Farmbzz.png' %}" width="10%"> <b>Farmbzz-A Farmer Friendly Web App</b>
+            </h1>
+        </div>
+
+
+        <nav class="navbar navbar-inverse" style="margin-top:-10px;">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:25px;" class="navbar-brand" href="http://127.0.0.1:8000/">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Disease Book <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a  href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+                        </ul>
+
+
+
+                   
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Insect Book <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'mango' %}">Mango</a></li>
+                        <li><a href="{% url 'irice' %}">Rice</a></li>
+                        <li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+                        <li><a href="{% url 'icotton' %}">Cotton</a></li>
+                        <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                        <li><a href="{% url 'ipotato' %}">Potato</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="{% url 'weather' %}">Weather</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">E-Shikayat</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">Soil Testing</a></li>
+                    <li><a href="{% url 'auto' %}">Auto Diagnosis</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        
+
+
+
+
+       
+       
+        <div class="container" style=" width: 100%; padding: 20px; margin-top: -20px;">
+            <h1 style="margin-top:0px">Mango</h1>
+            <div class="w3-content w3-section">
+                <img class="mySlides" src="{% static 'img/r1.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r2.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r3.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r4.jpeg' %}">
+            </div>
+        <!--<div class="mnb">-->
+            <p class="asx"> Mango trees grow to 35–40 m (115–131 ft) tall, with a crown radius of 10 m (33 ft). The trees are long-lived, as some specimens still fruit after 300 years.[11] In deep soil, the taproot descends to a depth of 6 m (20 ft), with profuse, wide-spreading feeder roots and anchor roots penetrating deeply into the soil.[1] The leaves are evergreen, alternate, simple, 15–35 cm (5.9–13.8 in) long, and 6–16 cm (2.4–6.3 in) broad; when the leaves are young they are orange-pink, rapidly changing to a dark, glossy red, then dark green as they mature.The mango is now cultivated in most frost-free tropical and warmer subtropical climates; almost half of the world's mangoes are cultivated in India alone, with the second-largest source being China.In 2016, global production of mangoes (report includes mangosteens and guavas) was 46.5 million tonnes, led by India with 40% (19 million tonnes) of the world total (table).
+                
+                
+            </p>
+        </div>
+        
+        <br /> 
+      
+        <div class="container" style=" width: 100%; padding: 20px; ">
+                <!--<div class="mnv"></div>-->
+                <div class="row">
+                        <div class="col-lg-6">
+                            <div class="thumbnail" style="border-color:transparent">
+                            <img src="{% static 'img/ricegraph.png' %}" alt="">
+                        </div>
+                    </div>
+                        <div class="col-lg-6"> 
+                            <div class="thumbnail">
+                            <p class="asx">Fruits are known as protective foods because of their richness in vitamins, minerals and
+                                    antioxidants, and their daily consumption protects mankind from various kinds of diseases. As
+                                    per the data available from the sources the yield loss in mango due to hopper is estimated to be
+                                    55%. As per the data available the yield loss in mango due to fruit fly is estimated to be 45%.
+                                    As per the data available the yield loss in mango due to mealybug is estimated to be 70%.</p>
+                        </div>
+                    </div>
+                    </div>
+                 </div>
+    
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <div>
+            <h1>Common Insects of Mango:</h1>
+        </div>
+        <br>
+        <br>
+        
+
+
+
+        <div id="hover3" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Mango Fruit Fly</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/fruit.jpeg' %}" style="width: 27%;">
+                <img src="{% static 'img/fruit1.jpeg' %}" style="width: 30%;">
+                <img src="{% static 'img/fruit2.jpg' %}" style="width: 35%;">
+            </div>
+            <p>
+                
+                    <h3> <b>Symptoms:</b> </h3><p class="text"> 
+    
+                        <ul style=" font-size: 20px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        color: green;
+                        line-height: 40px;"><li>
+                                Nymphs and adults of Idioscopus species suck phloem sap from twigs, inflorescences, tender leaves and fruits. Affected plant tissue turns brown, and may deform and dry up
+                        </li>
+                        <li>
+                                Young flowers fail to develop, thereby influencing fruit set and development. While feeding on mango trees the hoppers produce sugary fluids (honeydew) that
+                        </li>
+                        <li>
+                                The fungal growth on leaves affects photosynthesis, impacting tree vigor and reducing its productivity. Mango hoppers lay their eggs into the leaves and flower stems of mango trees, which may also cause damage to the tissues.
+                        </li>
+                    </ul>
+                      </p>
+                        <h3> <b>Triger:</b></h3><p class="text">
+                            <ul style=" font-size: 20px;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                            color: green;
+                            line-height: 40px;">
+                                <li>
+                                        Mango leafhoppers usually feature a wedge-like shape with a broad, round head, and globular eyes. Adults are golden or dark brown and about 4-5mm long.
+                                </li>
+                                <li>
+                                        Nymphs are yellow-brown, with red eyes. Mango hoppers lay their eggs singly in the florets, leaf veins and leaf lamina, depending on the species.
+                                </li>
+                                <li>
+                                        Between 100 and 200 eggs may be laid. They prefer shade environments with high humidity. Adult hoppers are good fliers and spread rapidly over short distances. Transport of nursery plants may spread the insects to other orchards or areas.
+                                </li>
+                            </ul>
+                            
+                            
+                 </p>
+                        <h3> <b>Biological method:</b></h3><p class="text"> 
+                            <ul style=" font-size: 20px;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                            color: green;
+                            line-height: 40px;">
+                                <li>
+                                        Biological control agents such as the predators Mallada boninensis and Chrysopa lacciperda and the egg parasite Polynema sp. can reduce hopper populations.
+                                </li>
+                                <li>
+                                        Alternatively, affected mango trees can be treated with oil-based sprays containing the fungi Beauveria bassiana or Metarhizium anisopliae. Treatment at rates of 2-3 times per week is recommended. Sprays based on neem oil (3%) can also reduce Idioscopus spp. populations by up to 60%.
+                                </li>
+                            </ul>
+                           </p>
+                    <h3><b>Chemical method:</b></h3><p class="text"> 
+                        <ul style=" font-size: 20px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        color: green;
+                        line-height: 40px;">
+                            <li>
+                                    Always consider an integrated approach with preventive measures together with biological treatments if available. Use sprays containing cypermethrin (0.4%), these have proven highly effective.
+                            </li>
+                            <li>
+                                    Insecticides containing dimethoate can be sprayed or injected into the trunk. Two sprays, 7 days apart, are recommended before the beginning of flowering, thereby reducing side effects on pollinators.
+                            </li>
+                        </ul>
+                            </p>
+                    <h3><b>Prevention:</b></h3><p class="text">
+                        <ul style=" font-size: 20px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        color: green;
+                        line-height: 40px;">
+                            <li>
+                                    Keep a wide distance between trees when planting. Regularly monitor the orchards for nymphs and adults of Idioscopus species.
+                            </li>
+                            <li>
+                                    Chose varieties which are less susceptible to mango hoppers. Do not transport infected mango plants between orchards.
+                            </li>
+                        </ul>
+                         </p>
+                    </p>
+                       
+                
+            <h4></h4>
+        </div>
+
+        <div id="hover9" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Oriental Fruit Fly</h2>
+                <div class="container"  style="width: 70%; ">
+                    <img src="{% static 'img/oriental.jpeg' %}" style="width: 29%;">
+                    <img src="{% static 'img/oriental1.png' %}" style="width: 30%;">
+                    <img src="{% static 'img/oriental2.jpeg' %}" style="width: 33%;">
+                </div>
+                <p>
+                        <h3><b>Intro</b></h3><p class="text"> 
+                                Brown spot has been historically largely ignored as one of the most common and most damaging rice diseases.</p>
+                           <h3> <b>Symptoms:</b> </h3><p class="text">  The oriental fruit fly only attacks ripe bananas. Unripe fruits that are still attached to the plant for up to one week past the scheduled harvest are not susceptible. Harvested fruits may also hold for 1 to 4 days depending on the variety. In ripe fruit, damage usually consists of breakdown of tissues and internal rotting associated with maggot infestation. Following oviposition there may also be some necrosis around the puncture marks ('sting'). The mechanical damage to fruits (or by other means) compromises the integrity of the skin and may favor the oviposition into the fruit flesh.
+
+                               </p>
+                               <h3> <b>Triger:</b></h3><p class="text">   
+                                      The damage is caused by the oriental fruit fly Bactrocera dorsalis. The color of the fly is very variable, but there are predominantly yellow and dark brown complemented with black markings on the thorax. The development from egg to adult under summer conditions requires about 16 days but this period may be extended considerably by cool weather. Females can lay from 1,200 to 1,500 eggs into ripe fruits during her lifetime, causing considerable damage if left unchecked. After feeding on the banana flesh, the mature larva emerges from the fruit, drops to the ground, and forms a tan to dark brown pupa. Nine days are required for adults to reach their sexual maturity after emergence. Beside banana, avocado, mango and papaya are the most commonly attacked. Other hosts include stone fruits, citrus, coffee, fig, guava, passion fruit, pear, persimmon, pineapple and tomato. 
+
+                                </p>
+                               <h3> <b>Biological method:</b></h3><p class="text"> 
+                                   Sterile males of Bactrocera dorsalis have been used in Japan to eradicate the fly from plantations, combined with traps. Use bait sprays with a suitable organically accepted insecticide (e.g. spinosad) mixed with a protein bait. Install pheromone traps to monitor fly number. If catches exceeds 8 flies per day for 3 consecutive days or if 10% rosette flowers or 10% damaged green bolls are observed in the crop, then follow the recommended chemical treatments immediately.</p>
+                           <h3><b>Chemical method:</b></h3><p class="text">
+                                   Always consider an integrated approach with preventive measures and biological treatments if available. If pheromone trap catches exceeds 8 per day for 3 consecutive days or if 10% rosette flowers or 10% damaged green bolls are observed in the crop, then       follow the control measures below: Use baits with a suitable insecticide (e.g. malathion) mixed with a protein solution. The most widely protein used is the hydrolysed form, but some of these are highly phytotoxic. Light-activated xanthene dye is an effective alternative. The males of B. dorsalis are attracted to methyl eugenol (4-allyl-1,2-dimethoxybenzene), sometimes in very large numbers.
+
+
+                               </p>
+                           <h3><b>Prevention:</b></h3><p class="text">
+                                Chose resilient varieties, if available in your area. Destroy unmarketable and infested fruits. Rake or disturb the soil below the fruit trees to disturb the pupae. Monitor the field by using pheromone traps baited with methyl eugenol as male lure. Wrap the fruit before maturation, either in newspaper, a paper bag, or polythene sleeve.
+
+
+            
+                              </p>
+                              
+                </p>
+                <h4></h4>
+            </div>
+
+
+        <div id="hover8" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Thrips In Mango</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/thripds.jpeg' %}" style="width: 28%;">
+                <img src="{% static 'img/thrips.jpeg' %}" style="width: 30%;">
+                <img src="{% static 'img/trips2.jpeg' %}" style="width: 33%;">
+            </div>
+            <p>
+                    <h3><b>Intro</b></h3><p class="text"> 
+                            Brown spot has been historically largely ignored as one of the most common and most damaging rice diseases.</p>
+                       <h3> <b>Symptoms:</b> </h3><p class="text"> 
+                           Young leaves are scarred, curled along the midrib, distorted, and may drop prematurely. Twigs of infested shoots are much shorter than uninfected ones. Heavily attacked plants are stunted or dwarfed. Infested fruits show silvery spots that later turn brown. Some of the species of Scirtothrips may also cause lesions on the fruits' peel, reducing their market value. Adult thrips are dark brown to black and just over 1 mm long. Nymphs are cream yellow with two bright red bands around their body. Both nymphs and adults rub and suck sap from the surface of plant tissues and leave silvery or dark rusty stains. Fecal excretions on the surface of infested plants attract sooty mold that may worsen the symptoms. It is considered one of the key pests of mango in south-east Asia.
+
+
+                            </p>
+                           <h3> <b>Triger:</b></h3><p class="text">
+                                
+                                 All species of Scirtothrips are polyphagous and can feed on a variety of hosts. Adults usually have a 1 mm long, black body while nymphs (young thrips) are cream yellow with two bright red bands around their body (in some species). Females lay small eggs       singly into the tender tissues of inflorescences and fruits or on the surface of young leaves. After hatching pale-white, translucent nymphs feed on the leaves and fruits of mango trees (depending on species). Having reached maturity, they subsequently fall onto the ground where they perform the last stage of their life cycle (pupa) in the soil, or on plant remains. Thrip populations are low in winter and reach their peak in summer. The complete life cycle varies in length depending on environmental conditions, but optimal temperatures range around 26°C, their developmental threshold is at 10°C. Thrips are spread over large distances by wind.
+
+            
+                                </p>
+                           <h3> <b>Biological method:</b></h3><p class="text"> 
+                               
+                                   Predatory wasps and mites, flower bugs, and other natural enemies are important control agents of thrips and need to be conserved. Neem based pheromone traps or sprays can control thrips populations. The bio-insecticide Spinosad effectively controls the pest. The pathogenic fungi Fusarium semitectum can be employed to reduce thrips populations.
+
+
+
+
+                                     </p>
+                            <h3><b>Chemical method:</b></h3><p class="text"> 
+                                   
+             Always consider an integrated approach with preventive measures together with biological treatments if available. Insecticide sprays containing fluvalinate are effective against the pest. Chemicals such as abamectin, azadirachtin, deltamethrin, lambda-cyhalothrin and lufenuron may also be used against thrips.
+
+
+                                    </p>
+                       <h3><b>Prevention:</b></h3><p class="text">
+                          Select resistant varieties, if available. Use yellow sticky traps to monitor thrip populations. Keep the soil well irrigated and avoid excessive use of nitrogen fertilizers. These promote thrip infestations. Enhance tree tolerance by maintaining decent fertilization and cultural practices. Avoid planting alternative hosts like cashew, grape, guava, avocado and ornamental shade trees nearby. Windbreaks can protect the orchard from long distance infestations. Till the soil to bring thrip pupae to the surface, exposing them to the sun. Avoid over-use of insecticides to preserve populations of beneficial insects.
+
+                           </p>
+
+                </p>
+            
+        </div>
+
+
+
+        <div id="hover7" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Mango Fruit Borer </h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/borer.jpeg' %}" style="width: 32%;">
+                <img src="{% static 'img/borer1.jpg' %}" style="width: 30%;">
+                <img src="{% static 'img/borer2.jpeg' %}" style="width: 30%;">
+            </div>
+            <p>
+                    <h3><b>Intro</b></h3><p class="text"> 
+                            Brown spot has been historically largely ignored as one of the most common and most damaging rice diseases.</p>
+                       <h3> <b>Symptoms:</b> </h3><p class="text"> 
+                           Pea- or lime-sized fruits display black entry holes, often surrounded by a round discolored patch at the distal end of the hanging fruit. Chewed pulp and sap material exudes from the entry hole when the fruits are larger. Fruits may split due to the extensive tunneling of the borer. The larvae might migrate to other fruits then. Newly hatched larvae are pale pink with a dark brown to black head. Later, they turn reddish-brown. Initially, they scrape the fruit skin, causing scab-like patches, then they bore into the fruit, which may cause premature dropping of young fruits. Hundreds of them can be found under heavily infested trees. The infested fruits drop prematurely.    </p>
+                           <h3> <b>Triger:</b></h3><p class="text">
+                                The adult moth has dark brown forewings and pale white-gray hindwings. The adult is a medium-sized moth with a wingspan of 20 mm. Adult moths live for about a week and lay 125-450 eggs on rough areas of the fruit and 	pedicels. Larvae enter the fruit and feed on the pulp and seed. A fully grown caterpillar measures about 20 mm in length. It pupates in a loosely woven silken cocoon in the soil adjacent to the fallen fruit. Development takes about 30 days. The pest is distributed through transport of infested fruits. What is more, adult moths are capable of flying to different orchards.</p>
+                           <h3> <b>Biological method:</b></h3><p class="text"> 
+                               Apply neem extracts (azadirachtin) at weekly intervals, starting when the mango is in flower and continue for 2 months. Try to maintain natural enemy populations of the mango fruit borer, e.g. the wasps Rychium attrisimum (feeding on the larvae) and Trichogramma chilonis and Trichogramma chilotreae which parasitize the eggs.
+
+
+                              </p>
+                            <h3><b>Chemical method:</b></h3><p class="text"> 
+                                   Always consider an integrated approach with preventive measures together with biological treatments if available. Sprays containing thiacloprid will effectively control mango fruit borers. Also, pesticides sprayed on marble-sized fruits showed satisfying results. Sprays containing chloripyriphos (2.5 ml/l water) also decimate mango fruit borers effectively.
+                           </p>
+                       <h3><b>Prevention:</b></h3><p class="text">
+                           Source plant material only from clean, accredited suppliers, and preferably use material that is certified. Check your orchard frequently for the presence of pests and unusual symptoms, especially at the beginning of fruit set. Destroy infested fruits and barks of the respective trees. Windbreaks may prevent moths from invading the orchard. Avoid too much insecticides to favor the development of beneficial insects. Do not transport infested plant material or fruits to other locations.            
+                           </p>
+                </p>
+            <h4></h4>
+        </div>
+
+    
+
+        <div id="hover2" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Mango Hoppers</h2>
+
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/hopper.jpeg' %}" style="width: 30%;">
+                <img src="{% static 'img/hopper1.jpg' %}" style="width: 30%;">
+                <img src="{% static 'img/hopper2.jpg' %}" style="width: 28%;">
+            </div>
+            <p>
+                
+                <h3> <b>Symptoms:</b> </h3><p class="text"> 
+
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;"><li>
+                            Nymphs and adults of Idioscopus species suck phloem sap from twigs, inflorescences, tender leaves and fruits. Affected plant tissue turns brown, and may deform and dry up
+                    </li>
+                    <li>
+                            Young flowers fail to develop, thereby influencing fruit set and development. While feeding on mango trees the hoppers produce sugary fluids (honeydew) that
+                    </li>
+                    <li>
+                            The fungal growth on leaves affects photosynthesis, impacting tree vigor and reducing its productivity. Mango hoppers lay their eggs into the leaves and flower stems of mango trees, which may also cause damage to the tissues.
+                    </li>
+                </ul>
+                  </p>
+                    <h3> <b>Triger:</b></h3><p class="text">
+                        <ul style=" font-size: 20px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        color: green;
+                        line-height: 40px;">
+                            <li>
+                                    Mango leafhoppers usually feature a wedge-like shape with a broad, round head, and globular eyes. Adults are golden or dark brown and about 4-5mm long.
+                            </li>
+                            <li>
+                                    Nymphs are yellow-brown, with red eyes. Mango hoppers lay their eggs singly in the florets, leaf veins and leaf lamina, depending on the species.
+                            </li>
+                            <li>
+                                    Between 100 and 200 eggs may be laid. They prefer shade environments with high humidity. Adult hoppers are good fliers and spread rapidly over short distances. Transport of nursery plants may spread the insects to other orchards or areas.
+                            </li>
+                        </ul>
+                        
+                        
+             </p>
+                    <h3> <b>Biological method:</b></h3><p class="text"> 
+                        <ul style=" font-size: 20px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        color: green;
+                        line-height: 40px;">
+                            <li>
+                                    Biological control agents such as the predators Mallada boninensis and Chrysopa lacciperda and the egg parasite Polynema sp. can reduce hopper populations.
+                            </li>
+                            <li>
+                                    Alternatively, affected mango trees can be treated with oil-based sprays containing the fungi Beauveria bassiana or Metarhizium anisopliae. Treatment at rates of 2-3 times per week is recommended. Sprays based on neem oil (3%) can also reduce Idioscopus spp. populations by up to 60%.
+                            </li>
+                        </ul>
+                       </p>
+                <h3><b>Chemical method:</b></h3><p class="text"> 
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;">
+                        <li>
+                                Always consider an integrated approach with preventive measures together with biological treatments if available. Use sprays containing cypermethrin (0.4%), these have proven highly effective.
+                        </li>
+                        <li>
+                                Insecticides containing dimethoate can be sprayed or injected into the trunk. Two sprays, 7 days apart, are recommended before the beginning of flowering, thereby reducing side effects on pollinators.
+                        </li>
+                    </ul>
+                   	 </p>
+                <h3><b>Prevention:</b></h3><p class="text">
+                    <ul style=" font-size: 20px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    color: green;
+                    line-height: 40px;">
+                        <li>
+                                Keep a wide distance between trees when planting. Regularly monitor the orchards for nymphs and adults of Idioscopus species.
+                        </li>
+                        <li>
+                                Chose varieties which are less susceptible to mango hoppers. Do not transport infected mango plants between orchards.
+                        </li>
+                    </ul>
+                     </p>
+                </p>
+                   
+                </p>
+            <h4></h4>
+        </div>
+
+
+
+
+        <div id="hover6" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%"> Mealbug</h2>
+                <div class="container"  style="width: 70%; ">
+                    <img src="{% static 'img/mealbuy.jpeg' %}" style="width: 30%;">
+                    <img src="{% static 'img/mealbuy1.jpeg' %}" style="width: 30%;">
+                    <img src="{% static 'img/mealbuy2.jpeg' %}" style="width: 35%;">
+                </div>
+                <p><h3><b>Description:</b></h3><p class="text">
+                        Rice sheath blight is one of the most </p>
+                   <h3 ><b>Symptoms:</b></h3>
+                   <p class="text">
+                       White cotton-like masses made of flocks of bugs appear on the underside of leaves, stems, flowers and fruits. They are very active and even though low numbers have very little impact, infestations can lead to yellowing and curling of young leaves, stunted growth of plants and early fall of fruits. Older leaves are less likely to become deformed or distorted. The bugs excrete honeydew during sap sucking and this makes the tissues sticky and prone to be colonized by opportunistic bacteria and fungi. Fruits are particularly susceptible to be attacked and may become deformed or completely coated by wax secretions. Ants may be attracted by the honeydew and may spread the pest to other plants.
+                    </p>
+                       <h3> <b>Triger:</b></h3><p class="text">Mealybugs are oval, wingless insects found in warm or temperate climates. Their body are protected by a layer of thin mealy wax that give them a cottony appearance. They insert their long piercing and sucking mouthparts (stylets) into plant tissues and suck sap out of them. The symptoms are a reaction to the toxic substances that they inject into plants while feeding. The eggs of the mealybug are also laid in the soil. After hatching, nymphs and adults can crawl to neighboring plants. They can also be dispersed over more or less longer distances by wind, ants, animals, birds or simply during field work activities such as pruning or harvesting. They have an array of alternative hosts such as eggplant and sweet potato, as well as many weeds. Warm temperatures and dry weather favor their life cycle and the severity of the symptoms.</p>
+                       <h3><b> Biological method:</b></h3>
+                   <p class="text">
+                       At the first sign of slight infestation, smear the colonies of mealybugs with a cotton bud imbued with oil or spirit. You can also wash the plants with warm water and a small amount of detergent, petroleum oil or insecticidal soap. Nearby plants should be sprayed with neem oil or pyrethrins in order to prevent spread of the population. Natural antagonists include the green lacewing, parasitoid wasps, hover flies, ladybird beetles, mealybug destroyer and the predator butterfly Spalgius epius.
+
+                      </p>
+                   <h3><b>Chemical method:</b></h3>
+                   <p class="text">
+                        Always consider an integrated approach with preventive measures together with biological treatments if available. Treatments against mealybug are difficult because they are protected from adverse environmental conditions by their waxy layers and fibers. However, foliar spray with solutions based on bifenthrin, chlorpyriphos, deltamethrin and pyrethroids can be effective against mealybugs.
+                    </p>
+                         <h3><b>Prevention:</b></h3>
+                                     <p class="text">
+                          Use seeds or transplants from healthy plants or from certified sources. Monitor the field regularly for signs of the pest. Remove and destroy infested plants or plant parts. Eradicate weeds in and around the field. Do not grow other            susceptible crops in the area. Take great care not to spread the mealybugs during field work. Encourage the population of predators with good field practices, for example with the use of insecticide specific for mealybugs. Avoid flood irrigation of the crop during the season. Follow a balanced and well-timed fertilization program. Control ants with sticky bands on the trunk or branches. Disinfection of equipment and tools is highly recommended. Crop rotation with non-susceptible plants is recommended.
+	
+
+            
+                              </p>
+                   
+                 </p>
+                <h4></h4>
+            </div>
+
+
+
+
+
+
+
+            <div id="link-change">
+                    <div class="container"  style="width: 65%;">
+                     <div class="row" >
+                          <div class="col-lg-4">
+                            <div class="thumbnail">
+                                 <div class="card" style="height: 430px;">
+                                    <img src="{% static 'img/hopper.jpeg' %}" alt="John" style="width:100%;height: 230px;">
+                                    <h1>Mango Hoppers</h1>
+                                    <p class="title"></p>
+                                    <p><b>Idioscopus Spp</b></p>
+                                    <div style="margin: 24px 0;">
+                                        <button class="hover-link" id="hover2-hidden">Click</button>
+                
+                                    </div>
+                
+                                </div>
+                 
+                       </div>
+                   </div>
+               
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                    <div class="card" style="height:430px;">
+                                            <img src="{% static 'img/fruit.jpeg' %}" alt="John" style="width:100%;height:230px;">
+                                            <h1>Mango Fruit Fly</h1>
+                                            <p class="title"></p>
+                                            <p><b>Ceratitis cosyra</b></p>
+                                            <div style="margin: 24px 0;">
+                                                <button class="hover-link" id="hover3-hidden">Click</button>
+                                            </div>
+                        
+                                     </div>
+                  
+                                </div>
+                    </div>
+                
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                        <div class="card" style="height:430px;">
+                                                <img src="{% static 'img/mealbuy1.jpeg' %}" alt="John" style="width:100%" height="230px">
+                                                <h1>Mealbug</h1>
+                                                <p class="title"></p>
+                                                <p><b>Pseudococcidae</b></p>
+                                                <div style="margin: 24px 0;">
+                                                        <button class="hover-link" id="hover6-hidden">Click</button>                    
+                                                </div>
+                                            </div>   
+                    
+                                 </div>
+                        </div>
+                    </div>
+                 </div>
+                 
+           
+        
+        
+        
+        
+        
+        
+        
+        
+           <div class="container" style="margin-top:2%; width: 65%;">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                             <div class="card" style="height:430px;">
+                                     <img src="{% static 'img/oriental1.png' %}" alt="John" style="width:100%; height:230px;">
+                                     <h1>Oriental Fruit Fly</h1>
+                                     <p class="title"></p>
+                                     <p><b>Bactrocera Dorsalis</b></p>
+                                     <div style="margin: 24px 0;">
+                                         <button class="hover-link" id="hover9-hidden">Click</button>
+                 
+                                     </div>
+                 
+                                 </div>
+                 
+                        </div>
+                    </div>
+                
+                     <div class="col-lg-4">
+                             <div class="thumbnail">
+                                     <div class="card" style="height:430px;">
+                                             <img src="{% static 'img/borer2.jpeg' %}" alt="John" style="width:100%;height: 230px;">
+                                             <h1>Mango Fruit Borer </h1>
+                                             <p class="title"></p>
+                                             <p><b>Citripestis Eutraphera</b></p>
+                                             <div style="margin: 24px 0;">
+                                                 <button class="hover-link" id="hover7-hidden">Click</button>
+                                             </div>
+                         
+                                      </div>
+                   
+                                 </div>
+                     </div>
+                 
+                         <div class="col-lg-4">
+                                 <div class="thumbnail">
+                                         <div class="card" style="height:430px;">
+                                                 <img src="{% static 'img/thrips.jpeg' %}" alt="John" style="width:100%" height="230px">
+                                                 <h1>Thrips in Mango</h1>
+                                                 <p class="title"></p>
+                                                 <p><b>Scirtothrips</b></p>
+                                                 <div style="margin: 24px 0;">
+                                                         <button class="hover-link" id="hover8-hidden">Click</button>                    
+                                                 </div>
+                                             </div>   
+                     
+                                  </div>
+                         </div>
+                     </div>
+                  </div>
+                  
+            </div>
+        
+        
+        
+        
+        
+        
+       
+        
+        
+        
+
+
+
+
+
+
+        <div>
+            <marquee class="opo"><b>Public Relation Officer:</b> Sh.Anil K Sharma , <b>Phone:</b> 91-11-25843301 ,
+                <b>Email:</b> anil.cpro@gmail.com <br /></marquee>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <script src="{% static 'js/project.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,510 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/css/wheat.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+   
+</head>
+
+<body>
+    <div class="back-body">
+        <div class="header" style="background-image: url('{% static 'img/crop3.jpg' %}');">
+            <h1><img src="{% static 'img/Farmbzz.png' %}" width="10%"> <b>Farmbzz-A Farmer Friendly Web App</b>
+            </h1>
+        </div>
+
+
+        <nav class="navbar navbar-inverse" style="margin-top:-10px;">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a style="font-size:25px;" class="navbar-brand" href="http://127.0.0.1:8000/">Home</a>
+                </div>
+                <ul class="nav navbar-nav">
+
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Disease Book <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a  href="{% url 'wheat' %}">Wheat</a></li>
+                            <li><a href="{% url 'rice' %}">Rice</a></li>
+                            <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                            <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                            <li><a href="{% url 'groundnut' %}">Groundnut</a></li>
+                            <li><a href="{% url 'potato' %}">Potato</a></li>
+                        </ul>
+
+
+
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Insect Book <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{% url 'mango' %}">Mango</a></li>
+                        <li><a href="{% url 'irice' %}">Rice</a></li>
+                        <li><a href="{% url 'isugarcane' %}">Sugarcane</a></li>
+                        <li><a href="{% url 'icotton' %}">Cotton</a></li>
+                        <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                        <li><a href="{% url 'ipotato' %}">Potato</a></li>
+                    </ul>
+
+
+                    </li>
+                    <li><a href="{% url 'weather' %}">Weather</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">E-Shikayat</a></li>
+                    <li><a href="http://127.0.0.1:8000/mailer">Soil Testing</a></li>
+                    <li><a href="{% url 'auto' %}">Auto Diagnosis</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        
+
+
+
+
+       
+       
+        <div class="container" style=" width: 100%; padding: 20px; margin-top: -20px;">
+            <h1 style="margin-top:0px">Rice</h1>
+            <div class="w3-content w3-section">
+                <img class="mySlides" src="{% static 'img/r1.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r2.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r3.jpeg' %}">
+                <img class="mySlides" src="{% static 'img/r4.jpeg' %}">
+            </div>
+        <!--<div class="mnb">-->
+            <p class="asx"> Rice is the seed of the grass species Oryza sativa(Asian rice) or Oryza glaberrima(African rice).
+                It is a cereal grain belongs to the grass family of Graminae and native to the deltas of the great Asian rivers,
+                 the Ganges, the Chang (Yangtze), and the Tigris and Euphrates. The rice plant grows from 2 to 6 ft tall, with a
+                  round, jointed stem, long pointed leaves and edible seeds borne in dense head on separate stalks. Rice is one 
+                  of the most cultivated grain crops in India as well as in Asian countries and a staple diet of major part of 
+                  India. India is an important centre for rice cultivation and consumption. India stands in second position after
+                  China in the production of rice.Major rice producing states are Haryana ,Tamil Nadu ,West Bengal ,Uttar Pradesh 
+                  ,Andhra Pradesh . Methods of growing rice differ greatly in different regions, but in most Asian countries 
+                  including India, the traditional hand methods of cultivating and harvesting rice are still practiced. Modern 
+                  farming of rice started in most of the countries which drastically reduced the labour problems and cost of cultivation.
+                   There are machines available from planting to harvesting the rice crop. Some parts of Indian rural areas still depend 
+                   on the wet buffalos for land preparation and manpower in plantation and harvesting. People often confuses with paddy 
+                   and rice. Rice when it is still covered by the brown hull is known as paddy. Rice fields are also called paddy fields or rice paddies.
+                     
+                
+                
+            </p>
+        </div>
+        
+        <br /> 
+        <div class="container" style=" width: 100%; padding: 20px; ">
+                <!--<div class="mnv"></div>-->
+                <div class="row">
+                        <div class="col-lg-6">
+                            <div class="thumbnail" style="border-color:transparent">
+                            <img src="{% static 'img/ricegraph.png' %}" alt="">
+                        </div>
+                    </div>
+                        <div class="col-lg-6"> 
+                            <div class="thumbnail">
+                            <p class="asx">dsjkfkjshfkjskdfsdjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+                        </div>
+                    </div>
+                    </div>
+                 </div>
+    
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <div>
+            <h1>Common Insects of Sugarcane:</h1>
+        </div>
+        <br>
+        <br>
+        
+
+
+
+        <div id="hover3" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Sugarcane Pyrillaa</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/purilla.jpg' %}" style="width: 27%;">
+                <img src="{% static 'img/sugarcane pyrilla1.jpeg' %}" style="width: 30%;">
+                <img src="{% static 'img/sugarcanepyrilla2.jpeg' %}" style="width: 35%;">
+            </div>
+            <p>
+                <h3><b>Description:</b></h3><p class="text">
+                     Rice sheath blight is one of the most </p>
+                <h3 ><b>Symptoms:</b></h3>
+                <p class="text">
+                        The pest is found on the underside of the leaves where they suck up plant sap. This causes the yellowing first and then the drying of leaves. Under low infestation, yellow patches appear on the leaf surface. Photosynthesis is reduced resulting in the stunting of the plant. Hoppers also secrete a sweet substance called honeydew that coats the leaves. This attracts opportunistic fungi whose growth blackens the leaf blade. This reduces photosynthesis even more, resulting in yield loss. Beside maize, they also readily attack sugarcane, millets, rice, barley, oats, sorghum, bajra and wild grasses.</p>
+                    <h3> <b>Triger:</b></h3><p class="text">
+                            Damage is caused by the adults of Pyrilla perpusilla, a very active plant hopper that breed throughout the year and may migrate from field to field, causing major damage. Adults are greenish to straw-colored and about 7-8 mm in length. They are usually found feeding gregariously on plants and jump off readily when disturbed. Their pointed snout hide the mouth parts with which they pierce and suck plant tissues. Spreading of the pest is favored by high humidity and rapid plant growth, for example in heavily manured or fertilized fields. Excess irrigation or the rainy season also contributes to its propagation.
+                        </p>
+                    <h3><b> Chemical method:</b></h3>
+                <p class="text">Always consider an integrated approach with preventive measures together with biological treatments if available. Products containing malathion are effective against this pest. 
+                        </p>
+                <h3><b>Biological method:</b></h3>
+                <p class="text">Several parasitoids attack eggs and nymphs. Egg parasitoids include Tetrastichus pyrillae, Cheiloneurus pyrillae, Ooencyrtus pyrillae, O. pipilionus and Agoniaspis pyrillae. Nymphs are attacked by Lestodryinus pyrillae, Pyrilloxenos ompactus, Chlorodryinus pallidus, Epiricania melanoleuca. Predators of this insect also include several species of ladybirds such as Coccinella septempunctata, C. undecimpunctata, Chilomenes sexmaculata, Brumus suturalis. Egg-predators are Nimboa basipunctata, Goniopteryx pusana.  
+                        </p>
+                      <h3><b>Prevention:</b></h3>
+                      <p class="text">
+                            Monitor the field regularly for symptoms of the pest. Remove infected plant after harvest and burn them. Do not use broad-range insecticides as this can affect negatively beneficial insects.
+                           </p>
+                    </p>
+            <h4></h4>
+        </div>
+
+        <div id="hover9" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">White Grub</h2>
+                <div class="container"  style="width: 70%; ">
+                    <img src="{% static 'img/whitegrub.jpeg' %}" style="width: 29%;">
+                    <img src="{% static 'img/whitegrub1.jpeg' %}" style="width: 30%;">
+                   
+                </div>
+                <p>
+                        <h3><b>Intro</b></h3><p class="text"> 
+                                Brown spot has been historically largely ignored as one of the most common and most damaging rice diseases.</p>
+                           <h3> <b>Symptoms:</b> </h3><p class="text">   Larvae feed on and damage the roots, decreasing the water and nutrient supply to the plant. The symptoms are similar in appearance to drought damage, with an initial yellowing and wilting of leaves. Over time, leaves turn brown and the maturing stalks deteriorate. In extreme cases, the grubs eat up the roots and canes may lodge in case of adverse weather, or simply by its own weight. Grubs may also be found tunneling into the cane stalks. In case of severe infestations and at early stages of cane growth, replanting may be necessary. 
+            
+            
+                               </p>
+                               <h3> <b>Triger:</b></h3><p class="text">   
+                                    Damage may be caused by the grubs of several types of beetles, the most important of which is Lepidiota stigma. Other species may be found, such as Phyllophaga helleri, Pachnessa nicobarica, Leucopholis spp. and Psilopholis spp. The grubs are characterized by a a creamy white and C-shaped body. They become more and more voracious as they grow old, causing severe damage if left unchecked. The amount of damage will depend on their number, their age, the variety of sugarcane and its growth stage when it is attacked. Attacks on old cane lead to yield reduction. 
+                                    
+                                </p>
+                               <h3> <b>Biological method:</b></h3><p class="text"> 
+                                    
+              Trap trees can be used to lure the beetles and easily destroy them is very effective to reduce infestations of white grubs in nearby sugarcane fields. Jayanti (Sesbania sesban), turi (Sesbania grandiflora), Acacia tomentosa, asam (Tamarindus indica), jengkol (Pithecellobium jiringa), and cashew (Anacardium occidentale) can be used. Cashew is ideal, as it can grow in poor soils and produces nuts. Try biopesticides containing Beauveria spp. to control the infestation.</p>
+                           <h3><b>Chemical method:</b></h3><p class="text">
+                               
+                                Always consider an integrated approach with preventive measures together with biological treatments if available. Chemical control is usually done using soil insecticides. Products containing the slow-realease soil insecticides chlorpyrifos or chlorpyrifos-methyl are effective against these grubs if applied to the root zone before planting. However, the application is not possible in ratoon fields.
+                               </p>
+                           <h3><b>Prevention:</b></h3><p class="text">
+                                Grow more tolerant varieties, if available. Regularly monitor the field for signs of white grubs and beetles. Use traps to assess numbers or simply mass-catch adults. Or simply collect beetles or grubs by hand. Alternatively, shake plants and collect them on a piece of clothe. Use trap trees to attract adults and pick them up by hand. Avoid cultivating sugarcane on clay soils. Ensure soil fertility with right fertilizer balance. Do not use broad-spectrum insecticides that kills beneficial insects. Carry out a deep plow to dig debris, favor their decomposition and expose grubs to predators. Alternatively, remove residues and stubble after harvest and burn them. Rotate with non-host crops such as legumes. Leave the field fallow some weeks after harvest to break the life cycle of the grubs. 
+            
+                              </p>
+                              
+                </p>
+                <h4></h4>
+            </div>
+
+
+        <div id="hover8" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">
+                Banana fruit Scarring beetle</h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/bananafriuit.jpeg' %}" style="width: 28%;">
+                <img src="{% static 'img/bananafriut2.jpeg' %}" style="width: 30%;">
+                <img src="{% static 'img/bananafriut3.jpg' %}" style="width: 33%;">
+            </div>
+            <p>
+                    <h3><b>Intro</b></h3><p class="text"> 
+                            Brown spot has been historically largely ignored as one of the most common and most damaging rice diseases.</p>
+                       <h3> <b>Symptoms:</b> </h3><p class="text"> 
+                            The adult beetles feed on various weeds, as well as the young unfurled leaves, stems, and roots of banana trees. They also eat on the young fruit, making scars and spots on the skin that deforms it and makes it unmarketable. Most of the scarring occurs at the base of the fruit, reflecting the fact that beetles chose the most sheltered spots for feeding (under the bract for example). Scars are mostly oval in shape and can be confused with those of the fruit-scarring bee Melipona amalthea. The damage is made worse by the colonization of the tissues by opportunistic pathogens. The larvae feed on young roots, and tunnel on the older ones to eat their tissues. Occurrence of this pest is usually high during the rainy season. 
+
+                            </p>
+                           <h3> <b>Triger:</b></h3><p class="text">
+                                The damage is caused by the banana fruit-scarring beetle, Colaspis hypochlora. Adults have brown forewings with characteristic rows of small parallel dots. They are very good fliers.  Females lay pale lemon-yellow eggs, singly or in clusters varying in number from 5 to 45. Egg-laying is taking place in cavities gnawed in the leaf sheaths near the crown or in natural depressions that expose the surface of roots. After 7 to 9 days, the newly-hatched larvae start to feed on the young roots or to bore tunnels into the soft epidermal tissues of the older roots to feed on them. They have a whitish, slender and hairy body, and the head somewhat amber-colored. The pupa is dirty yellow, becoming darker as the adult becomes ready to emerge.
+            
+                                </p>
+                           <h3> <b>Biological method:</b></h3><p class="text"> 
+                               
+                                No biological treatment seems to be available for this pest to this day. The best preventive measure to avoid its proliferation is a good weeding program.
+
+                                     </p>
+                            <h3><b>Chemical method:</b></h3><p class="text"> 
+                                   
+                                    Always consider an integrated approach with preventive measures together with biological treatments if available. Chemical control is usually not recommended, as a proper weeding, for example, can reduce the population levels enough to avoid the use of insecticides. Spray insecticides on a rotation basis depending on the pest load. However, unless the beetles are causing serious economic losses the use of insecticides should be avoided. 
+
+                                    </p>
+                       <h3><b>Prevention:</b></h3><p class="text">
+                            Maintain a thorough control of weeds in the plantations, as this pest thrives on them. Avoid to plant banana trees near drainage canals. Remove pseudostems below ground level and trim the rhizome where larvae mature. Remove damage plant parts from the plantation. Rake the surface of the soil to expose the pupae to predators.
+            
+                           </p>
+
+                </p>
+            
+        </div>
+
+
+
+        <div id="hover7" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Sugarcane Borer </h2>
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/sugarcaneborer.jpeg' %}" style="width: 32%;">
+                <img src="{% static 'img/sugarcaneborer1.jpg' %}" style="width: 30%;">
+                <img src="{% static 'img/sugarcaneborer2.jpeg' %}" style="width: 30%;">
+            </div>
+            <p>
+                    <h3><b>Intro</b></h3><p class="text"> 
+                            Brown spot has been historically largely ignored as one of the most common and most damaging rice diseases.</p>
+                       <h3> <b>Symptoms:</b> </h3><p class="text"> 
+                            “Pinhole” feeding damage and perforations on stalks caused by larvae. On young plants the internal tissue of stems is eaten up, a symptom named dead heart. On older plants young larvae drill themselves into the leaf sheath and axil. As the larvae grow older, they start tunneling into the stalk. Heavily infected plants grow weak and stunted and may eventually break or lodge when the meteorological conditions are unfavorable. Perforations are eventually found all over the plant and reduce the yield and the quality of the juice. </p>
+                           <h3> <b>Triger:</b></h3><p class="text">
+                                Temperature determines the length of the life cycle. Larval development usually requires 25 to 30 days during warm weather and approximately five days longer during cool weather. Heavy rainfalls and low temperatures during winter decrease borer population. Warm temperatures and light rainfall favor pest survival and development. Reduced tillage agriculture enables the pest to overwinter in infested crop debris. Lack of natural predators also. Higher levels of nitrogen fertilization may favor survival. </p>
+                           <h3> <b>Biological method:</b></h3><p class="text"> 
+                                Soak the seed cane in water at 25.6°C for 72 hours at least to kill 27-100% of the borers eggs. Germination is not hindered following this treatment, and soaked cane tends to produce a better stand. D. saccharalis populations can be controlled by numerous parasitoids and predators. Use ants, especially the red fire ant Solenopsis invicta. Or employ species of the parasitic wasp Trichogramma to minimize the egg population. 
+                              </p>
+                            <h3><b>Chemical method:</b></h3><p class="text"> 
+                                    
+                            Always consider an integrated approach with preventive measures together with biological treatments if available. Monitor fields for populations big enough to cause economic damage. Apply insecticides containing chlorantraniliprole, flubendiamide or insect growth regulators to prevent the older larvae from tunneling into the stalks. 
+                           </p>
+                       <h3><b>Prevention:</b></h3><p class="text">
+                            Use tolerant and resistant varieties. Avoid the use of seed cane damaged by the borer. Add silicon to the soil to reduce survival and injury by borers. Burn the cane pre-harvest to reduce populations. Quickly destroy crop residues in field after harvest by burning, disking or flooding.
+            
+                           </p>
+                </p>
+            <h4></h4>
+        </div>
+
+    
+
+        <div id="hover2" class="html-hidden">
+
+            <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Wolly Aphid</h2>
+
+            <div class="container"  style="width: 70%; ">
+                <img src="{% static 'img/wollyaphid.jpeg' %}" style="width: 30%;">
+                <img src="{% static 'img/wollyaphids1.jpeg' %}" style="width: 30%;">
+                <img src="{% static 'img/wollyaphids2.jpg' %}" style="width: 28%;">
+            </div>
+            <p>
+                <h3><b>Intro</b></h3><p class="text"> 
+                     Brown spot has been historically largely ignored as one of the most common and most damaging rice diseases.</p>
+                <h3> <b>Symptoms:</b> </h3><p class="text"> 
+                    
+              White hairy insects can be seen feeding on buds, twigs, branches, and even on the roots. Distorted leaves, yellowing foliage, poor growth and branch dieback are the consequence of this activity. A white, fluffy covering and honeydew appear near the feeding sites. On bark and shoots, the development of cankers and swellings is also characteristic. Underground forms of the aphid also attack roots and lead to the formation of swollen enlargements or large knots. The impaired transport of water and nutrients explains the yellowish appearance of the the trees. These galls increase in size from year to year as a result of aphid feeding. The wounds caused by the insects and the presence of the honeydew also attract opportunistic fungi that may cover the infected tissues with sooty mold. Young trees are easily uprooted when infested.</p>
+                    <h3> <b>Triger:</b></h3><p class="text">
+                            The symptoms are caused by the feeding activity of the woolly aphid Eriosoma lanigerum. Unlike most aphids, it sucks sap from the woody stems, rather than from foliage. This insect is characterized by its white, thick, fluffy wax covering. It overwinters on its host in cracks on the bark or on suberised wounds around old feeding sites. As temperatures increase in the spring, the aphids become active again and climb on the suckers, younger shoots and branches in search of a vulnerable sites (areas with thinner bark). There, it feeds gregariously, sucking sap from beneath the bark, and starts secreting the fluffy hairs that eventually wrapped the colony. Opportunistic pathogen can then colonize these open wounds. During the summer, the adults grow wings and fly off in search of new host plants. Elm trees in the vicinity of orchards increase the migration of the aphid to the apple orchards. </p>
+                    <h3> <b>Biological method:</b></h3><p class="text"> 
+                            Spray solutions must be able to penetrate the woolly coat secreted by the aphids to kill them. Diluted alcohol solutions or insecticidal soaps can be splashed over the woolly spots to disturb them. Ecological oils or neem abstracts (2-3 ml/l water) can also be sprayed over the trees. Good coverage and a follow-up spray 7 days after first application are essential. Parasites or predators such as lacewings, ladybugs (Exochomus quadripustulatus), hoverflies larvae, and parasitic wasps (Aphelinus mali) can help to control populations. Artificial refuges foster populations of predator earwigs, for example Forficula auricularia. </p>
+                <h3><b>Chemical method:</b></h3><p class="text"> 
+                        Always consider an integrated approach with preventive measures together with biological treatments if available. Chemical controls can be applied either preventively or after detection. Systemic treatments can be useful to deter the aphids from feeding on treated trees. Unfortunately they can also be harmful to beneficial insects. Reactive sprays include formulations based on deltamethrin, lambda-cyhalothrin, and acetamiprid. Carbamates and pyrethroids should be avoided as they encourage outbreaks of aphids by killing parasites and predators. Trees in flower should not be sprayed due to the danger to pollinating insects .</p>
+                <h3><b>Prevention:</b></h3><p class="text">
+                    
+              Choose resistant varieties if available. In mild infestations, the insect can be monitored and scrubbed with a brush. Apply fortifiers or balanced fertilization to strengthen the trees. Avoid the excessive usage of pesticides as they can decrease populations of beneficial insects. Summer prune in late summer to remove developing colonies. Remove affected young shoots and branches. Remove suckers at the base of the tree to create less favorable conditions for the aphids. Paint large pruning cuts with commercial pruning paint to discourage aphid colonies. Do not plant elm trees close to apple tree orchards.</p>
+                </p>
+                   
+                </p>
+            <h4></h4>
+        </div>
+
+
+
+
+        <div id="hover6" class="html-hidden">
+
+                <h2><img class="normal-content" src="{% static 'img/i.png' %}" width="3%">Early shoot borer</h2>
+                <div class="container"  style="width: 70%; ">
+                    <img src="{% static 'img/earlyshootborer.jpeg' %}" style="width: 20%;">
+                    <img src="{% static 'img/earlyshootborer1.jpeg' %}" style="width: 35%;">
+                    <img src="{% static 'img/earlyshootborer1.jpg' %}" style="width: 35%;">
+                </div>
+                <p><h3><b>Description:</b></h3><p class="text">
+                        Rice sheath blight is one of the most </p>
+                   <h3 ><b>Symptoms:</b></h3>
+                   <p class="text">
+                        White, flat eggs can be found in clusters of up to 60 eggs in 3 to 5 rows on the lower surface of the leaf sheaths. Young larvae make small holes in leaves, especially in the leaf-sheaths. Older larvae drill holes at the base of the stems, enter the inside of the plant and feed on the soft internal tissues, causing dead hearts in plants. The central whorl of leaves may also dry up in the damaged plants. Infested tissues emit a foul odor. The early shoot borer act as an internode borer. 
+                    </p>
+                       <h3> <b>Triger:</b></h3><p class="text">  
+                            1-3 month old crops are highly susceptible.Females lay white flat eggs in clusters of up to 60 eggs in three to five rows on the under surface of the leaf sheaths. The larvae hatch from the eggs in one to six days, get scattered and enter the stem by making a hole just above the ground level. The larvae may migrate and attack a number of shoots similarly. It becomes full grown in 25 to 30 days and pupates inside the stem. An adult moth emerges after six to eight days. The total life cycle is completed in 35 to 40 days. </p>
+                       <h3><b> Chemical method:</b></h3>
+                   <p class="text">
+                        Always consider an integrated approach with preventive measures together with biological treatments if available. If insecticides are needed, spray products containing chlorantraniliprole. The application of granules of insecticide at planting and during growth reduces infections.
+            
+                      </p>
+                   <h3><b>Biological method:</b></h3>
+                   <p class="text">
+                        Release the egg parasitoid Trichogramma chilonis at seven to ten day intervals from the first month of planting until one month prior to harvest. Release females of Sturmiopsis inferens 30 to 45 days after planting. Alternatively, apply the granulosis virus of sugarcane shoot borer at a concentration of eight to ten virus inclusion bodies per millilitre at the 30th, 45th and 60th day of crop growth. The virus should be applied during evening hours immediately followed by irrigation.
+                    </p>
+                         <h3><b>Prevention:</b></h3>
+                                     <p class="text">
+
+                                            Use resistant or tolerant varieties. Avoid planting alternative host plants in the vicinity of the cane field (schwank, dub grass, maize). Plant early in the season to avoid infestation. Use pheromone sleeve traps or light traps to catch the moths. Remove and destroy dried shoots and other crop residues after harvest. Intercropping with green gram, black gram, daincha (Agathi) also helps repelling the adults. Avoid excessive use of nitrogen fertilizers.
+            
+                              </p>
+                   
+                 </p>
+                <h4></h4>
+            </div>
+
+
+
+
+
+
+
+            <div id="link-change">
+                    <div class="container"  style="width: 65%;">
+                     <div class="row" >
+                          <div class="col-lg-4">
+                            <div class="thumbnail">
+                                 <div class="card" style="height: 430px;">
+                                    <img src="{% static 'img/wollyaphid.jpeg' %}" alt="John" style="width:100%;height: 230px;">
+                                    <h1>Wolly Aphid</h1>
+                                    <p class="title">CEO & , Example</p>
+                                    <p><b>Cnaphalocrocis Medinalis</b></p>
+                                    <div style="margin: 24px 0;">
+                                        <button class="hover-link" id="hover2-hidden">Click</button>
+                
+                                    </div>
+                
+                                </div>
+                 
+                       </div>
+                   </div>
+               
+                    <div class="col-lg-4">
+                            <div class="thumbnail">
+                                    <div class="card" style="height:430px;">
+                                            <img src="{% static 'img/purilla.jpg' %}" alt="John" style="width:100%;height:230px;">
+                                            <h1>Pyrilla</h1>
+                                            <p class="title"> & Founder, Example</p>
+                                            <p><b>Dicladispa Armigera</b></p>
+                                            <div style="margin: 24px 0;">
+                                                <button class="hover-link" id="hover3-hidden">Click</button>
+                                            </div>
+                        
+                                     </div>
+                  
+                                </div>
+                    </div>
+                
+                        <div class="col-lg-4">
+                                <div class="thumbnail">
+                                        <div class="card" style="height:430px;">
+                                                <img src="{% static 'img/earlyshootborer1.jpg' %}" alt="John" style="width:100%" height="230px">
+                                                <h1>Early shoot borer</h1>
+                                                <p class="title">CEO & Founder,</p>
+                                                <p><b>Orseolia oryzae</b></p>
+                                                <div style="margin: 24px 0;">
+                                                        <button class="hover-link" id="hover6-hidden">Click</button>                    
+                                                </div>
+                                            </div>   
+                    
+                                 </div>
+                        </div>
+                    </div>
+                 </div>
+                 
+           
+        
+        
+        
+        
+        
+        
+        
+        
+           <div class="container" style="margin-top:2%; width: 65%;">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumbnail">
+                             <div class="card" style="height:430px;">
+                                     <img src="{% static 'img/whitegrub.jpeg' %}" alt="John" style="width:100%; height:230px;">
+                                     <h1>White Grub</h1>
+                                     <p class="title">CEO & , Example</p>
+                                     <p><b>Causal Organism : Helminthosporium</b></p>
+                                     <div style="margin: 24px 0;">
+                                         <button class="hover-link" id="hover9-hidden">Click</button>
+                 
+                                     </div>
+                 
+                                 </div>
+                 
+                        </div>
+                    </div>
+                
+                     <div class="col-lg-4">
+                             <div class="thumbnail">
+                                     <div class="card" style="height:430px;">
+                                             <img src="{% static 'img/sugarcaneborer.jpeg' %}" alt="John" style="width:100%;height: 230px;">
+                                             <h1>Sugarcane Borer </h1>
+                                             <p class="title"> & Founder, Example</p>
+                                             <p><b></b></p>
+                                             <div style="margin: 24px 0;">
+                                                 <button class="hover-link" id="hover7-hidden">Click</button>
+                                             </div>
+                         
+                                      </div>
+                   
+                                 </div>
+                     </div>
+                 
+                         <div class="col-lg-4">
+                                 <div class="thumbnail">
+                                         <div class="card" style="height:430px;">
+                                                 <img src="{% static 'img/bananafriuit.jpeg' %}" alt="John" style="width:100%" height="230px">
+                                                 <h1>
+                                                        Banana fruit Scarring beetle</h1>
+                                                 <p class="title">CEO & Founder,</p>
+                                                 <p><b>Causal Organism : Ustilaginoidea Virens</b></p>
+                                                 <div style="margin: 24px 0;">
+                                                         <button class="hover-link" id="hover8-hidden">Click</button>                    
+                                                 </div>
+                                             </div>   
+                     
+                                  </div>
+                         </div>
+                     </div>
+                  </div>
+                  
+            </div>
+        
+        
+        
+        
+        
+        
+       
+        
+        
+        
+
+
+
+
+
+
+        <div>
+            <marquee class="opo"><b>Public Relation Officer:</b> Sh.Anil K Sharma , <b>Phone:</b> 91-11-25843301 ,
+                <b>Email:</b> anil.cpro@gmail.com <br /></marquee>
+            <br>
+            <br>
+
+        </div>
+    </div>
+    <script src="{% static 'js/project.js' %}"></script>
+</body>
+
+</html>

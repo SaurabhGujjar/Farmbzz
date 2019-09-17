@@ -1,0 +1,183 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+	<title>Farmbzz-Login</title>
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'images/favicon.ico' %}">
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="{% static 'css/css/font-awesome.min.css' %}" rel="stylesheet">
+	<link href="{% static 'css/css/mystyle.css' %}" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!--// Stylesheets -->
+	<!--fonts-->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	<!--//fonts-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+        <!-- ***** Navbar Area ***** -->
+
+	 <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+    <nav class="navbar navbar-" style="background-color: transparent">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">
+                    <p style=" color:#00264d; float: left; font-size: 45px"><b>Farmbzz</b></p>
+                </a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="default" placeholder="Phone Number">
+                    <input class="form-control mr-sm-2" type="password" placeholder="Password">
+                    <span class="navbar-text"></span> <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log In</button>
+                </form>
+            </ul>
+        </div>
+    </nav>
+
+	<h2 style="color: darkgrey">Create Your Account: </h2>
+	<img  src="{% static 'css/images/Farmbzz.png' %}" alt="Farmbzz">
+
+	<div  class="w3ls-login box box--big" style="margin-left:49%; margin-right:2%">
+		<!-- form starts here -->
+		<form action="#" method="post">
+			<div class="farmbzz">
+				<label><i class="fa fa-user" aria-hidden="true"></i> First Name </label>
+				<input type="text" name="name" placeholder="Enter First Name" required="" />
+			</div>
+
+			<div class="farmbzz">
+				<label><i class="fa fa-user" aria-hidden="true"></i> Last Name </label>
+				<input type="text" name="name" placeholder="Enter Last Name" required="" />
+			</div>
+
+			<div class="farmbzz">
+				<label><i class="fas fa-map-marker-alt"></i> State </label>
+				<input type="text" name="name" placeholder="Enter State Name" required="" />
+			</div>
+
+			<div class="farmbzz">
+				<label><i class="fas fa-map-marker-alt" aria-hidden="true"></i> City </label>
+				<input type="text" name="name" placeholder="Enter City Name" required="" />
+			</div>
+
+			<div class="agile-field-txt">
+				<label><i class="fas fa-mobile-alt"></i> Phone Number </label>
+				<input type="text" name="name" placeholder="Enter Phone" required="" />
+			</div>
+
+			<div class="agile-field-txt">
+				<label><i class="fa fa-unlock-alt" aria-hidden="true"></i> Password </label>
+				<input type="password" name="password" placeholder="Enter Password" required="" id="myInput" />
+				<div class="agile_label">
+					<input id="check3" name="check3" type="checkbox" value="show password" onclick="myFunction()">
+					<label class="check" for="check3">Show password</label>
+				</div>
+				<div class="agile-right">
+					<a href="#">forgot password?</a>
+				</div>
+			</div>
+			<!-- script for show password -->
+			<script>
+				function myFunction() {
+					var x = document.getElementById("myInput");
+					if (x.type === "password") {
+						x.type = "text";
+					} else {
+						x.type = "password";
+					}
+				}
+			</script>
+			<!-- //end script -->
+				<input type="submit" value="SUBMIT">
+		</form>
+	</div>
+	<!-- //form ends here -->
+	<div class="copy-wthree">
+		<p></p>
+	</div>
+
+
+        <div style="align-content: center">
+            <h1 style="color: darkgrey; margin-left:60px">A Farmer Friendly<br />Web App</h1>
+        </div>
+
+
+                    <!-- Search Form -->
+
+
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-post-slides owl-carousel">
+
+            <!-- Single Hero Post -->
+            <div class="single-hero-post bg-overlay">
+                <!-- Post Image -->
+                <div class="slide-img bg-img" style="background-image: url({% static 'css/images/1.jpg' %});"></div>
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Post -->
+
+        </div>
+
+        <!-- Footer Bottom Area -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="border-line"></div>
+                    </div>
+                    <!-- Copywrite Text -->
+
+                    <!-- Footer Nav -->
+                    <div class="col-12 col-md-6">
+                        <div class="footer-nav">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+</body>
+
+</html>
