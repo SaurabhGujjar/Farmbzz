@@ -134,7 +134,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "static-serve", "media-root")
 EMAIL_USE_TLS =True
 EMAIL_HOST ='smtp.gmail.com'
 EMAIL_PORT =587
-EMAIL_HOST_USER ='sahilnawaab@gmail.com'
-EMAIL_HOST_PASSWORD ='sahilbmwx5#$'
-EMAIL_PORT =587
+EMAIL_HOST_USER ='noreply.farmbzz@gmail.com'
+EMAIL_HOST_PASSWORD ='4dbewr3ft#487q6$'
 
